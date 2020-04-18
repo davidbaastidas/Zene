@@ -11,6 +11,9 @@ body{
     height: 100%;
     background-color:#131212;
     margin-left: 0cm;
+    display: grid;
+    grid-template-rows: 15% 85%;
+    gap: 5px;
 }
 .derecha{
     display: grid;
@@ -19,7 +22,6 @@ body{
 }
 .arriba{
     height: 100%;
-    background-color:#131212;
     margin-top: 0cm;
     padding-top: 20px;
 }
@@ -35,8 +37,9 @@ fieldset{
 input, button{
     position: relative;
     width: 200px;
-    height: 50px;
+    height: 40px;
     padding: 0cm;
+    border-radius: 15px;
 }
 input{
     color: black;
@@ -79,4 +82,11 @@ h2{
     color: white;
     font-family: 'Manrope', sans-serif;
     font-weight: 700;
+}
+.logo-img{
+    max-width: 100%;
+}
+.menu{
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
 }
