@@ -1,5 +1,5 @@
 body{
-    background-color:black;
+    background-color: black;
 }
 .grid-container{
     display: grid;
@@ -12,8 +12,32 @@ body{
     background-color:#131212;
     margin-left: 0cm;
     display: grid;
-    grid-template-rows: 15% 85%;
     gap: 5px;
+    grid-template-rows: 15% 85%;
+}
+.izquierda-abajo{
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    max-height: 15%;
+     
+}
+.fila1{
+    background-color: black;
+    margin: 2px;
+    padding-left: 10px;
+}
+.fila2{
+    background-color: black;
+    margin: 2px;
+    padding-left: 10px;
+}
+.fila3{
+    background-color: black;
+    margin: 2px;
+    padding-left: 10px;
+}
+h3{
+    color: white;
 }
 .derecha{
     display: grid;
