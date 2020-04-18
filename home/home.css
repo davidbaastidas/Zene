@@ -1,0 +1,53 @@
+body{
+    background-color:#131212;
+}
+.grid-container{
+    display: grid;
+    grid-template-columns: 15% 85%;
+    gap: 0,2cm;
+    height: 21cm;
+}
+.izquierda{
+    height: 100%;
+    background-color:#332C2C;
+    margin-left: 0cm;
+}
+.derecha{
+    display: grid;
+    grid-template-rows: 15% 85%;
+}
+.arriba{
+    height: 100%;
+    background-color:#332C2C;
+    margin-top: 0cm;
+}
+.abajo{
+    display: grid;
+    grid-template-rows: 33% 34% 33%;
+}
+.generos{
+    display: grid;
+    grid-template-rows: 15% 85%;
+}
+.generosArriba{
+    padding-left: 15px;
+}
+.playlists{
+    display: grid;
+    grid-template-rows: 15% 85%;
+}
+.playlistsArriba{
+    padding-left: 15px;
+}
+.artistas{
+    display: grid;
+    grid-template-rows: 15% 85%;
+}
+.artistasArriba{
+    padding-left: 15px;
+}
+h2{
+    color: blanchedalmond;
+    font-family: 'Manrope', sans-serif;
+    font-weight: 700;
+}
