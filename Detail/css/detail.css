@@ -1,0 +1,49 @@
+.grid-container{
+    display: grid;
+    grid-template-rows: 80px 500px;
+}
+header{
+    display: grid;
+    grid-template-columns: 15% 85%;
+}
+.logo{
+    padding: 25px;
+    text-align: center;
+    background-color: #131212;
+}
+.buscador{
+    background-color: #131212;
+}
+.main{
+    display: grid;
+    grid-template-columns: 15% 85%;
+}
+.izquierda{
+    background-color: #131212;
+}
+.fila1{
+    background-color: black;
+    margin: 5px;
+    padding: 1px;
+    padding-left: 10px;
+}
+.fila2{
+    background-color: black;
+    margin: 5px;
+    padding: 1px;
+    padding-left: 10px;
+}
+.fila3{
+    background-color: black;
+    margin: 5px;
+    padding: 1px;
+    padding-left: 10px;
+}
+h3{
+    color: white;
+}
+.derecha{
+    background-color: grey;
+    display: grid;
+    grid-template-columns: 30% 70%;
+}
