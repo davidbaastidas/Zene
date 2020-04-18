@@ -86,7 +86,3 @@ h2{
 .logo-img{
     max-width: 100%;
 }
-.menu{
-    display: grid;
-    grid-template-rows: 1fr 1fr 1fr;
-}
