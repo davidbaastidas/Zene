@@ -88,6 +88,50 @@ button{
 .generosArriba{
     padding-left: 15px;
 }
+.generosAbajo{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.contenedorCarrusel{
+    width: 100%;
+}
+.contenidoCarrusel{
+    width: 90%;
+    position: absolute;
+}
+.contenidoCarrusel figure{
+    width: 70px;
+    height: 70px;
+    position: absolute;
+}
+.contenidoCarrusel figure:nth-child(1){
+    transform: rotateY(0deg) translate(300px);
+}
+.contenidoCarrusel figure:nth-child(2){
+    transform: rotateY(51deg) translate(300px);
+}
+.contenidoCarrusel figure:nth-child(3){
+    transform: rotateY(102deg) translate(300px);
+}
+.contenidoCarrusel figure:nth-child(4){
+    transform: rotateY(153deg) translate(300px);
+}
+.contenidoCarrusel figure:nth-child(5){
+    transform: rotateY(204deg) translate(300px);
+}
+.contenidoCarrusel figure:nth-child(6){
+    transform: rotateY(255deg) translate(300px);
+}
+.contenidoCarrusel figure:nth-child(7){
+    transform: rotateY(306deg) translate(300px);
+}
+.contenidoCarrusel figure:nth-child(8){
+    transform: rotateY(357deg) translate(300px);
+}
+.contenidoCarrusel img{
+    width: 100%;
+}
 .playlists{
     display: grid;
     grid-template-rows: 15% 85%;
