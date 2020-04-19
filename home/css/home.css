@@ -17,13 +17,16 @@ html,body{
     display: grid;
     grid-template-rows: 20% 80%;
     gap: 46px;
+    border-right: solid 5px #131212;
 }
 .logo-img{
     max-width: 100%;
+    border-radius: 60px;
 }
 .izquierda-abajo{
     display: grid;
     grid-template-rows: 80px 80px 80px;
+    border-right: solid 5px #131212;
 }
 .menu{
     margin: 2px;
@@ -45,6 +48,7 @@ h3{
     padding-right: 10px;
     background-color: black;
     margin-right: 3cm;
+    border-bottom: solid 5px #131212;
 }
 form{
     text-align: right;
