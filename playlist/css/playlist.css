@@ -15,6 +15,7 @@ body{
     gap: 46px;
     display: grid;
     grid-template-rows: 20% 80%;
+    border: solid 5px #131212;
 }
 .izquierda-abajo{
     display: grid;
@@ -30,25 +31,26 @@ h3{
 }
 .derecha{
     display: grid;
-    grid-template-rows: 20% 80%;
-    gap: 5px;
+    grid-template-rows: 10% 90%;
+    margin-left: 15px;
 }
 .arriba{
     height: 100%;
-    margin-top: 0cm;
     padding-top: 20px;
-}
-.abajo{
-    display: grid;
-    grid-template-rows: 5% 95%;
+    padding-right: 10px;
+    background-color: black;
+    border-bottom: solid 5px #131212;
 }
 form{
-    width: 300px;
+    width: 100%;
+    text-align: right;
 }
 fieldset{
     border: 0px solid;
     border-radius: 5px;
-    padding: 0 0 0 30px;
+    padding-right: 20px;
+    padding-left: 0;
+    padding-bottom: 20px;
     width: 100%;
 }
 input, button{
@@ -70,7 +72,11 @@ button{
     width: 60px;
     border: none;
 }
-
+.abajo{
+    display: grid;
+    grid-template-rows: 5% 95%;
+    margin-top: 50px;
+}
 h2{
     color: white;
     font-family: 'Manrope', sans-serif;
@@ -78,6 +84,7 @@ h2{
 }
 .logo-img{
     max-width: 100%;
+    border-radius: 60px;
 }
 a{
     text-decoration: none;

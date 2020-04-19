@@ -15,6 +15,7 @@ body{
     display: grid;
     gap: 40px;
     grid-template-rows: 20% 80%;
+    border: solid 5px #131212;
 }
 .izquierda-abajo{
     display: grid;
@@ -30,19 +31,26 @@ h3{
 }
 .derecha{
     display: grid;
-    grid-template-rows: 15% 85%;
-    gap: 5px;
+    grid-template-rows: 10% 90%;
+    margin-left: 15px;
 }
 .arriba{
     height: 100%;
-    margin-top: 0cm;
     padding-top: 20px;
-    position: sticky;
+    padding-right: 10px;
+    background-color: black;
+    border-bottom: solid 5px #131212;
+}
+form{
+    text-align: right;
+    width: 100%;
 }
 fieldset{
     border: 0px solid;
     border-radius: 5px;
-    padding: 0 0 0 30px;
+    padding-right: 20px;
+    padding-left: 0;
+    padding-bottom: 20px;
     width: 100%;
 }
 input, button{
@@ -75,21 +83,17 @@ h2{
 }
 .logo-img{
     max-width: 100%;
+    border-radius: 60px;
 }
 a{
     text-decoration: none;
     font-size: 15px;
 }
 .abajoDerecha{
-    margin-top: 2cm;
+    margin-top: 80px;
 }
 ul li{
     color: white;
-}
-.derecha{
-    display: grid;
-    grid-template-rows: 15% 85%;
-    gap: 5px;
 }
 .foto-artista{
     text-align: center;

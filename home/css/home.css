@@ -17,7 +17,7 @@ html,body{
     display: grid;
     grid-template-rows: 20% 80%;
     gap: 46px;
-    border-right: solid 5px #131212;
+    border: solid 5px #131212;
 }
 .logo-img{
     max-width: 100%;
@@ -43,11 +43,9 @@ h3{
 }
 .arriba{
     height: 100%;
-    margin-top: 0cm;
     padding-top: 20px;
     padding-right: 10px;
     background-color: black;
-    margin-right: 3cm;
     border-bottom: solid 5px #131212;
 }
 form{
