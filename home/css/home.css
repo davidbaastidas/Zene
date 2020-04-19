@@ -12,29 +12,18 @@ body{
     height: 100%;
     background-color:#131212;
     margin-left: 0cm;
-    display: grid;
     gap: 5px;
-    grid-template-rows: 15% 85%;
+    display: grid;
+    grid-template-rows: 20% 80%;
 }
 .izquierda-abajo{
     display: grid;
-    grid-template-rows: 1fr 1fr 1fr;
-    max-height: 15%;
+    grid-template-rows: 80px 80px 80px;
 }
-.fila1{
-    background-color: black;
+.menu{
     margin: 2px;
-    padding-left: 10px;
-}
-.fila2{
-    background-color: black;
-    margin: 2px;
-    padding-left: 10px;
-}
-.fila3{
-    background-color: black;
-    margin: 2px;
-    padding-left: 10px;
+    padding: 10px;
+    text-align: center;
 }
 h3{
     color: white;
@@ -78,20 +67,22 @@ button{
     border: none;
 }
 .abajo{
+    margin-top: 20px;
     display: grid;
     grid-template-rows: 33% 34% 33%;
 }
 .generos{
     display: grid;
-    grid-template-rows: 15% 85%;
+    grid-template-rows: 20% 85%;
 }
 .generosArriba{
     padding-left: 15px;
+    
 }
 .generosAbajo{
     margin: 0;
-    padding: 0;
     box-sizing: border-box;
+    padding-top: 25px;
 }
 .contenedorCarrusel{
     width: 100%;

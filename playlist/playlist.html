@@ -3,23 +3,46 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Mi Playlist</title>
+    <link rel="stylesheet" href="css/playlist.css">
+    <script src="https://kit.fontawesome.com/a0c0bb4f74.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Raleway&display=swap" rel="stylesheet">
 </head>
 <body>
-    
-    ////LOGO
-    <img src="../logo.png" alt="Zene">
-
-    <div class="fila1">
-        <a href="home.html"><h3>Home</h3></a>
+    <div class="grid-container">
+        <div class="izquierda"> 
+            <div class="izquierda-arriba">
+                <img class="logo-img" src="../logo.png" alt="Zene">
+            </div>
+            <div class="izquierda-abajo">
+                <div class="menu">
+                    <a href="../home/home.html"><h3>Home</h3></a>
+                </div>
+                <div class="menu">
+                    <a href="../detail/detail.html"><h3>Detalle</h3></a>
+                </div>
+                <div class="menu">
+                    <a href="playlist.html"><h3>Mi Playlist</h3></a>
+                </div>
+            </div>
+        </div>
+        <div class="derecha">
+            <div class="arriba"> 
+                <form action="barra-buscador">
+                    <fieldset>
+                        <input type="search" placeholder="Search">
+                        <button type="submit"><i class="fas fa-search"></i> </button>
+                    </fieldset>
+                </form>
+            </div>
+            <div class="abajo">
+                <h2 class="title">Tus favoritas</h2>
+                <div id="song-list">
+                    <p>Song List</p>
+                </div>
+            </div>
+        </div>
     </div>
-    <div class="fila2">
-        <a href="../detail/detail.html"><h3>Detalle</h3></a>
-    </div>
-    <div class="fila3">
-        <a href="../playlist/playlist.html"><h3>Mi Playlist</h3></a>
-    </div>
-
-
 </body>
 </html>
