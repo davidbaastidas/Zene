@@ -1,5 +1,6 @@
 body{
     background-color: black;
+    font-family: 'Montserrat', sans-serif;
 }
 .grid-container{
     display: grid;
@@ -19,7 +20,6 @@ body{
     display: grid;
     grid-template-rows: 1fr 1fr 1fr;
     max-height: 15%;
-     
 }
 .fila1{
     background-color: black;
@@ -174,4 +174,8 @@ h2{
 }
 .logo-img{
     max-width: 100%;
+}
+a{
+    text-decoration: none;
+    font-size: 15px;
 }
