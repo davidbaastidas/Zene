@@ -80,15 +80,12 @@ a{
     text-decoration: none;
     font-size: 15px;
 }
-<<<<<<< HEAD
 .abajoDerecha{
     margin-top: 2cm;
 }
 ul li{
     color: white;
 }
-=======
->>>>>>> 6398acd360f34353828eb78a6d8780343e03fa84
 .derecha{
     display: grid;
     grid-template-rows: 15% 85%;
