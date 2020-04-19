@@ -16,6 +16,7 @@ html,body{
     margin-left: 0cm;
     display: grid;
     grid-template-rows: 20% 80%;
+    gap: 46px;
 }
 .logo-img{
     max-width: 100%;
@@ -42,11 +43,12 @@ h3{
     margin-top: 0cm;
     padding-top: 20px;
     padding-right: 10px;
+    background-color: black;
+    margin-right: 3cm;
 }
 form{
     text-align: right;
     width: 100%;
-    border-bottom: rgb(211,211,211,0.3) solid;
 }
 fieldset{
     border: 0px solid;
