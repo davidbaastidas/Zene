@@ -17,7 +17,6 @@ body{
     grid-template-rows: 20% 80%;
     border: solid 5px #131212;
 }
-
 .menu{
     margin: 2px;
     padding: 10px;
@@ -112,5 +111,7 @@ p{
     border-right: none;
     border-left: none;
     border-color: rgb(211, 211, 211, 0.3);
+}
+@media (max-width: 768px){
 }
 

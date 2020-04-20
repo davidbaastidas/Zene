@@ -118,3 +118,18 @@ h2{
     background-size: cover;
     border-radius: 50px;
 }
+@media (max-width: 768px){
+    .grid-container{
+        grid-template-columns: 1fr;
+        grid-template-rows: 15% 85%;
+    }
+    .izquierda{
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+    .izquierda-abajo{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    .listenNow{
+        grid-template-columns: 1fr 1fr;
+    }
+}
