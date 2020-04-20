@@ -2,13 +2,10 @@ html,body{
     background-color: black;
     font-family: 'Montserrat', sans-serif;
     box-sizing: border-box;
-    width: 100%;
 }
 .grid-container{
     display: grid;
     grid-template-columns: 15% 85%;
-    height: 20cm;
-    width: 100%;
 }
 .izquierda{
     height: 100%;
@@ -88,7 +85,7 @@ button{
     display: grid;
     grid-template-rows: 1fr 1fr;
 }
-generos{
+.generos{
     display: grid;
     grid-template-rows: 20% 85%;
 }

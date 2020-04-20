@@ -74,12 +74,30 @@ button{
 }
 .abajo{
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 30% 70%;
+}
+.caja1{
+    background-color: grey;
+}
+h1{
+    color: white;
+    font-family: 'Manrope', sans-serif;
+}
+.caja2{
+    display: grid;
+    grid-template-rows: 5% 95%;
 }
 h2{
     color: white;
     font-family: 'Manrope', sans-serif;
     font-weight: 700;
+    border-top: gray solid 1px;
+}
+.playlist.box{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 10px;
+    margin: 10px;
 }
 .logo-img{
     max-width: 100%;
@@ -88,7 +106,4 @@ h2{
 a{
     text-decoration: none;
     font-size: 15px;
-}
-.abajoDerecha{
-    margin-top: 80px;
 }
