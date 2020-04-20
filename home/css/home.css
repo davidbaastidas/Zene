@@ -23,7 +23,6 @@ html,body{
 .izquierda-abajo{
     display: grid;
     grid-template-rows: 80px 80px 80px;
-    border-right: solid 5px #131212;
 }
 .menu{
     margin: 2px;
@@ -35,8 +34,9 @@ h3{
 }
 .derecha{
     display: grid;
-    grid-template-rows: 10% 90%;
+    grid-template-rows: 10% 80% 10%;
     margin-left: 15px;
+    border-left: solid 5px #131212;
 }
 .arriba{
     height: 100%;
@@ -84,10 +84,12 @@ button{
 .homeIzq{
     display: grid;
     grid-template-rows: 1fr 1fr;
+    gap: 4cm;
 }
 .generos{
     display: grid;
-    grid-template-rows: 20% 85%;
+    grid-template-rows: 20% 70% 10%;
+    gap: 20px;
 }
 .generosArriba{
     padding-left: 15px;   
@@ -97,17 +99,20 @@ button{
     padding-top: 25px;
     height: 100%;
 }
+.generosVideo{
+    padding-left: 2cm;
+}
 .contenedorCarrusel{
-    width: 100%;
+    width: 10%;
     perspective: 1100px;
     padding-left: 200px;
     margin:0;
     position: relative;
 }
 .contenidoCarrusel{
-    width: 10%;
-    position: absolute;
-    animation: rotar 18s infinite linear;
+    width: 150px;
+    position: fixed;
+    animation: rotar 20s infinite linear;
     transform-style: preserve-3d;
 }
 .contenidoCarrusel:hover{
@@ -168,6 +173,7 @@ button{
 .artistas{
     display: grid;
     grid-template-rows: 15% 85%;
+    gap: 30px;
 }
 .artistasArriba{
     padding-left: 15px;
@@ -193,11 +199,18 @@ a{
 .playlistsAbajo{
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 15px;
-    row-gap: 20px;
+    gap: 10px;
+    row-gap: 10px;
     margin-right: 15px;
+    margin-bottom: 25px;
 }
 .play{
     width: 100%;
 }
-
+.footer{
+    border-top: solid 5px #131212;
+    border-bottom: solid 5px #131212;
+}
+.footer p{
+    color: white;
+}
