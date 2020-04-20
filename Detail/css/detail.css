@@ -33,6 +33,7 @@ h3{
     display: grid;
     grid-template-rows: 10% 90%;
     margin-left: 15px;
+    border-left: solid 5px #131212;
 }
 .arriba{
     height: 100%;
