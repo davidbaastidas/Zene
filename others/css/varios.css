@@ -29,6 +29,7 @@ h3{
     display: grid;
     grid-template-rows: 10% 90%;
     margin-left: 15px;
+    border-left: solid 5px #131212;
 }
 .arriba{
     height: 100%;
@@ -70,30 +71,26 @@ button{
 }
 .abajo{
     display: grid;
-    grid-template-rows: 30% 70%;
-}
-.caja1{
-    background-color: grey;
+    grid-template-rows: 35% 5% 70%;
+    padding-left: 10px;
 }
 h1{
     color: white;
     font-family: 'Manrope', sans-serif;
-}
-.caja2{
-    display: grid;
-    grid-template-rows: 5% 95%;
 }
 h2{
     color: white;
     font-family: 'Manrope', sans-serif;
     font-weight: 700;
     border-top: gray solid 1px;
+    border-bottom: gray solid 1px;
+    padding: 8px 0px;
 }
-.playlist.box{
+.caja3{
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    gap: 10px;
-    margin: 10px;
+    grid-template-columns: 20% 20% 20% 20% 20%;
+    margin-top: 45px;
+    gap: 2px;
 }
 .logo-img{
     max-width: 100%;
