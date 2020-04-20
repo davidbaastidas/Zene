@@ -74,6 +74,7 @@ button{
 }
 .abajo{
     margin-top: 20px;
+    margin-bottom: 50px;
     display: grid;
     grid-template-columns: 60% 40%;
 }
@@ -154,6 +155,10 @@ button{
     display: grid;
     grid-template-rows: 15% 85%;
     gap: 30px;
+}
+.homeIzq{
+    display: grid;
+    grid-template-rows: 40% 60%;
 }
 .titleArriba{
     padding-left: 15px;
