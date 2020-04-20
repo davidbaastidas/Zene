@@ -17,10 +17,6 @@ body{
     grid-template-rows: 20% 80%;
     border: solid 5px #131212;
 }
-.izquierda-abajo{
-    display: grid;
-    grid-template-rows: 80px 80px 80px;
-}
 .menu{
     margin: 2px;
     padding: 10px;
