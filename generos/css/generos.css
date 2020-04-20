@@ -1,0 +1,120 @@
+html,body{
+    background-color: black;
+    font-family: 'Montserrat', sans-serif;
+    box-sizing: border-box;
+}
+.grid-container{
+    display: grid;
+    grid-template-columns: 15% 85%;
+}
+.izquierda{
+    height: 100%;
+    background-color:#131212;
+    margin-left: 0cm;
+    display: grid;
+    grid-template-rows: 20% 80%;
+    gap: 46px;
+    border: solid 5px #131212;
+}
+.logo-img{
+    max-width: 100%;
+    border-radius: 60px;
+}
+.menu{
+    margin: 2px;
+    padding: 10px;
+    text-align: center;
+}
+h3{
+    color: white;
+}
+.derecha{
+    display: grid;
+    grid-template-rows: 10% 80% 10%;
+    margin-left: 15px;
+    border-left: solid 5px #131212;
+}
+.arriba{
+    height: 100%;
+    padding-top: 20px;
+    padding-right: 10px;
+    background-color: black;
+    border-bottom: solid 5px #131212;
+}
+.abajo{
+    margin-top: 20px;
+    padding-left: 15px;
+}
+form{
+    text-align: right;
+    width: 100%;
+}
+fieldset{
+    border: 0px solid;
+    border-radius: 5px;
+    padding-right: 20px;
+    padding-left: 0;
+    padding-bottom: 20px;
+    width: 100%;
+}
+input, button{
+    position: relative;
+    width: 200px;
+    height: 40px;
+    padding: 0cm;
+    border-radius: 15px;
+}
+input{
+    color: black;
+    border: none;
+    padding-left: 0cm;
+}
+input:focus{
+    outline: none;
+}
+button{
+    width: 60px;
+    border: none;
+}
+.homeIzq{
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    gap: 4cm;
+    margin-right: 50px;
+}
+.generos{
+    gap: 20px;
+    display: grid;
+    grid-row: 10% 90%;
+}
+h2{
+    color: white;
+    font-family: 'Manrope', sans-serif;
+    font-weight: 700;
+}
+.listenNow{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    gap: 30px;
+    margin: 10px ;
+}
+.play{
+    width: 100%;
+}
+.footer{
+    border-top: solid 5px #131212;
+    border-bottom: solid 5px #131212;
+}
+.footer p{
+    margin-bottom: 0px;
+    margin-top: 25px;
+    padding-left: 10px;
+    color: white;
+}
+.fotoGenero{
+    height: 100%;
+    width: 100%;
+    float: left;
+    background-size: cover;
+    border-radius: 50px;
+}

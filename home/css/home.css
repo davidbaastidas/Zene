@@ -81,6 +81,7 @@ button{
     display: grid;
     grid-template-rows: 1fr 1fr;
     gap: 4cm;
+    margin-right: 50px;
 }
 .generos{
     display: grid;
@@ -92,7 +93,6 @@ button{
 }
 .generosAbajo{
     margin: 0;
-    padding-top: 25px;
     height: 100%;
 }
 .generosVideo{
@@ -101,14 +101,13 @@ button{
 .contenedorCarrusel{
     width: 10%;
     perspective: 1100px;
-    padding-left: 200px;
-    margin:0;
+    padding-left: 160px;
     position: relative;
 }
 .contenidoCarrusel{
     width: 150px;
     position: fixed;
-    animation: rotar 20s infinite linear;
+    animation: rotar 30s infinite linear;
     transform-style: preserve-3d;
 }
 .contenidoCarrusel:hover{
@@ -208,5 +207,8 @@ a{
     border-bottom: solid 5px #131212;
 }
 .footer p{
+    margin-bottom: 0px;
+    margin-top: 25px;
+    padding-left: 10px;
     color: white;
 }
