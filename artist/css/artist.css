@@ -7,15 +7,18 @@ body{
     grid-template-columns: 15% 85%;
     gap: 0,2cm;
     height: 21cm;
+    position: relative;
 }
 .izquierda{
     height: 100%;
     background-color:#131212;
     margin-left: 0cm;
     display: grid;
-    gap: 40px;
+    gap: 70px;
     grid-template-rows: 20% 80%;
     border: solid 5px #131212;
+    position: fixed;
+    right: 85%;
 }
 .menu{
     margin: 2px;
@@ -30,6 +33,10 @@ h3{
     grid-template-rows: 10% 90%;
     margin-left: 15px;
     border-left: solid 5px #131212;
+    position: absolute;
+    left: 15%;
+    top: 0px;
+    width: 85%;
 }
 .arriba{
     height: 100%;

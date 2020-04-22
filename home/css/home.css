@@ -6,6 +6,7 @@ html,body{
 .grid-container{
     display: grid;
     grid-template-columns: 15% 85%;
+    position: relative;
 }
 .izquierda{
     height: 100%;
@@ -13,8 +14,10 @@ html,body{
     margin-left: 0cm;
     display: grid;
     grid-template-rows: 20% 80%;
-    gap: 46px;
+    gap: 70px;
     border: solid 5px #131212;
+    position: fixed;
+    right: 85%;
 }
 .logo-img{
     max-width: 100%;
@@ -33,6 +36,9 @@ h3{
     grid-template-rows: 10% 80% 10%;
     margin-left: 15px;
     border-left: solid 5px #131212;
+    position: absolute;
+    left: 15%;
+    top: 0px;
 }
 .arriba{
     height: 100%;
