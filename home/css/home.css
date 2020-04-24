@@ -241,17 +241,34 @@ a img:hover{
     border-top: solid 5px #131212;
     height: 100px;
 }
-.creditos p{
+.sponsors{
+    color: white;
+    letter-spacing: 5px;
+}
+.anclaLocal{
+    margin-top: -2cm;
+    background-color: #131212;
+    height: 160px;
+}
+.anclaLocal p,a{
+    margin-left: 30px;
+    color: white;
+}
+.ruta{
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+}
+.creditos{
+    display: grid;
+    grid-template-columns: 80% 20%;
+}
+.textoCreditos p{
     margin-bottom: 0px;
     margin-top: 25px;
     padding-left: 10px;
     color: white;
 }
-.anclaLocal{
-    margin-top: 0cm;
-    margin-left: 10px;
-}
-.ruta{
-    color: white;
-    font-family: 'Montserrat', sans-serif;
+.deezer img{
+    height: 100px;
+    width: auto;
 }
