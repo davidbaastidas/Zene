@@ -37,16 +37,10 @@ h3{
     display: grid;
     grid-template-rows: 10% 80% 10%;
     margin-left: 15px;
-<<<<<<< HEAD
-=======
-    border-left: solid 5px #131212;
-    position: absolute;
-    left: 15%;
-    top: 0px;
->>>>>>> eaa1a239ffc2e0548a14fc598427ace2cdbd67cc
+    margin-left: 7cm;
 }
 .arriba{
-    height: 100%;
+    height: 75px;
     padding-top: 20px;
     padding-right: 10px;
     background-color: black;
@@ -84,10 +78,11 @@ button{
     border: none;
 }
 .abajo{
-    margin-top: 20px;
+    margin-top: -5px;
     margin-bottom: 50px;
     display: grid;
     grid-template-columns: 60% 40%;
+    gap: 10px;
 }
 .homeIzq{
     display: grid;
@@ -162,16 +157,13 @@ button{
         transform: rotateY(360deg);
     }
 }
-<<<<<<< HEAD
-iframe {
+.topBillboard {
     width: 530px;
-    height: 180px;
-    margin-left: 2cm;
+    height: 200px;
+    margin-left: 1cm;
+    margin-top: 7cm;
 }
 .artistas{
-=======
-.infoHome{
->>>>>>> eaa1a239ffc2e0548a14fc598427ace2cdbd67cc
     display: grid;
     grid-template-rows: 15% 85%;
     gap: 30px;
@@ -200,8 +192,9 @@ a img:hover{
 }
 .playlists{
     display: grid;
-    grid-template-rows: 10% 80%;
+    grid-template-rows: 10% 60% 30%;
     margin-bottom: 10px;
+    margin-left: 1cm;
 }
 .playlistsArriba{
     padding-left: 15px;
@@ -214,6 +207,10 @@ a img:hover{
     row-gap: 10px;
     margin-right: 15px;
     margin-top: 15px;
+    width: 350px;
+}
+.videoMotivacion{
+    margin-top: 1cm;
 }
 .playlistsAbajo img{
     height: 100%;
@@ -222,13 +219,16 @@ a img:hover{
     background-size: cover;
     border-radius: 20px;
 }
+.TopSongs{
+    margin-top: 4cm;
+}
 #songsAbajo{
     display: grid;
     grid-template-rows: repeat(6, 1fr);
     margin-right: 20px;
     margin-left: 20px;
 }
-p{
+.TopSongs p{
     color: white;
     border-style: solid;
     border-width: 1px;
@@ -241,9 +241,17 @@ p{
     border-top: solid 5px #131212;
     height: 100px;
 }
-.footer p{
+.creditos p{
     margin-bottom: 0px;
     margin-top: 25px;
     padding-left: 10px;
     color: white;
+}
+.anclaLocal{
+    margin-top: 0cm;
+    margin-left: 10px;
+}
+.ruta{
+    color: white;
+    font-family: 'Montserrat', sans-serif;
 }
