@@ -31,12 +31,13 @@ html,body{
 }
 h3{
     color: white;
+    font-weight: 400;
+    font-family: 'Montserrat', sans-serif;
 }
 .derecha{
     display: grid;
     grid-template-rows: 10% 80% 10%;
     margin-left: 15px;
-    border-left: solid 5px #131212;
 }
 .arriba{
     height: 100%;
@@ -170,22 +171,32 @@ button{
         transform: rotateY(360deg);
     }
 }
+iframe {
+    width: 530px;
+    height: 180px;
+    margin-left: 2cm;
+}
 .artistas{
     display: grid;
     grid-template-rows: 15% 85%;
     gap: 30px;
+    margin-top: 1cm;
 }
 .artistasArriba{
     padding-left: 15px;
 }
 h2{
     color: white;
-    font-family: 'Manrope', sans-serif;
-    font-weight: 700;
+    font-weight: 400;
+    font-family: 'Montserrat', sans-serif;
 }
 a{
     text-decoration: none;
     font-size: 15px;
+}
+a img:hover{
+    transform: scale(1.2);
+    transition: all 300ms;
 }
 .playlists{
     display: grid;
@@ -208,8 +219,9 @@ a{
     width: 100%;
 }
 .footer{
+    margin-top: 1cm;
     border-top: solid 5px #131212;
-    border-bottom: solid 5px #131212;
+    height: 100px;
 }
 .footer p{
     color: white;
