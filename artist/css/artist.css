@@ -83,16 +83,12 @@ button{
 }
 .infoArtista{
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 15px;
+    grid-template-columns: 40% 60%;
 }
 h2,h1{
     color: white;
     font-family: 'Manrope', sans-serif;
     font-weight: 700;
-}
-h1{
-    margin: 0;
 }
 .logo-img{
     max-width: 100%;
@@ -105,8 +101,21 @@ a{
 .abajoDerecha{
     margin-top: 100px;
 }
+.seguir{
+    width: 70px;
+    height: 30px;
+    margin-left: 20px;
+}
 ol li{
     color: white;
+}
+li{
+    padding-left: 5px;
+    border: solid gray 0.5px;
+    width: 70%;
+}
+.fotolista{
+    margin: 5px;
 }
 .foto-artista{
     padding-top: 100px;
@@ -115,14 +124,11 @@ ol li{
 .albumArtists{
     display: grid;
     grid-template-rows: 15% 85%;
-    padding-left: 15px;
+    padding: 0px 20px;
 }
 .numberAlbums{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    margin-left: 10px;
-    margin-right: 10px;
-    margin-top: 45px;
-    margin-bottom: 0;
-    gap: 30px;
+    margin-top: 30px;
+    gap: 20px
 }
