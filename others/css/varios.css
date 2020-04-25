@@ -5,8 +5,6 @@ body{
 .grid-container{
     display: grid;
     grid-template-columns: 15% 85%;
-    gap: 0,2cm;
-    height: 21cm;
     position: relative;
 }
 .izquierda{
@@ -89,6 +87,19 @@ h2{
     font-family: 'Manrope', sans-serif;
     font-weight: 700;
 }
+h5{
+    color: grey;
+    font-family: 'Manrope', sans-serif;
+}
+.reproducir{
+    width: 70px;
+    height: 30px;
+    margin-right: 10px;
+}
+.descargar{
+    width: 70px;
+    height: 30px;
+}
 .logo-img{
     max-width: 100%;
     border-radius: 60px;
@@ -119,5 +130,27 @@ p{
     border-left: none;
     border-color: rgb(211, 211, 211, 0.3);
 }
-@media (max-width: 768px){
+@media (max-width: 320px){
+    .grid-container{
+        grid-template-columns: 1fr;
+        grid-template-rows: 15% 85%;
+        gap: none;
+    }
+    .izquierda{
+        position: unset;
+        gap: none;
+        border: none
+    }
+    .logo-img{
+        height: 70px;
+    }
+    .derecha{
+        position: relative;
+        top: 15%;
+    }
+    .menu{
+        padding: none;
+        margin: none;
+    }
+
 }
