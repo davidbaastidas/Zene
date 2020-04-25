@@ -225,16 +225,21 @@ a img:hover{
 #songsAbajo{
     display: grid;
     grid-template-rows: repeat(6, 1fr);
-    margin-right: 20px;
-    margin-left: 20px;
+    margin-right: 5px;
+    margin-left: 5px;
 }
-.TopSongs p{
-    color: white;
+#songsAbajo a{
+    margin-right: 5px;
+    margin-left: 5px;
     border-style: solid;
     border-width: 1px;
     border-right: none;
     border-left: none;
     border-color: rgb(211, 211, 211, 0.3);
+}
+.TopSongs p{
+    color: white;
+
 }
 .footer{
     margin-top: 1cm;

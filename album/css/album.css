@@ -78,20 +78,28 @@ button{
     border: none;
 }
 .abajo{
+    height: fit-content;
     display: grid; 
-    grid-template-rows: 2fr 1fr;
+    grid-template-rows: 1fr 1fr;
     gap:20px;
-    margin-top: 20px;
+}
+.abajoIzquierda{
+    margin-left: 20px;
 }
 .infoArtista{
     display: grid;
     grid-template-columns: 40% 60%;
     column-gap: 20px;
+    margin-top: 60px;
 }
-h2,h1{
+#reference,h3,h2,h1{
     color: white;
     font-family: 'Manrope', sans-serif;
     font-weight: 700;
+}
+#reference{
+    margin-bottom: 0;
+    font-size: 20px;
 }
 .logo-img{
     max-width: 100%;
@@ -101,35 +109,16 @@ a{
     text-decoration: none;
     font-size: 15px;
 }
-.abajoDerecha{
-    margin-top: 50px;
-}
-.seguir{
-    width: 70px;
+.bajar{
+    width: 110px;
     height: 30px;
-    margin-left: 20px;
-}
-ol li{
-    color: white;
-}
-li{
-    border: solid gray 0.5px;
-    border-right: none;
-    border-left: none;
-    width: 70%;
-    padding: 5px;
-}
-.listSong{
-    margin:2px;
-}
-.fotoArtista{
-    padding-left: 40px;
-    padding-top: 60px;
+    margin-left: 10px;
 }
 .albumArtists{
     display: grid;
     grid-template-rows: 15% 85%;
     padding: 0px 20px;
+    margin-top: 20px;
 }
 .numberAlbums{
     display: grid;

@@ -102,14 +102,14 @@ a{
     display: grid;
     grid-template-rows: repeat(14,1fr);   
 }
-#song-list p{
-    color: white;
-    margin: 0;
-    padding: 10px;
+#song-list a{
+    padding-top: 10px;
+    margin: 10px;
     border-style: solid;
     border-width: 1px;
     border-right: none;
     border-left: none;
+    border-bottom: none;
     border-color: rgb(211, 211, 211, 0.3);
 }
 .footer{
