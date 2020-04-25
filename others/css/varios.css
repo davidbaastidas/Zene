@@ -133,24 +133,49 @@ p{
 @media (max-width: 320px){
     .grid-container{
         grid-template-columns: 1fr;
-        grid-template-rows: 15% 85%;
+        grid-template-rows: 20% 80%;
         gap: none;
     }
     .izquierda{
         position: unset;
-        gap: none;
-        border: none
+        gap: 35px;
+        border: 0px
+    }
+    .izquierda-arriba{
+        text-align: center;
     }
     .logo-img{
         height: 70px;
+        padding-top: 5px;
+    }
+    .menu{
+        padding: 0px;
+        margin: 2px;
     }
     .derecha{
         position: relative;
-        top: 15%;
+        top: 0%;
+        left: 0px;
+        margin-left: 15zpx
     }
-    .menu{
-        padding: none;
-        margin: none;
+    input, button{
+        width: 100px;
+        height: 20px;
     }
-
+    button{
+        width: 30px;
+        margin-right: 10px;
+    }
+    fieldset{
+        padding-bottom: 0px;
+    }
+    .arriba{
+        border-bottom: none;
+    }
+    .abajo{
+        margin-top: 0px;
+    }
+    .fotochill{
+        height: 80px;
+    }
 }
