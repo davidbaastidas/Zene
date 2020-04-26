@@ -93,7 +93,7 @@ button{
 .contenedorCarrusel{
     width: 10%;
     perspective: 1100px;
-    padding-left: 160px;
+    padding-left: 180px;
     position: relative;
 }
 .contenidoCarrusel{
@@ -157,9 +157,9 @@ button{
         transform: rotateY(360deg);
     }
 }
-.topBillboard {
+.promoResponsive img{
     width: 530px;
-    height: 200px;
+    height: 285px;
     margin-left: 1cm;
     margin-top: 7cm;
 }
@@ -206,11 +206,11 @@ a img:hover{
     gap: 10px;
     row-gap: 10px;
     margin-right: 15px;
-    margin-top: 15px;
+    margin-top: 0px;
     width: 375px;
 }
 .videoMotivacion{
-    margin-top: 1cm;
+    margin-top: 2cm;
 }
 .playlistsAbajo img{
     height: 100%;
