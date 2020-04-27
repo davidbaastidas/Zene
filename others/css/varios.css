@@ -168,51 +168,54 @@ a{
 }
 
 @media (max-width: 320px){
-    .grid-container{
-        grid-template-columns: 1fr;
-        grid-template-rows: 20% 80%;
-        gap: none;
-    }
     .izquierda{
-        position: unset;
-        gap: 35px;
-        border: 0px
-    }
-    .izquierda-arriba{
-        text-align: center;
+        margin-left: -2%;
+        gap: 0%;
+        right: auto;
+        height: 205px;
+        width: 417px;
+        z-index: 50;
+        margin-top: -3%;
     }
     .logo-img{
-        height: 70px;
-        padding-top: 5px;
-    }
-    .menu{
-        padding: 0px;
-        margin: 2px;
+        height: 150px;
+        margin-left: 130px;
+        margin-top: 5px;
+    }    
+    .izquierda-abajo{
+        margin-left: 16px;
+        display: grid;
+        grid-template-columns: 100px 100px 125px;
+        margin-top: 2cm;
+        gap: 23px;
     }
     .derecha{
-        position: relative;
-        top: 0%;
-        left: 0px;
-        margin-left: 15zpx
+        display: grid;
+        grid-template-rows: 10% 80% 10%;
+        margin-left: 1cm;
+        margin-top: 6cm;
+        width: 295px;
+        height: 800px;
     }
-    input, button{
-        width: 100px;
-        height: 20px;
-    }
-    button{
-        width: 30px;
-        margin-right: 10px;
-    }
-    fieldset{
-        padding-bottom: 0px;
-    }
-    .arriba{
+    .arriba {
+        height: 60px;
+        padding-top: 10px;
+        padding-right: 10px;
+        background-color: black;
         border-bottom: none;
+        width: 300px;
     }
     .abajo{
-        margin-top: 0px;
+        margin-top: -12px;
+        display: grid;
+        grid-template-rows: 60% 40%;
+        gap: 10px;
+        margin-left: -40px;
     }
-    .fotochill{
-        height: 80px;
+    .homeIzq{
+        display: grid;
+        grid-template-rows: 60px 150px;
+        gap: 30px;
+        margin-right: 50px;
     }
 }

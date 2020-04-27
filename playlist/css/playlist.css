@@ -29,11 +29,10 @@ h3{
 .derecha{
     display: grid;
     grid-template-rows: 10% 80% 10%;
-    margin-left: 15px;
-    position: absolute;
-    left: 15%;
+    position: relative;
+    left: 120px;
     top: 0px;
-    width: 1060px;
+    width: 1050px;
     margin-left: 2cm;
 }
 .arriba{
@@ -148,4 +147,46 @@ a{
 .deezer img{
     height: 100px;
     width: auto;
+}
+@media (max-width: 768px){
+    .izquierda{
+        margin-left: -2%;
+        gap: 0%;
+        right: auto;
+        height: 205px;
+        width: 417px;
+        z-index: 50;
+        margin-top: -3%;
+    }
+    .logo-img{
+        height: 150px;
+        margin-left: 130px;
+        margin-top: 5px;
+    }    
+    .izquierda-abajo{
+        margin-left: 16px;
+        display: grid;
+        grid-template-columns: 100px 100px 125px;
+        margin-top: 2cm;
+        gap: 23px;
+    }
+    .derecha{
+        display: grid;
+        grid-template-rows: 10% 80% 10%;
+        margin-top: 6cm;
+        margin-left: 1cm;
+        width: 295px;
+        height: 800px;
+    }
+    .arriba {
+        padding-top: 10px;
+        border-bottom: none;
+        width: 300px;
+    }
+    form{
+        text-align: center;
+    }
+    fieldset{
+        padding-bottom: 0px;
+    }
 }
