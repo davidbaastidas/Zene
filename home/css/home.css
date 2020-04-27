@@ -283,32 +283,31 @@ a img:hover{
         background-color: black;
     }
     .izquierda{
-        margin-left: 0%;
+        margin-left: -2%;
         gap: 0%;
         right: auto;
-        height: 220px;
-        width: 350px;
+        height: 205px;
+        width: 417px;
         z-index: 50;
+        margin-top: -3%;
     }
     .logo-img{
-        height: 120px;
-        margin-left: 120px;
-        margin-top: 25px;
+        height: 150px;
+        margin-left: 130px;
+        margin-top: 5px;
     }    
     .izquierda-abajo{
-        margin-left: 40px;
+        margin-left: 16px;
         display: grid;
-        grid-template-columns: 100px 100px 100px;
+        grid-template-columns: 100px 100px 125px;
         margin-top: 2cm;
-    }
-    .menu{
-        margin-left: 60pxpx;
+        gap: 23px;
     }
     .derecha{
         display: grid;
         grid-template-rows: 10% 80% 10%;
-        margin-left: 20cm;
-        margin-top: 7cm;
+        margin-left: 1cm;
+        margin-top: 6cm;
         width: 295px;
         height: 800px;
     }
@@ -318,13 +317,14 @@ a img:hover{
         padding-right: 10px;
         background-color: black;
         border-bottom: none;
-        width: 295px;
+        width: 300px;
     }
     .abajo{
         margin-top: -12px;
         display: grid;
         grid-template-rows: 60% 40%;
         gap: 10px;
+        margin-left: -40px;
     }
     .homeIzq{
         display: grid;
@@ -332,13 +332,16 @@ a img:hover{
         gap: 30px;
         margin-right: 50px;
     }
+    h3{
+        font-size: 20px;
+    }
     h2{
-        font-size: 16px;
+        font-size: 20px;
     }
     .contenedorCarrusel {
-        width: 10%;
+        width: 2%;
         perspective: 1100px;
-        padding-left: 60px;
+        padding-left: 128px;
         position: relative;
         margin-top: 20px;
         z-index: 2;
@@ -350,50 +353,52 @@ a img:hover{
         display: grid;
         grid-template-rows: repeat(6, 1fr);
         margin-right: 5px;
-        margin-left: 5px;
+        margin-left: 60px;
         width: 295px;
+        margin-top: 35px;
     }
     .playlists{
         display: grid;
         grid-template-rows: 10% 60% 30%;
         margin-bottom: 10px;
         margin-left: 23px;
-        margin-top: 25cm;
+        margin-top: 27cm;
         position: absolute;
     }
     .playlistsAbajo{
         display: grid;
-        grid-template-columns: 100px 100px;
+        grid-template-columns: 150px 150px;
         gap: 35px;
         row-gap: 10px;
-        margin-left: 25px;
+        margin-left: 15px;
         margin-top: 20px;
         width: 375px;
     }
     .playlistLogo img{
-        height: 125px;
-        width: 125px;
+        height: 150px;
+        width: 150px;
     }
     .videoMotivacion{
         display: none;
     }
     .footer{
-        margin-top: 15cm;
+        margin-top: 21cm;
         border-top: none;
     }
     .anclaLocal{
         margin-top: -2cm;
         background-color: #131212;
-        height: 165px;
-        width: 305px;
+        height: 178px;
+        width: 341px;
     }
     .anclaLocal p,a{
-        margin-left: 30px;
+        margin-left: 35px;
         color: white;
         padding-top: 10px;
+        font-size: 19px;
     }
     .anclaLocal .sponsors{
-        margin-left: 80px;
+        margin-left: 105px;
     }
     .fab{
         width: 40px;
@@ -401,8 +406,8 @@ a img:hover{
     .ruta{
         color: white;
         font-family: 'Montserrat', sans-serif;
-        font-size: 13px;
-        margin-left: 20px;
+        font-size: 15px;
+        margin-left: 17px;
     }
     .creditos{
         display: grid;
@@ -410,14 +415,15 @@ a img:hover{
     }
     .textoCreditos p{
         margin-bottom: 0px;
-        margin-top: 25px;
-        padding-left: 30px;
+        margin-top: 35px;
+        padding-left: 11px;
         color: white;
+        width: 333px;
     }
     .deezer img{
-        margin-top: 100px;
+        margin-top: 84px;
         height: 100px;
         width: auto;
-        margin-left: -228px;
+        margin-left: -236px;
     }
 }
