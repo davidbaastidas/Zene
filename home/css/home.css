@@ -39,11 +39,12 @@ h3{
     margin-left: 7cm;
 }
 .arriba{
-    height: 75px;
+    height: 95px;
     padding-top: 20px;
     padding-right: 10px;
     background-color: black;
     border-bottom: solid 5px #131212;
+    margin-right: -43px;
 }
 form{
     text-align: right;
