@@ -285,17 +285,17 @@ a img:hover{
         gap: 0%;
         right: auto;
         height: 205px;
-        width: 417px;
+        width: 450px;
         z-index: 50;
         margin-top: -3%;
     }
     .logo-img{
         height: 150px;
-        margin-left: 130px;
+        margin-left: 155px;
         margin-top: 5px;
     }    
     .izquierda-abajo{
-        margin-left: 16px;
+        margin-left: 40px;
         display: grid;
         grid-template-columns: 100px 100px 125px;
         margin-top: 2cm;
@@ -367,7 +367,7 @@ a img:hover{
         display: grid;
         grid-template-columns: 150px 150px;
         gap: 35px;
-        margin-left: 15px;
+        margin-left: 25px;
         margin-top: 20px;
         width: 375px;
     }
@@ -379,14 +379,15 @@ a img:hover{
         display: none;
     }
     .footer{
-        margin-top: 21cm;
+        margin-top: 23cm;
         border-top: none;
+        margin-left: -1cm;
     }
     .anclaLocal{
         margin-top: -2cm;
         background-color: #131212;
         height: 178px;
-        width: 341px;
+        width: 415px;
     }
     .anclaLocal p,a{
         margin-left: 35px;
