@@ -44,7 +44,7 @@ h3{
     padding-right: 10px;
     background-color: black;
     border-bottom: solid 5px #131212;
-    margin-right: -43px;
+    margin-right: -50px;
 }
 form{
     text-align: right;
@@ -81,7 +81,8 @@ button{
     margin-top: -5px;
     display: grid;
     grid-template-columns: 60% 40%;
-    gap: 0px;
+    gap: 4px;
+    margin-left: 40px;
 }
 .homeIzq{
     display: grid;
@@ -241,6 +242,7 @@ a img:hover{
     margin-top: 3cm;
     border-top: solid 5px #131212;
     height: 100px;
+    margin-left: 2cm;
 }
 .sponsors{
     color: white;

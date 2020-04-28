@@ -32,11 +32,10 @@ h3{
     display: grid;
     grid-template-rows: 10% 90%;
     margin-left: 15px;
-    border-left: solid 5px #131212;
     position: absolute;
     left: 15%;
     top: 0px;
-    width: 85%;
+    width: 1120px;
     height: fit-content;
 }
 .arriba{
