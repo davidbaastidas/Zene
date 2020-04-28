@@ -278,6 +278,7 @@ a{
     }
     .fab{
         width: 40px;
+        margin-left: 8px;
     }
     .ruta{
         color: white;
