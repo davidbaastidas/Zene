@@ -170,3 +170,114 @@ a{
     height: 100px;
     width: auto;
 }
+
+
+@media(max-width: 320px){
+    html,body{
+        background-color: black;
+    }
+    .grid-container{
+        display: grid;
+        grid-template-rows: 25% 75%;
+        grid-template-columns: none;
+    }
+    .izquierda{
+        margin-left: -2%;
+        gap: 0%;
+        right: auto;
+        height: 205px;
+        z-index: 50;
+        margin-top: -3%;
+    }
+    .logo-img{
+        height: 150px;
+        margin-left: 100px;
+        margin-top: 5px;
+    }    
+    .izquierda-abajo{
+        display: grid;
+        grid-template-columns: 100px 100px 125px;
+        margin-top: 2cm;
+        gap: 23px;
+        margin-left: 0;
+    }
+    .derecha{
+        display: grid;
+        grid-template-rows: 10% 10% 80%;
+        margin-left: 1cm;
+        margin-top: 6cm;
+        width: 295px;
+        height: 800px;
+        position: inherit;
+    }
+    .arriba {
+        height: 60px;
+        padding-top: 10px;
+        padding-right: 10px;
+        background-color: black;
+        border-bottom: none;
+        width: 300px;
+    }
+    .abajo{
+        margin-top: -12px;
+        display: grid;
+        grid-template-rows: 60% 40%;
+        gap: 10px;
+        margin-left: -40px;
+    }
+    .homeIzq{
+        display: grid;
+        grid-template-rows: 60px 150px;
+        gap: 30px;
+        margin-right: 50px;
+    }
+    h3,h2{
+        font-size: 20px;
+    }
+    .footer{
+        margin-top: 24cm;
+        border-top: none;
+        margin-left: -1cm;
+    }
+    .anclaLocal{
+        margin-top: -2cm;
+        background-color: #131212;
+        height: 178px;
+        width: 341px;
+    }
+    .anclaLocal p,a{
+        margin-left: 35px;
+        color: white;
+        padding-top: 10px;
+        font-size: 19px;
+    }
+    .anclaLocal .sponsors{
+        margin-left: 105px;
+    }
+    .fab{
+        width: 40px;
+    }
+    .ruta{
+        color: white;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 15px;
+        margin-left: 17px;
+    }
+    .creditos{
+        display: grid;
+        grid-template-columns: 80% 20%;
+    }
+    .textoCreditos p{
+        margin-bottom: 0px;
+        margin-top: 35px;
+        padding-left: 11px;
+        color: white;
+        width: 333px;
+    }
+    .deezer img{
+        margin-top: 84px;
+        height: 100px;
+        width: auto;
+        margin-left: -236px;
+    }
+}

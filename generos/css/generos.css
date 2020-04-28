@@ -118,6 +118,9 @@ h2{
     gap: 30px;
     margin: 10px ;
 }
+#rock{
+    height: 89%;
+}
 .play{
     width: 100%;
 }
