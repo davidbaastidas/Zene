@@ -76,6 +76,20 @@ button{
     width: 55px;
     border: none;
 }
+main{
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+h1{
+    color: ivory;
+}
+h2{
+    color: ivory;
+}
+li{
+    margin-top: 30px;
+    color: ivory;
+}
 footer{
     position:absolute;
     width:100%;
