@@ -21,7 +21,7 @@ header{
 }
 .main-header{
     text-align: center; 
-    height: 125px
+    height: 130px
 }
 nav{
     margin-top: 5px;
@@ -204,51 +204,23 @@ footer{
 .deezer{
     background-color: black;
 }
-
-@media (min-width:426px){
-    .container{
-        position: relative;
-    }
-    header{
-        display: block;
-        position: absolute;
-        height: 100vw;
-        width: 180px;
-    }
-    .logo-img{
-        width: 80%;
-        margin-bottom: 40px;
-    }
-    #link0{
-        display: block;
-    }
-    #link1{
-        display: block;
-        margin-left: 0;
-    }
-    nav li{
-        margin-bottom: 30px;
-    }
-    form{
-        text-align: end;
-        padding-right: 20px;
-    }
-    footer{
-        bottom: 0;
-        max-height: 80px;
-    }
-    .anclaLocal a,p{
-        font-size: 15px;
-    }
-    .creditos{
-        display: grid;
-        grid-template-columns: 2fr 1fr;
-    }
-    .deezer img{
-        height: 85px;
-    }
-    .textoCreditos{
-        padding-top: 35px;
-        text-align: left;
+@media (min-width:375px){
+    .main-header{
+        height: 155px;
     }
 }
+@media (min-width:425px){
+    .main-header{
+        height: 165px;
+    }
+    .topArtists{
+        padding-left: 20px;
+    }
+    .topTracks{
+        padding-left: 20px;
+    }
+    .topAlbums{
+        padding-left: 20px;
+    }
+}
+/*Aca termina los cimientos de Mobile, y tenemos que empezar a poner lo de Tablet. Aca empiezan a aparecer todos los Carrusels */
