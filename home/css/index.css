@@ -37,8 +37,24 @@ nav{
     margin-right: auto;
     margin-top: 5px;
 }
+img.logo-img:hover{
+    transform: scale(1.2);
+    transition: all 300ms;
+}
 nav ul li{
     display: inline-block;
+}
+.nav-links #link0:hover{
+    transform: scale(1.2);
+    transition: all 300ms;
+}
+.nav-links #link1:hover{
+    transform: scale(1.2);
+    transition: all 300ms;
+}
+.nav-links h3:hover{
+    transform: scale(1.2);
+    transition: all 300ms;
 }
 #link0{
     display: none;
@@ -81,6 +97,10 @@ button{
     width: 55px;
     border: none;
 }
+button:hover{
+    transform: scale(1.2);
+    transition: all 300ms;
+}
 .titulos{
     color: white;
 }
@@ -110,6 +130,10 @@ button{
     width: auto;
     margin-top: 15px;
     border-radius: 90px;
+}
+img.fotoEjemplo:hover{
+    transform: scale(1.2);
+    transition: all 300ms;
 }
 .topTracks{
     display: grid;
