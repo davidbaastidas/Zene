@@ -201,9 +201,6 @@ footer{
 #experiencia, .sponsors, .textoCreditos, .deezer{
     text-align: center;
 }
-.deezer{
-    background-color: black;
-}
 @media (min-width:375px){
     .main-header{
         height: 155px;

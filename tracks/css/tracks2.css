@@ -5,7 +5,9 @@
     text-decoration: none;
 }
 html,body{
-    background-color: black;
+    background-image: url("https://andro4all.com/files/2020/03/Luces-de-noche-700x1244.jpg");
+    background-repeat: repeat;
+    background-size: inherit;
     font-family: 'Montserrat', sans-serif;
 }
 .container{
@@ -76,6 +78,46 @@ button{
     width: 55px;
     border: none;
 }
+button:hover{
+    transform: scale(1.2);
+    transition: all 300ms;
+}
+.main{
+    display: grid;
+    grid-template-rows: 40% 40%;
+}
+.infoArtista{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    gap: 4px;
+}
+.fotoTrack img{
+    height: 140px;
+    width: auto;
+    border-radius: 90px;
+    margin-left: 10px;
+}
+.fotoTrack img:hover{
+    transform: scale(1.2);
+    transition: all 300ms;
+}
+.infoArriba{
+    padding-right: 5px;
+}
+.tituloTrack{
+    font-size: 19px;
+    color: white;
+}
+.botonAgregar{
+    margin-left: 55px;
+    margin-top: 20px;
+}
+.infoAbajo h3{
+    font-size: 12px;
+}
+.videoTrack{
+    display: none;
+}
 footer{
     position:absolute;
     width:100%;
@@ -106,16 +148,49 @@ footer{
 #experiencia, .sponsors, .textoCreditos, .deezer{
     text-align: center;
 }
+@media (min-width:375px){
+    .tituloTrack{
+        font-size: 21px;
+        margin-left: 6px;
+    }
+}
+@media (min-width:425px){
+    .fotoTrack img {
+        height: 160px;
+    }
+    .tituloTrack {
+        font-size: 23px;
+        margin-left: 10px;
+    }
+    .botonAgregar {
+        margin-left: 55px;
+        margin-top: 20px;
+        height: 40px;
+        width: 100px;
+    }
+    .infoAbajo h3{
+        font-size: 16px;
+    }
+    .infoAbajo{
+        margin-right: 15px;
+    }
 
-@media (min-width:426px){
+}
+
+/*Aca termina Mobile*/
+
+/*Aca empiezan Tablet */
+
+@media (min-width:768px){
     .container{
         position: relative;
     }
     header{
         display: block;
         position: absolute;
-        height: 100vw;
+        height: 78vw;
         width: 180px;
+        z-index: 1;
     }
     .logo-img{
         width: 80%;
@@ -135,9 +210,29 @@ footer{
         text-align: end;
         padding-right: 20px;
     }
-    footer{
-        bottom: 0;
-        max-height: 80px;
+    .infoArtista{
+        margin-left: 225px;
+        margin-top: 75px;
+    }
+    .tituloTrack {
+        font-size: 25px;
+        margin-left: 25px;
+    }
+    .botonAgregar {
+        margin-left: 75px;
+    }
+    .videoTrack{
+        display: grid;
+    }
+    .videoSong{
+        margin-left: 190px;
+        width: 570px;
+        margin-top: 30px;
+    }
+    footer {
+        margin-bottom: 85px;
+        margin-top: 0px;
+        height: 100px;
     }
     .anclaLocal a,p{
         font-size: 15px;
@@ -154,3 +249,100 @@ footer{
         text-align: left;
     }
 }
+
+/*Aca termina Tablet*/
+
+/*Aca empieza Laptop*/
+
+@media (min-width:1024px){
+    header {
+        height: 80vw;
+    }
+    main{
+        margin-top: 95px;
+    }
+    .fotoTrack img {
+        height: 205px;
+        width: 215px;
+        margin-left: 50px;
+    }
+    .tituloTrack {
+        font-size: 30px;
+        margin-left: 40px;
+    }
+    .botonAgregar {
+        margin-left: 105px;
+    }
+    .infoAbajo {
+        margin-right: 80px;
+    }
+    .videoSong {
+        margin-left: 285px;
+        width: 625px;
+        margin-top: 135px;
+        padding-bottom: 8px;
+    }
+    footer{
+        bottom: 5px;
+    }
+}
+@media (min-width:1440px){
+    .main-header{
+        width: 250px;
+    }
+    .nav-links{
+        font-size: 19px;
+    }
+    main{
+        margin-left: 90px;
+    };
+    input{
+        height: 50px;
+        width: 210px;
+    }
+    button{
+        height: 50px;
+    }
+    .fotoTrack img {
+        height: 300px;
+        width: auto;
+        margin-left: 184px;
+    }
+    .infoDerecha{
+        margin-top: 55px;
+    }
+    .tituloTrack {
+        font-size: 40px;
+        margin-left: 68px;
+    }
+    .botonAgregar {
+        margin-left: 175px;
+        height: 55px;
+    }
+    .infoAbajo h3 {
+        font-size: 20px;
+        margin-right: 75px;
+    }
+    .videoSong{
+        margin-left: 385px;
+        width: 800px;
+        margin-top: 53px;
+        padding-bottom: 8px;
+        height: 544px;
+    }
+    #experiencia, .sponsors{
+        font-size: 20px;
+    }
+    .anclaLocal a, p{
+        font-size: 20px;
+    }
+    .deezer img{
+        height: 120px;
+    }
+    footer {
+        bottom: 85px;
+    }
+}
+
+/*Aca termina Laptop*/
+
