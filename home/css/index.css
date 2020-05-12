@@ -5,8 +5,7 @@
     text-decoration: none;
 }
 html,body{
-    background-image: url("https://i.pinimg.com/originals/e6/cb/b2/e6cbb2092a7c16b23ca5907cae5534c9.jpg");
-    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcT0xsDAe56d1TNnxcWMVkqmO01cfZCwnpEkVcOOY8UvcxPsbE-E&usqp=CAU");
+    background-image: url("https://andro4all.com/files/2020/03/Luces-de-noche-700x1244.jpg");
     background-repeat: repeat;
     background-size: inherit;
     font-family: 'Montserrat', sans-serif;
@@ -201,6 +200,9 @@ footer{
 }
 #experiencia, .sponsors, .textoCreditos, .deezer{
     text-align: center;
+}
+.deezer{
+    background-color: black;
 }
 
 @media (min-width:426px){
