@@ -5,7 +5,10 @@
     text-decoration: none;
 }
 html,body{
-    background-color: black;
+    background-image: url("https://i.pinimg.com/originals/e6/cb/b2/e6cbb2092a7c16b23ca5907cae5534c9.jpg");
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcT0xsDAe56d1TNnxcWMVkqmO01cfZCwnpEkVcOOY8UvcxPsbE-E&usqp=CAU");
+    background-repeat: repeat;
+    background-size: inherit;
     font-family: 'Montserrat', sans-serif;
 }
 .container{
@@ -18,11 +21,14 @@ header{
     top:-60;
 }
 .main-header{
-    text-align: center;  
+    text-align: center; 
+    height: 125px
 }
 nav{
     margin-top: 5px;
     padding-bottom: 5px;
+    position: sticky;
+    margin-left: 25px;
 }
 .logo-img{
     width: 30%;
@@ -76,11 +82,101 @@ button{
     width: 55px;
     border: none;
 }
+.titulos{
+    color: white;
+}
+.topArtists{
+    display: grid;
+    grid-template-columns: 60% 40%;
+    gap: 10px;
+}
+.listaArtistas{
+    color: white;
+}
+.artistasIzquierda{
+    display: grid;
+    grid-template-rows: 20% 80%;
+    margin-left: 5px;
+    gap: 15px;
+}
+.artistasArriba .titulos{
+    margin-left: 5px;
+}
+.artistasAbajo{
+    margin-left: 55px;
+    font-size: 13px;
+}
+.artistasDerecha .fotoEjemplo{
+    height: 110px;
+    width: auto;
+    margin-top: 15px;
+    border-radius: 90px;
+}
+.topTracks{
+    display: grid;
+    grid-template-columns: 60% 40%;
+    gap: 10px;
+}
+.listaCanciones{
+    color: white;
+}
+.cancionesIzquierda{
+    display: grid;
+    grid-template-rows: 20% 80%;
+    margin-left: 5px;
+    gap: 15px;
+}
+.cancionesArriba{
+    width: 210px;
+}
+.cancionesArriba .titulos{
+    margin-left: 5px;
+}
+.cancionesAbajo{
+    margin-left: 55px;
+    font-size: 13px;
+}
+.cancionesDerecha .fotoEjemplo{
+    height: 110px;
+    width: auto;
+    margin-top: 25px;
+    border-radius: 90px;
+}
+.topAlbums{
+    display: grid;
+    grid-template-columns: 60% 40%;
+    gap: 10px;
+}
+.listaAlbums{
+    color: white;
+}
+.albumsIzquierda{
+    display: grid;
+    grid-template-rows: 20% 80%;
+    margin-left: 5px;
+    gap: 15px;
+}
+.albumsArriba{
+    width: 210px;
+}
+.albumsArriba .titulos{
+    margin-left: 5px;
+}
+.albumsAbajo{
+    margin-left: 50px;
+    font-size: 13px;
+}
+.albumsDerecha .fotoEjemplo{
+    height: 110px;
+    width: auto;
+    margin-top: 35px;
+    border-radius: 90px;
+}
 footer{
     position:absolute;
     width:100%;
     border-top: solid 5px #131212;
-    margin-top: 20px;
+    margin-top: 10px;
 }
 .sponsors{
     color: white;
