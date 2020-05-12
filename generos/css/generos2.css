@@ -5,7 +5,9 @@
     text-decoration: none;
 }
 html,body{
-    background-color: black;
+    background-image: url("https://andro4all.com/files/2020/03/Luces-de-noche-700x1244.jpg");
+    background-repeat: repeat;
+    background-size: inherit;
     font-family: 'Montserrat', sans-serif;
 }
 .container{
@@ -19,10 +21,13 @@ header{
 }
 .main-header{
     text-align: center;  
+    height: 130px;
 }
 nav{
     margin-top: 5px;
     padding-bottom: 5px;
+    position: sticky;
+    margin-left: 25px;
 }
 .logo-img{
     width: 30%;
@@ -79,7 +84,10 @@ button{
 .generos{
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-row: 1fr 1fr 1fr 1fr 1fr;
+}
+div a img:hover{
+    transform: scale(1.2);
+    transition: all 300ms;
 }
 .fotoGenero{
     height: 100%;
@@ -118,8 +126,21 @@ footer{
 }
 #experiencia, .sponsors, .textoCreditos, .deezer{
     text-align: center;
+} 
+@media (min-width:375px){
+    .main-header{
+        height: 155px;
+    }
 }
-
+@media (min-width:425px){
+    .main-header{
+        height: 165px;
+    }
+    .generos{
+        padding-left: 5px;
+    }
+}
+/*Aca termina los cimientos de Mobile, y tenemos que empezar a poner lo de Tablet. Aca empiezan a aparecer todos los Carrusels */
 @media (min-width:426px){
     .container{
         position: relative;
