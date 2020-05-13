@@ -142,9 +142,6 @@ footer{
 }
 /*Aca termina los cimientos de Mobile, y tenemos que empezar a poner lo de Tablet. Aca empiezan a aparecer todos los Carrusels */
 @media (min-width:426px){
-    .container{
-        position: relative;
-    }
     header{
         display: block;
         position: absolute;
