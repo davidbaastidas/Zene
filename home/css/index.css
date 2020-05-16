@@ -110,29 +110,29 @@ h2.titulos{
     margin-top: 20px;
     font-family: 'Montserrat', sans-serif;  
 }
-.cancionesIzquierda{
-    display: grid;
-    grid-template-rows: 20% 80%;
-    margin-left: 5px;
-    gap: 15px;
+.insider{
+    font-size: 20px;
+    font-family: 'Montserrat', sans-serif; 
 }
-.cancionesArriba{
-    width: 210px;
+.chartTracks{
+    margin-left: auto;
+    margin-right: auto;
 }
-.cancionesArriba .titulos{
-    margin-left: 5px;
+.listSongs li,.listSongs ol{
+    border-bottom: 1px solid #dfe1ea;
+    padding-bottom: 5px;
+    padding-top: 5px;
+    color: rgb(253, 253, 253);
 }
-.cancionesAbajo{
-    margin-left: 55px;
-    font-size: 13px;
+span{
+    padding-left: 10px;
+    gap: 30px;
+    font-size: 20px;
 }
-.cancionesDerecha .fotoEjemplo{
-    height: 110px;
-    width: auto;
-    margin-top: 25px;
-    border-radius: 90px;
+.songA{
+    font-size: 16px;
+    color: rgba(200, 214, 214, 0.5);
 }
-
 footer{
     width:100%;
     border-top: solid 5px #131212;
@@ -161,6 +161,9 @@ footer{
 }
 #experiencia, .sponsors, .textoCreditos, .deezer{
     text-align: center;
+}
+#equipo{
+    margin:0;
 }
 @media (min-width:425px){
     .topArtists{
