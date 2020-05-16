@@ -9,6 +9,7 @@ html,body{
     background-repeat: repeat;
     background-size: inherit;
     font-family: 'Montserrat', sans-serif;
+    background-attachment: fixed;
 }
 .container{
     min-height: 100vw;
@@ -313,7 +314,7 @@ footer{
         margin-left: 90px;
     };
     input{
-        height: 50px;
+        height: 55px;
         width: 210px;
     }
     button{
