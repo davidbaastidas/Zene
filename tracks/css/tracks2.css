@@ -132,10 +132,6 @@ button:hover{
 .infoAbajo h3{
     font-size: 11px;
 }
-.videoSong:hover{
-    transform: scale(1.1);
-    transition: all 300ms;
-}
 .videoTrack{
     display: none;
 }
@@ -150,7 +146,19 @@ footer{
     letter-spacing: 5px;
     padding-bottom: 15px;
 }
-.logoFb:hover{
+.fa-facebook-square:hover{
+    transform: scale(1.2);
+    transition: all 300ms;
+}
+.fa-twitter:hover{
+    transform: scale(1.2);
+    transition: all 300ms;
+}
+.fa-instagram:hover{
+    transform: scale(1.2);
+    transition: all 300ms;
+}
+.fa-whatsapp:hover{
     transform: scale(1.2);
     transition: all 300ms;
 }
@@ -199,24 +207,20 @@ footer{
     .infoAbajo{
         margin-right: 6%;
     }
-
 }
-
-/*Aca termina Mobile*/
-
-/*Aca empiezan Tablet */
-
 @media (min-width:768px){
     .container{
         position: relative;
     }
     main{
-        margin: 0%;
+        margin-top: -6%;
+        margin-left: 5%;
+        min-width: 75vw;
     }
     header{
         display: block;
         position: absolute;
-        height: 78vw;
+        height: 100vw;
         width: 24%;
         z-index: 1;
     }
@@ -255,13 +259,14 @@ footer{
     }
     .videoSong{
         margin-left: 27%;
-        margin-top: 5%;
+        margin-top: 1%;
         width: 70%;
     }
     footer {
-        margin-bottom: 85px;
         margin-top: 0px;
         height: 100px;
+        margin-left: 26%;
+        width: 560px;
     }
     .anclaLocal a,p{
         font-size: 15px;
@@ -278,27 +283,23 @@ footer{
         text-align: left;
     }
 }
-
-/*Aca termina Tablet*/
-
-/*Aca empieza Laptop*/
-
 @media (min-width:1024px){
     .container{
-        min-height: 72vw;
+        min-height: 48vw;
     }
-    header {
-        height: 55vw;
+    .main-header {
+        height: 63vw;
         width: 16%;
     }
     main{
         margin-top: -3%;
-        margin-left: 1%;
+        margin-left: -8%;
+        min-height: 34vw;
     }
     .fotoTrack img {
-        height: 205px;
+        height: 160px;
         width: 215px;
-        margin-left: 50px;
+        margin-left: 40%;
     }
     .tituloTrack {
         font-size: 30px;
@@ -311,86 +312,38 @@ footer{
         margin: auto;
     }
     .infoDerecha{
-        margin: auto;
+        margin-right: 40%;
     }
     .infoAbajo {
         margin:auto;
     }
     .videoSong {
-        margin-left: 33%;
+        margin-left: 40%;
         width: 625px;
-        margin-top: 6%;
+        margin-top: 2%;
     }
     footer{
-        bottom: 5px;
-        margin-bottom: 8%;
+        bottom: -14%;
+        margin-left: 20%;
+        margin-bottom: 0%;
+        width: 78%;
     }
     .anclaLocal{
         height: 115px;
     }
 }
 @media (min-width:1440px){
-    .main-header{
-        width: 250px;
+    .container{
+        min-height: 35vw;
     }
-    .nav-links{
-        font-size: 19px;
+    .main-header {
+        height: 62vw;
     }
     main{
-        margin-left: 90px;
-    };
-    input, button{
-        height: 55px;
-        width: 210px;
+        min-height: 38vw;
     }
-    .infoArtista{
-        margin-left: 17%;
-    }
-    .fotoTrack img {
-        height: 265px;
-        width: auto;
-        margin-left: 184px;
-    }
-    .infoArriba{
-        margin: auto;
-    }
-    .infoAbajo{
-        margin: auto;
-    }
-    .infoDerecha{
-        margin-top: 55px;
-    }
-    .tituloTrack {
-        font-size: 40px;
-        margin-left: 68px;
-    }
-    .botonAgregar {
-        margin-left: 175px;
-        height: 55px;
-    }
-    .infoAbajo h3 {
-        font-size: 20px;
-    }
-    .videoSong{
-        margin-left: 385px;
-        width: 800px;
-        margin-top: 53px;
-        padding-bottom: 8px;
-        height: 544px;
-    }
-    #experiencia, .sponsors{
-        font-size: 20px;
-    }
-    .anclaLocal a, p{
-        font-size: 20px;
-    }
-    .deezer img{
-        height: 120px;
-    }
-    footer {
-        bottom: 18px;
+    footer{
+        bottom: -17%;
     }
 }
-
-/*Aca termina Laptop*/
 
