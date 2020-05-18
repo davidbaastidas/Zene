@@ -7,6 +7,13 @@
     <script src="https://kit.fontawesome.com/a0c0bb4f74.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Raleway&display=swap" rel="stylesheet">
+    <!-- UIkit CSS -->
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.2.7/dist/css/uikit.min.css" />
+   <link rel="stylesheet" href="./css/style.css">
+   <script defer src="./js/index.js"></script>
+   <!-- UIkit JS -->
+   <script src="https://cdn.jsdelivr.net/npm/uikit@3.2.7/dist/js/uikit.min.js"></script>
+   <script src="https://cdn.jsdelivr.net/npm/uikit@3.2.7/dist/js/uikit-icons.min.js"></script>
     <title>Playlist</title>
 </head>
 <body>
@@ -18,8 +25,8 @@
             <nav>           
                 <ul class="nav-links">
                     <li id="link0"><a href="index.html"><h3>Home</h3></a></li>
-                    <li><a href="../generos/generos.html"><h3>Géneros</h3></a></li>
-                    <li id="link1"><a href="../playlist/playlist.html"><h3>Mi Playlist</h3></a></li>
+                    <li id="link1"><a href="../generos/generos.html"><h3>Géneros</h3></a></li>
+                    <li id="link2"><a href="../playlist/playlist.html"><h3>Mi Playlist</h3></a></li>
                 </ul>
             </nav>
         </header>
@@ -35,23 +42,80 @@
         
         <!-- main -->
         <main>
-            <h2 class="title">Tus favoritas</h2>
-                <div id="song-list">
-                    <a href="../tracks/tracks.html">Song 1</a>
-                    <a href="../tracks/tracks.html">Song 2</a>
-                    <a href="../tracks/tracks.html">Song 3</a>
-                    <a href="../tracks/tracks.html">Song 4</a>
-                    <a href="../tracks/tracks.html">Song 5</a>
-                    <a href="../tracks/tracks.html">Song 6</a>
-                    <a href="../tracks/tracks.html">Song 7</a>
-                    <a href="../tracks/tracks.html">Song 8</a>
-                    <a href="../tracks/tracks.html">Song 9</a>
-                    <a href="../tracks/tracks.html">Song 10</a>
-                    <a href="../tracks/tracks.html">Song 11</a>
-                    <a href="../tracks/tracks.html">Song 12</a>
-                    <a href="../tracks/tracks.html">Song 13</a>
-                    <a href="../tracks/tracks.html">Song 14</a>
-                </div>
+        <div class="titulo">
+            <h2>Tus favoritas</h2>
+        </div>
+            <div class="chartTracks">
+                <ol class="listSongs">
+                    <li>
+                        <div class="number">1</div>
+                        <div>
+                            <span>Yummy</span>
+                            <br>
+                            <span class="songA">Justin Bieber</span>
+                        </div>
+                        <div class="songAudio">
+                            <audio src="../home/audios/justinbieber.mp3" controls></audio>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="number">2</div>
+                        <div>
+                            <span>Break My Heart</span>
+                            <br>
+                            <span class="songA">Dua Lipa</span>
+                        </div>
+                        <div class="songAudio">
+                            <audio src="../home/audios/dualipa.mp3" controls></audio>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="number">3</div>
+                        <div>
+                            <span>Say So</span>
+                            <br>
+                            <span class="songA">Doja Cat</span>
+                        </div>
+                        <div class="songAudio">
+                            <audio src="../home/audios/dojacat.mp3" controls></audio>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="number">4</div>
+                        <div>
+                            <span>Blinding Lights</span>
+                            <br>
+                            <span class="songA">The Weekend</span>
+                        </div>
+                        <div class="songAudio">
+                            <audio src="../home/audios/theweekend.mp3" controls></audio>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="number">5</div>
+                        <div>
+                            <span>Toosie Slide</span>
+                            <br>
+                            <span class="songA">Drake</span>
+                        </div>
+                        <div class="songAudio">
+                            <audio src="../home/audios/drake.mp3" controls></audio>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="number">6</div>
+                        <div>
+                            <span>Agregar titulo...</span>
+                            <br>
+                            <span class="songA">Buscar artista...</span>
+                        </div>
+                        <div class="songPlus" style="font-size: 35px;">
+                            <i class="fas fa-plus-circle"></i>
+                        </div>
+                    </li>
+                </ol>
+            </div>
+        </div>
         </main>
 
         <!-- footer -->
