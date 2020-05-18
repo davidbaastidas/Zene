@@ -54,11 +54,11 @@ nav ul li{
     transform: scale(1.2);
     transition: all 300ms;
 }
-#link0{
-    display: none;
+.nav-links{
+    margin-left: 7%;
 }
-#link1{
-    margin-left: 40px;
+.nav-links li{
+    margin-right: 5%;
 }
 h3{
     color: white;
@@ -105,8 +105,8 @@ button:hover{
 }
 .infoArtista{
     display: grid;
-    grid-template-columns: 50% 50%;
-    gap: 4px;
+    grid-template-columns: 48% 50%;
+    gap: 5px;
 }
 .fotoTrack img{
     height: 140px;
@@ -130,7 +130,11 @@ button:hover{
     margin-top: 20px;
 }
 .infoAbajo h3{
-    font-size: 12px;
+    font-size: 11px;
+}
+.videoSong:hover{
+    transform: scale(1.1);
+    transition: all 300ms;
 }
 .videoTrack{
     display: none;
@@ -139,12 +143,16 @@ footer{
     position:absolute;
     width:100%;
     border-top: solid 5px #131212;
-    margin-top: 20px;
+    margin-top: 5%;
 }
 .sponsors{
     color: white;
     letter-spacing: 5px;
     padding-bottom: 15px;
+}
+.logoFb:hover{
+    transform: scale(1.2);
+    transition: all 300ms;
 }
 .anclaLocal{
     background-color: #131212;
@@ -189,7 +197,7 @@ footer{
         font-size: 16px;
     }
     .infoAbajo{
-        margin-right: 15px;
+        margin-right: 6%;
     }
 
 }
@@ -202,11 +210,14 @@ footer{
     .container{
         position: relative;
     }
+    main{
+        margin: 0%;
+    }
     header{
         display: block;
         position: absolute;
         height: 78vw;
-        width: 180px;
+        width: 24%;
         z-index: 1;
     }
     .logo-img{
@@ -228,8 +239,9 @@ footer{
         padding-right: 20px;
     }
     .infoArtista{
-        margin-left: 225px;
-        margin-top: 75px;
+        margin-left: 27%;
+        margin-top: 10%;
+        gap: 0px
     }
     .tituloTrack {
         font-size: 25px;
@@ -242,9 +254,9 @@ footer{
         display: grid;
     }
     .videoSong{
-        margin-left: 190px;
-        margin-top: 30px;
-        width: 570px;
+        margin-left: 27%;
+        margin-top: 5%;
+        width: 70%;
     }
     footer {
         margin-bottom: 85px;
@@ -273,10 +285,12 @@ footer{
 
 @media (min-width:1024px){
     header {
-        height: 80vw;
+        height: 83vw;
+        width: 16%;
     }
     main{
-        margin-top: 95px;
+        margin-top: 11%;
+        margin-left: 1%;
     }
     .fotoTrack img {
         height: 205px;
@@ -290,17 +304,26 @@ footer{
     .botonAgregar {
         margin-left: 105px;
     }
+    .infoArriba{
+        margin: auto;
+    }
+    .infoDerecha{
+        margin: auto;
+    }
     .infoAbajo {
-        margin-right: 80px;
+        margin:auto;
     }
     .videoSong {
-        margin-left: 285px;
+        margin-left: 33%;
         width: 625px;
-        margin-top: 135px;
-        padding-bottom: 8px;
+        margin-top: 12%;
     }
     footer{
         bottom: 5px;
+        margin-bottom: 8%;
+    }
+    .anclaLocal{
+        height: 115px;
     }
 }
 @media (min-width:1440px){
@@ -313,17 +336,23 @@ footer{
     main{
         margin-left: 90px;
     };
-    input{
+    input, button{
         height: 55px;
         width: 210px;
     }
-    button{
-        height: 50px;
+    .infoArtista{
+        margin-left: 17%;
     }
     .fotoTrack img {
-        height: 300px;
+        height: 265px;
         width: auto;
         margin-left: 184px;
+    }
+    .infoArriba{
+        margin: auto;
+    }
+    .infoAbajo{
+        margin: auto;
     }
     .infoDerecha{
         margin-top: 55px;
@@ -338,7 +367,6 @@ footer{
     }
     .infoAbajo h3 {
         font-size: 20px;
-        margin-right: 75px;
     }
     .videoSong{
         margin-left: 385px;
@@ -357,7 +385,7 @@ footer{
         height: 120px;
     }
     footer {
-        bottom: 85px;
+        bottom: 18px;
     }
 }
 
