@@ -284,12 +284,15 @@ footer{
 /*Aca empieza Laptop*/
 
 @media (min-width:1024px){
+    .container{
+        min-height: 72vw;
+    }
     header {
-        height: 83vw;
+        height: 55vw;
         width: 16%;
     }
     main{
-        margin-top: 11%;
+        margin-top: -3%;
         margin-left: 1%;
     }
     .fotoTrack img {
@@ -316,7 +319,7 @@ footer{
     .videoSong {
         margin-left: 33%;
         width: 625px;
-        margin-top: 12%;
+        margin-top: 6%;
     }
     footer{
         bottom: 5px;
