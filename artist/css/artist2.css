@@ -5,8 +5,11 @@
     text-decoration: none;
 }
 html,body{
-    background-color: black;
+    background-image: url("https://andro4all.com/files/2020/03/Luces-de-noche-700x1244.jpg");
+    background-repeat: repeat;
+    background-size: inherit;
     font-family: 'Montserrat', sans-serif;
+    background-attachment: fixed;
 }
 .container{
     min-height: 100vw;
@@ -15,13 +18,15 @@ html,body{
 header{
     position: sticky;
     background-color:#131212;
-    top:-60;
 }
 .main-header{
-    text-align: center;  
+    text-align: center; 
+}
+header.main-header {
+    height: 125px;
 }
 nav{
-    margin-top: 5px;
+    margin-top: -40px;
     padding-bottom: 5px;
 }
 .logo-img{
@@ -30,20 +35,53 @@ nav{
     display: block;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 5px;
+    margin-top: 0%;
+}
+img.logo-img:hover{
+    transform: scale(1.2);
+    transition: all 300ms;
 }
 nav ul li{
     display: inline-block;
 }
-#link0{
-    display: none;
+.nav-links #link0:hover{
+    transform: scale(1.2);
+    transition: all 300ms;
 }
-#link1{
-    margin-left: 40px;
+.nav-links #link1:hover{
+    transform: scale(1.2);
+    transition: all 300ms;
 }
-h3{
+.nav-links #link2:hover{
+    transform: scale(1.2);
+    transition: all 300ms;
+}
+.nav-links{
+    width: 100%;
+}
+.nav-links li{
+    margin-right: 5%;
+}
+ul.nav-links{
+    padding-left: 5%;
+}
+#link0:hover{
+    transform: scale(1.2);
+    transition: all 300ms;
+}
+#link1:hover{
+    transform: scale(1.2);
+    transition: all 300ms;
+}
+#link2:hover{
+    transform: scale(1.2);
+    transition: all 300ms;
+}
+nav h3{
     color: white;
     text-align: center;
+    margin: 0;
+    font-size: 20px;
 }
 section,form{
     position: relative;
@@ -76,6 +114,10 @@ button{
     width: 55px;
     border: none;
 }
+button:hover{
+    transform: scale(1.2);
+    transition: all 300ms;
+}
 main{
     display: grid;
     grid-template-rows: 1fr 1fr 1fr;
@@ -90,8 +132,60 @@ li{
     margin-top: 30px;
     color: ivory;
 }
+main{
+    display: grid;
+    grid-template-rows: 20% 10% 40% 20%;
+}
+img.artist{
+    height: 160px;
+    max-width: 50%;
+    margin-left: 25%;
+    border-radius: 60%;
+}
+img.artist:hover{
+    transform: scale(1.2);
+    transition: all 300ms;
+}
+.infoArtista{
+    display: grid;
+    grid-template-columns: 60% 20%;
+    gap: 3%;
+    margin-left: 17%;
+}
+.infoIzquierda h1{
+    color: ivory;
+}
+.seguir{
+    margin-top: 15%;
+}
+.seguir:hover{
+    transform: scale(1.2);
+    transition: all 300ms;
+}
+.cancionesPopulares h2{
+    color: ivory;
+    margin-left: 5%;
+}
+audio{
+    width: 70%;
+    margin-left: 10%;
+    height: 35px;
+}
+.titulos{
+    color: ivory;
+    margin-left: 5%;
+    margin-bottom: 0%;
+}
+h3.insider{
+    color: ivory;
+    font-size: 100%;
+}
+.fotoAlbumCarrusel{
+    height: 160px;
+    width: 100%;
+}
 footer{
-    position:absolute;
+    position:relative;
     width:100%;
     border-top: solid 5px #131212;
     margin-top: 20px;
@@ -100,6 +194,22 @@ footer{
     color: white;
     letter-spacing: 5px;
     padding-bottom: 15px;
+}
+.fa-facebook-square:hover{
+    transform: scale(1.2);
+    transition: all 300ms;
+}
+.fa-twitter:hover{
+    transform: scale(1.2);
+    transition: all 300ms;
+}
+.fa-instagram:hover{
+    transform: scale(1.2);
+    transition: all 300ms;
+}
+.fa-whatsapp:hover{
+    transform: scale(1.2);
+    transition: all 300ms;
 }
 .anclaLocal{
     background-color: #131212;
@@ -120,16 +230,38 @@ footer{
 #experiencia, .sponsors, .textoCreditos, .deezer{
     text-align: center;
 }
-
-@media (min-width:426px){
+@media (min-width:375px){
+    header.main-header {
+        height: 135px;
+    }
+}
+@media (min-width:375px){
+    header.main-header {
+        height: 135px;
+    }
+}
+@media (min-width:425px){
+    header.main-header {
+        height: 150px;
+    }
+    img.artist {
+        height: 180px;
+    }
+}
+@media (min-width:768px){
     .container{
         position: relative;
+        min-height: 175vw;
     }
     header{
         display: block;
         position: absolute;
         height: 100vw;
-        width: 180px;
+        width: 23%;
+    }
+    header.main-header {
+        height: 200;
+        min-height: 1344px;
     }
     .logo-img{
         width: 80%;
@@ -140,7 +272,9 @@ footer{
     }
     #link1{
         display: block;
-        margin-left: 0;
+    }
+    #link2{
+        display: block;
     }
     nav li{
         margin-bottom: 30px;
@@ -149,9 +283,18 @@ footer{
         text-align: end;
         padding-right: 20px;
     }
+    main{
+        margin-left: 25%;
+        margin-right: 1%;
+    }
+    img.artist{
+        width: 40%;
+    }
     footer{
+        width: 74%;
         bottom: 0;
         max-height: 80px;
+        margin-left: 25%
     }
     .anclaLocal a,p{
         font-size: 15px;
@@ -166,5 +309,42 @@ footer{
     .textoCreditos{
         padding-top: 35px;
         text-align: left;
+    }
+}
+@media (min-width:1024px){
+    .container {
+        position: relative;
+        min-height: 100vw;
+    }
+    header.main-header {
+        height: 200;
+        min-height: 1360px;
+        width: 20%;
+    }
+    img.artist{
+        width: 25%;
+        margin-left: 40%;
+    }
+    .seguir {
+        width: 55%;
+    }
+    ol.listSongs{
+        padding-left: 70px;
+    }
+
+}
+@media (min-width:1440px){
+    .container{
+        min-height: 95vw;
+    }
+    header.main-header {
+        height: 200;
+        min-height: 1365px;
+    }
+
+    img.artist {
+        width: 25%;
+        margin-left: 40%;;
+        height: 200px;
     }
 }
