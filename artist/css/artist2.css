@@ -331,7 +331,6 @@ footer{
     ol.listSongs{
         padding-left: 70px;
     }
-
 }
 @media (min-width:1440px){
     .container{
@@ -341,7 +340,6 @@ footer{
         height: 200;
         min-height: 1365px;
     }
-
     img.artist {
         width: 25%;
         margin-left: 40%;;
