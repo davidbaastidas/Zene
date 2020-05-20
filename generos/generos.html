@@ -3,75 +3,71 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Géneros</title>
-    <link rel="stylesheet" href="css/generos.css">
+    <link rel="stylesheet" href="css/generos2.css">
     <script src="https://kit.fontawesome.com/a0c0bb4f74.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Raleway&display=swap" rel="stylesheet">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generos</title>
 </head>
 <body>
-    <div class="grid-container">
-        <div class="izquierda"> 
-            <div class="izquierda-arriba">
-                <img class="logo-img" src="../logo.png" alt="Zene">
-            </div>
-            <div class="izquierda-abajo">
-                <div class="menu">
-                    <a href="../home/home.html"><h3>Home</h3></a>
-                </div>
-                <div class="menu">
-                    <a href="../generos/generos.html"><h3>Géneros</h3></a>
-                </div>
-                <div class="menu">
-                    <a href="../playlist/playlist.html"><h3>Mi Playlist</h3></a>
-                </div>
-            </div>
-        </div>
-        <div class="derecha">
-            <div class="arriba"> 
-                <form action="barra-buscador">
-                    <fieldset>
-                        <input type="search" placeholder=" Search...">
-                        <button type="submit"><i class="fas fa-search"></i> </button>
-                    </fieldset>
-                </form>
-            </div>
-            <div class="abajo">
-                <div class="generos">
-                    <a name="Generos"></a>
-                    <div><h2>Géneros</h2></div>
-                    <div class="listenNow">
-                        <div id="rock"><a href="generoDetalle.html"><img class= "fotoGenero" src="../home/imagenes/rock.jpg" alt="logo rock"></a></div>
-                        <div><a href="generoDetalle.html"><img class= "fotoGenero" src="../home/imagenes/regueton.jpg" alt="logo regueton"></a></div>
-                        <div><a href="generoDetalle.html"><img class= "fotoGenero" src="../home/imagenes/trap.jpg" alt="logo trap"></a></div>
-                        <div><a href="generoDetalle.html"><img class= "fotoGenero" src="../home/imagenes/country.jpg" alt="logo country"></a></div>
-                        <div><a href="generoDetalle.html"><img class= "fotoGenero" src="../home/imagenes/pop.jpg" alt="logo pop"></a></div>
-                        <div><a href="generoDetalle.html"><img class= "fotoGenero" src="../home/imagenes/rap.jpg" alt="logo rap"></a></div>
-                        <div><a href="generoDetalle.html"><img class= "fotoGenero" src="../home/imagenes/jazz.jpg" alt="logo jazz"></a></div>
-                        <div><a href="generoDetalle.html"><img class= "fotoGenero" src="../home/imagenes/reggae.jpg" alt="logo reggae"></a></div>
-                        <div><a href="generoDetalle.html"><img class= "fotoGenero" src="../home/imagenes/cumbia.jpg" alt="logo cumbia"></a></div>
-                        <div><a href="generoDetalle.html"><img class= "fotoGenero" src="../home/imagenes/clasica.jpg" alt="logo clasica"></a></div>
-                    </div>
+    <div class="container">
+        
+        <!-- header -->
+        <a name="buscadorAncla"></a>
+        <header class="main-header">
+            <a href="home.html"><img class="logo-img" src="../logo.png" alt="Zene"></a>
+            <nav>           
+                <ul class="nav-links">
+                    <li id="link0"><a href="home.html"><h3>Home</h3></a></li>
+                    <li><a href="../generos/generos.html"><h3>Géneros</h3></a></li>
+                    <li id="link1"><a href="../playlist/playlist.html"><h3>Mi Playlist</h3></a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <!-- barra buscador -->
+        <form action="barra-buscador">
+            <fieldset>
+                <input type="search" placeholder=" Search...">
+                <button type="submit"><i class="fas fa-search"></i> </button>
+            </fieldset>
+        </form>
+        
+        <!-- main -->
+        <main>
+            <div class="generos">
+                <div class="listenNow">
+                    <div></div><a href="generoDetalle.html"><img class= "fotoGenero" src="../home/imagenes/rock.jpg" alt="logo rock"></a></div>
+                    <div><a href="generoDetalle.html"><img class= "fotoGenero" src="../home/imagenes/regueton.jpg" alt="logo regueton"></a></div>
+                    <div><a href="generoDetalle.html"><img class= "fotoGenero" src="../home/imagenes/trap.jpg" alt="logo trap"></a></div>
+                    <div><a href="generoDetalle.html"><img class= "fotoGenero" src="../home/imagenes/country.jpg" alt="logo country"></a></div>
+                    <div><a href="generoDetalle.html"><img class= "fotoGenero" src="../home/imagenes/pop.jpg" alt="logo pop"></a></div>
+                    <div><a href="generoDetalle.html"><img class= "fotoGenero" src="../home/imagenes/rap.jpg" alt="logo rap"></a></div>
+                    <div><a href="generoDetalle.html"><img class= "fotoGenero" src="../home/imagenes/jazz.jpg" alt="logo jazz"></a></div>
+                    <div><a href="generoDetalle.html"><img class= "fotoGenero" src="../home/imagenes/reggae.jpg" alt="logo reggae"></a></div>
+                    <div><a href="generoDetalle.html"><img class= "fotoGenero" src="../home/imagenes/cumbia.jpg" alt="logo cumbia"></a></div>
+                    <div><a href="generoDetalle.html"><img class= "fotoGenero" src="../home/imagenes/clasica.jpg" alt="logo clasica"></a></div>
                 </div>
             </div>
-            <div class="footer">
-                <div class="anclaLocal">
-                    <p>Compartí tu experiencia Zene</p>
-                    <p class="sponsors"><i class="fab fa-facebook-square"></i><i class="fab fa-twitter"></i><i class="fab fa-instagram"></i></i><i class="fab fa-whatsapp"></i></p>
-                    <a class="ruta" href="#Generos" style="text-decoration: none">Volver a ver a los diferentes generos</a>
+        </main>
+
+        <!-- footer -->
+        <footer>
+            <div class="anclaLocal">
+                <p id="experiencia">Compartí tu experiencia Zene</p>
+                <p class="sponsors"><i class="fab fa-facebook-square"></i><i class="fab fa-twitter"></i><i class="fab fa-instagram"></i></i><i class="fab fa-whatsapp"></i></p>
+                <a class="ruta" href="#buscadorAncla" style="text-decoration: none">Volver a subir</a> <br>
+            </div>
+            <div class="creditos">
+                <div class="textoCreditos">
+                    <p>Equipo creativo: David Bastidas Velez, Candelaria Vinsennau y Natasha Kotodij</p>
                 </div>
-                <div class="creditos">
-                    <div class="textoCreditos">
-                        <p>Equipo creativo: David Bastidas Velez, Candelaria Vinsennau y Natasha Kotodij</p>
-                    </div>
-                    <div class="deezer">
-                        <img src="../home/imagenes/deezerlogo.jpg" alt="Logo de deezer">
-                    </div>
+                <div class="deezer">
+                    <img src="../home/imagenes/deezerlogo.jpg" alt="Logo de deezer">
                 </div>
             </div>
-        </div>
+        </footer>
+
     </div>
-    
 </body>
 </html>

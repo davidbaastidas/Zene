@@ -22,6 +22,7 @@ header{
 nav li{
     padding-left: 4px;
     padding-right: 4px;
+    font-size: 30px;
 }
 ul.nav-links{
     margin:0;
@@ -63,6 +64,8 @@ nav h3{
     color: white;
     text-align: center;
     margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    text-decoration: none;
 }
 section,form{
     position: relative;
@@ -75,11 +78,11 @@ form{
 fieldset{
     border: 0px solid;
     padding-top: 20px;
-    padding-bottom: 20px;
+    padding-bottom: 10px;
     width: 100%;
 }
 input, button{
-    width: 180px;
+    width: 50%;
     height: 35px;
     border-radius: 15px;
 }
@@ -136,6 +139,9 @@ span{
     font-weight: 600;
     font-size: 30px;
 }
+.video{
+    display:none;
+}
 audio{
     width: 100%;
     height: 60px;
@@ -153,7 +159,6 @@ footer{
 .sponsors{
     color: white;
     letter-spacing: 5px;
-    padding-bottom: 15px;
 }
 .anclaLocal{
     background-color: #131212;
@@ -178,6 +183,10 @@ footer{
     margin:0;
 }
 @media (min-width:425px){
+    nav li{
+        padding-left: 5%;
+        padding-right: 5%;
+    }
     .topArtists{
         padding-left: 20px;
     }
@@ -187,5 +196,35 @@ footer{
     .topAlbums{
         padding-left: 20px;
     }
+    footer p,a.ruta{
+        font-size: 14px;
+    }
+    
 }
-/*Aca termina los cimientos de Mobile, y tenemos que empezar a poner lo de Tablet. Aca empiezan a aparecer todos los Carrusels */
+/*Aca termina los cimientos de Mobile*/
+@media (min-width:768px){
+    input{
+        width: 385px;
+    }
+    h2.titulos{
+        margin-top: 30px;
+    }
+    #tracksAndVideo{
+        display:grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .video{
+        display: block;
+        text-align: center;
+        padding-top: 6%;
+    }
+    #experiencia,.sponsors{
+        font-size: 16px;
+    }
+}
+/*Aca termina los cimientos de Tablet*/
+@media (min-width: 1240px){
+    h2.titulos{
+        font-size: 36px;
+    }
+}

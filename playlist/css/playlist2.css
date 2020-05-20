@@ -12,28 +12,31 @@ html,body{
     background-attachment: fixed;
 }
 .container{
-    min-height: 100vw;
     width: 100%;
 }
 header{
-    position: sticky;
     background-color:#131212;
-}
-.main-header{
+    padding-bottom: 10px;
     text-align: center;
-    height: 135px;  
+}
+nav li{
+    padding-left: 4px;
+    padding-right: 4px;
+    font-size: 30px;
+}
+ul.nav-links{
+    margin:0;
+    padding: 0;
 }
 nav{
     margin-top: 0px;
     padding-bottom: 0px;
 }
 .logo-img{
-    width: 30%;
-    border-radius: 35px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 5px;
+    width: auto;
+    height: 240px;
+    margin-top: -30px;
+    margin-bottom: -30px ;
 }
 img.logo-img:hover{
     transform: scale(1.2);
@@ -41,6 +44,7 @@ img.logo-img:hover{
 }
 nav ul li{
     display: inline-block;
+    font-family: 'Montserrat', sans-serif;  
 }
 .nav-links #link0:hover{
     transform: scale(1.2);
