@@ -190,6 +190,22 @@ footer{
 #equipo{
     margin:0;
 }
+.fa-facebook-square:hover{
+    transform: scale(1.2);
+    transition: all 300ms;
+}
+.fa-twitter:hover{
+    transform: scale(1.2);
+    transition: all 300ms;
+}
+.fa-instagram:hover{
+    transform: scale(1.2);
+    transition: all 300ms;
+}
+.fa-whatsapp:hover{
+    transform: scale(1.2);
+    transition: all 300ms;
+}
 /*Aca termina los cimientos de Mobile*/
 @media (min-width:768px){
     .main-header{
