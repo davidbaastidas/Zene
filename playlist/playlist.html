@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/playlist2.css">
+    <link rel="stylesheet" href="css/playlist.css">
     <script src="https://kit.fontawesome.com/a0c0bb4f74.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Raleway&display=swap" rel="stylesheet">
@@ -24,7 +24,7 @@
             <a href="../home/index.html"><img class="logo-img" src="../logo.png" alt="Zene"></a>
             <nav>           
                 <ul class="nav-links">
-                    <li><a href="../home/index.html"><h3 class="menuHome" >Home</h3></a></li>
+                    <li><a href="../home/index.html"><h3 class="menuHome">Home</h3></a></li>
                     <li><a href="../generos/generos.html"><h3 class="menuGenero">Géneros</h3></a></li>
                     <li><a href="playlist.html"><h3 class="menuPlaylist">Mi Playlist</h3></a></li>
                 </ul>
@@ -32,7 +32,6 @@
         </header>
 
         <!-- barra buscador -->
-        <a name="arribaAncla"></a>
         <form action="barra-buscador">
             <fieldset>
                 <input type="search" placeholder=" Search...">
@@ -42,9 +41,7 @@
         
         <!-- main -->
         <main>
-        <div class="titulo">
-            <h2>Tus favoritas</h2>
-        </div>
+        <h2 id="miPlaylist">Tus favoritas</h2>
             <div class="chartTracks">
                 <ol class="listSongs">
                     <li>
@@ -115,7 +112,6 @@
                     </li>
                 </ol>
             </div>
-        </div>
         </main>
 
         <!-- footer -->
@@ -123,11 +119,12 @@
             <div class="anclaLocal">
                 <p id="experiencia">Compartí tu experiencia Zene</p>
                 <p class="sponsors"><i class="fab fa-facebook-square"></i><i class="fab fa-twitter"></i><i class="fab fa-instagram"></i></i><i class="fab fa-whatsapp"></i></p>
-                <a class="ruta" href="#arribaAncla" style="text-decoration: none">Volver al principio de las playlists</a> <br>
+                <a class="ruta" href="#miPlaylist" style="text-decoration: none">Volver al principio de Mi Playlist</a> 
+                <br>
             </div>
             <div class="creditos">
                 <div class="textoCreditos">
-                    <p>Equipo creativo: David Bastidas Velez, Candelaria Vinsennau y Natasha Kotodij</p>
+                    <p id="equipo">Equipo creativo: David Bastidas Velez y Candelaria Vinsennau</p>
                 </div>
                 <div class="deezer">
                     <img src="../home/imagenes/deezerlogo.jpg" alt="Logo de deezer">
