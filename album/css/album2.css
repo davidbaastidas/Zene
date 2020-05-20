@@ -5,45 +5,68 @@
     text-decoration: none;
 }
 html,body{
-    background-color: black;
+    background-image: url("https://andro4all.com/files/2020/03/Luces-de-noche-700x1244.jpg");
+    background-repeat: repeat;
+    background-size: inherit;
     font-family: 'Montserrat', sans-serif;
+    background-attachment: fixed;
 }
 .container{
     min-height: 100vw;
     width: 100%;
 }
 header{
-    position: sticky;
     background-color:#131212;
-    top:-60;
+    padding-bottom: 10px;
+    text-align: center;
 }
-.main-header{
-    text-align: center;  
+nav li{
+    padding-left: 4px;
+    padding-right: 4px;
+    font-size: 30px;
+}
+ul.nav-links{
+    display: inline;
+    margin:0;
+    padding: 0;
 }
 nav{
-    margin-top: 5px;
-    padding-bottom: 5px;
+    margin-top: 0px;
+    padding-bottom: 0px;
 }
 .logo-img{
-    width: 30%;
-    border-radius: 35px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 5px;
+    width: auto;
+    height: 240px;
+    margin-top: -30px;
+    margin-bottom: -30px;
+}
+img.logo-img:hover{
+    transform: scale(1.2);
+    transition: all 300ms;
 }
 nav ul li{
     display: inline-block;
+    font-family: 'Montserrat', sans-serif;  
 }
-#link0{
-    display: none;
+.menuHome:hover{
+    transform: scale(1.2);
+    transition: all 300ms;
 }
-#link1{
-    margin-left: 40px;
+.menuGenero:hover{
+    transform: scale(1.2);
+    transition: all 300ms;
 }
-h3{
+.menuPlaylist:hover{
+    transform: scale(1.2);
+    transition: all 300ms;
+}
+nav h3{
     color: white;
     text-align: center;
+    font-size: 20px;
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    text-decoration: none;
 }
 section,form{
     position: relative;
@@ -56,15 +79,15 @@ form{
 fieldset{
     border: 0px solid;
     padding-top: 20px;
-    padding-bottom: 20px;
+    padding-bottom: 10px;
     width: 100%;
 }
 input, button{
-    width: 180px;
     height: 35px;
     border-radius: 15px;
 }
 input{
+    width: 50%;
     color: black;
     border: none;
     padding-left: 0cm;
@@ -76,16 +99,41 @@ button{
     width: 55px;
     border: none;
 }
+button:hover{
+    transform: scale(1.2);
+    transition: all 300ms;
+}
+#nameArtist, #genreArtist,#fecha{
+    color: ivory;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    margin-top: 5%;
+    margin-bottom: 8%;
+}
+#selectedAlbum{
+    text-align:center;
+}
+.fotoAlbum{
+    width: 90%;
+}
+img.fotoAlbum:hover{
+    transform: scale(1.2);
+    transition: all 300ms;
+}
+#albumsRelacionados h2{
+    color: ivory;
+    text-align: center;
+    font-size: 25px;
+    font-family: 'Montserrat', sans-serif;
+}
 footer{
-    position:absolute;
     width:100%;
     border-top: solid 5px #131212;
-    margin-top: 20px;
+    margin-top: 10px;
 }
 .sponsors{
     color: white;
     letter-spacing: 5px;
-    padding-bottom: 15px;
 }
 .anclaLocal{
     background-color: #131212;
@@ -106,38 +154,66 @@ footer{
 #experiencia, .sponsors, .textoCreditos, .deezer{
     text-align: center;
 }
+#equipo{
+    margin:0;
+}
+.fa-facebook-square:hover{
+    transform: scale(1.2);
+    transition: all 300ms;
+}
+.fa-twitter:hover{
+    transform: scale(1.2);
+    transition: all 300ms;
+}
+.fa-instagram:hover{
+    transform: scale(1.2);
+    transition: all 300ms;
+}
+.fa-whatsapp:hover{
+    transform: scale(1.2);
+    transition: all 300ms;
+}   
 
 @media (min-width:426px){
-    .container{
-        position: relative;
+    .fotoAlbum{
+        width: 100%;
+        padding: 5%;
     }
-    header{
-        display: block;
-        position: absolute;
-        height: 100vw;
-        width: 180px;
+    #firstSection{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
     }
-    .logo-img{
-        width: 80%;
-        margin-bottom: 40px;
+}
+@media (min-width:768px){
+    .main-header{
+        position: fixed;
+        width: 25%;
+        min-height: 100vw;
+        padding-bottom: 0;
     }
-    #link0{
-        display: block;
+    main{
+        margin-left: 25%;
     }
-    #link1{
-        display: block;
-        margin-left: 0;
-    }
-    nav li{
+    .nav-links{
         margin-bottom: 30px;
+    }
+    nav ul li{
+        display: block;
+        padding: 0;
+        margin-bottom: 8%;
+        font-size: 18px;
     }
     form{
         text-align: end;
         padding-right: 20px;
     }
+    input{
+        width: 18%;
+    }
     footer{
         bottom: 0;
-        max-height: 80px;
+        width: 70%;
+        margin-left: 28%;
     }
     .anclaLocal a,p{
         font-size: 15px;
@@ -145,6 +221,7 @@ footer{
     .creditos{
         display: grid;
         grid-template-columns: 2fr 1fr;
+        padding-bottom: 0;
     }
     .deezer img{
         height: 85px;
@@ -153,4 +230,8 @@ footer{
         padding-top: 35px;
         text-align: left;
     }
+    #experiencia,.sponsors{
+        font-size: 16px;
+    }
 }
+/*Aca termina los cimientos de Tablet*/
