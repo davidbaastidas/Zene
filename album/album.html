@@ -3,80 +3,109 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Album</title>
     <link rel="stylesheet" href="css/album.css">
     <script src="https://kit.fontawesome.com/a0c0bb4f74.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Raleway&display=swap" rel="stylesheet">
+   <!-- UIkit CSS -->
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.2.7/dist/css/uikit.min.css" />
+   <link rel="stylesheet" href="./css/style.css">
+   <script defer src="./js/index.js"></script>
+   <!-- UIkit JS -->
+   <script src="https://cdn.jsdelivr.net/npm/uikit@3.2.7/dist/js/uikit.min.js"></script>
+   <script src="https://cdn.jsdelivr.net/npm/uikit@3.2.7/dist/js/uikit-icons.min.js"></script>
+    <title>Album</title>
 </head>
 <body>
-    <div class="grid-container">
-        <div class="izquierda"> 
-            <div class="izquierda-arriba">
-                <img class="logo-img" src="../logo.png" alt="Zene">
-            </div>
-            <div class="izquierda-abajo">
-                <div class="menu">
-                    <a href="../home/home.html"><h3>Home</h3></a>
+    <div class="container">
+        
+        <!-- header -->
+        <!-- header -->
+        <header class="main-header">
+            <a href="../home/index.html"><img class="logo-img" src="../logo.png" alt="Zene"></a>
+            <nav>           
+                <ul class="nav-links">
+                    <li><a href="../home/index.html"><h3 class="menuHome">Home</h3></a></li>
+                    <li><a href="../generos/generos.html"><h3 class="menuGenero">Géneros</h3></a></li>
+                    <li><a href="../playlist/playlist.html"><h3 class="menuPlaylist">Mi Playlist</h3></a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <!-- barra buscador -->
+        <form action="barra-buscador">
+            <fieldset>
+                <input type="search" placeholder=" Search...">
+                <button type="submit"><i class="fas fa-search"></i> </button>
+            </fieldset>
+        </form>
+        
+        <!-- main -->
+        <main>
+            <a id="anclaArriba"></a>
+            <section id="firstSection">
+                <div id="selectedAlbum">
+                    <img class="fotoAlbum" src="imagenes/Future nostalgia.jpg" alt="">
                 </div>
-                <div class="menu">
-                    <a href="../generos/generos.html"><h3>Géneros</h3></a>
-                </div>
-                <div class="menu">
-                    <a href="../playlist/playlist.html"><h3>Mi Playlist</h3></a>
-                </div>
-            </div>
-        </div>
-        <a name="Arriba"></a>
-        <div class="derecha">
-            <div class="arriba"> 
-                <form action="barra-buscador">
-                    <fieldset>
-                        <input type="search" placeholder=" Search...">
-                        <button type="submit"><i class="fas fa-search"></i> </button>
-                    </fieldset>
-                </form>
-            </div>
-            <div class="abajo">
-                <div class="infoArtista">
-                    <div class="abajoIzquierda">
-                        <div class="fotoAlbum">
-                            <div><img height="300" src="imagenes/albumDua.jpg" alt=""></div>
+                <div id="info" >
+                    <div class="informacion">
+                        <h3 id="nameArtist">Future Nostalgia</h4>
+                        <h5 id="genreArtist">Dua Lipa // Dance-Pop</h5>
+                        <h5 id="fecha"><span id="release" uk-icon="calendar">
+                        </span> Lanzamiento<br>27 de Marzo del 2020</h5>
+
+                        <div id="masInfo">
+                        <button class="uk-button" type="button" uk-toggle="target: #offcanvas-flip">+ Detalles</button>
+                            <div id="offcanvas-flip" uk-offcanvas="flip: true; overlay: true"> 
+                                <div class="uk-offcanvas-bar">
+                                    <button class="uk-offcanvas-close" type="button" uk-close></button>
+                                    <p>Discográfica:	Warner Records</p>
+                                    <p>Productor(es): Jeff Bhasker, Lorna Blackwood, Lauren D'Elia, Danja, Jason Evigan, Ian Kirkpatrick, SG Lewis, Skylar Mones, The Monsters and the Strangerz, Stuart Price, Gian Stone, TMS y Watt</p>
+
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    <div class="abajoDerecha">
-                        <h1>Future Nostalgia</h1>
-                        <br>
-                        <a href="../artist/artist.html"><h3 id="reference">Artista: Dua Lipa</h3></a>
-                        <h3>Género: Pop</h3>
-                        <h3>Fecha de lanzamiento: 20 de marzo de 2020</h3>
-                    </div>
+
+                    <section class="video">
+                        <iframe src="https://player.vimeo.com/video/388652527?title=0&byline=0&portrait=0" width="680" height="400" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+                    </section> 
+
                 </div>
-                <div class="albumArtists">
-                    <h2>Other Albums</h2>
-                    <div class="numberAlbums">
-                        <a href="../album/album.html"><img height="150" src="imagenes/Future nostalgia.jpg" alt="album 1"></a>
-                        <a href="../album/album.html"><img height="150" src="imagenes/Dua Lipa.jpg" alt="album 2"></a>
-                        <a href="../album/album.html"><img height="150" src="imagenes/Live acustic.jpg" alt="album 3"></a>
-                    </div>
+
+
+                
+            </section>
+
+            <section id="albumsRelacionados">
+                <h2>Albums relacionados</h2>
+                <div class="generos">
+                    <div class="listenNow">
+                        <div><a href=""><img src="imagenes/Dua Lipa.jpg" alt=""></a></div>
+                        <div><a href=""><img src="imagenes/Future nostalgia.jpg" alt=""></a></div>
+                        <div><a href=""><img src="imagenes/Live acustic.jpg" alt=""></a></div>
+                </div>
+            </section>
+
+        </main>
+
+        <!-- footer -->
+        <footer>
+            <div class="anclaLocal">
+                <p id="experiencia">Compartí tu experiencia Zene</p>
+                <p class="sponsors"><i class="fab fa-facebook-square"></i><i class="fab fa-twitter"></i><i class="fab fa-instagram"></i></i><i class="fab fa-whatsapp"></i></p>
+                <a class="ruta" href="#anclaArriba" style="text-decoration: none">Volver arriba</a> <br>
+            </div>
+            <div class="creditos">
+                <div class="textoCreditos">
+                    <p>Equipo creativo: David Bastidas Velez y Candelaria Vinsennau</p>
+                </div>
+                <div class="deezer">
+                    <img src="../home/imagenes/deezerlogo.jpg" alt="Logo de deezer">
                 </div>
             </div>
-            <div class="footer"></div>
-                <div class="anclaLocal">
-                    <p>Compartí tu experiencia Zene</p>
-                    <p class="sponsors"><i class="fab fa-facebook-square"></i><i class="fab fa-twitter"></i><i class="fab fa-instagram"></i></i><i class="fab fa-whatsapp"></i></p>
-                    <a class="ruta" href="#Arriba" style="text-decoration: none">Volver arriba</a> <br>
-                </div>
-                <div class="creditos">
-                    <div class="textoCreditos">
-                        <p>Equipo creativo: David Bastidas Velez, Candelaria Vinsennau y Natasha Kotodij</p>
-                    </div>
-                    <div class="deezer">
-                        <img src="../home/imagenes/deezerlogo.jpg" alt="Logo de deezer">
-                    </div>
-                </div>
-            </div>
-        </div>
+        </footer>
+
     </div>
 </body>
 </html>
