@@ -269,15 +269,15 @@ footer{
         width: 16%;
     }
     main {
-        margin-left: 20%;
+        margin-left: 17%;
     }
     #miPlaylist{
         font-size: 45px;
     }
     footer {
         bottom: 0;
-        width: 76%;
-        margin-left: 22%;
+        width: 79%;
+        margin-left: 19%;
     }
 }
 @media (min-width:1440px){
