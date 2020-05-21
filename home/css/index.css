@@ -38,10 +38,6 @@ ul.nav-links{
     margin-top: -30px;
     margin-bottom: -30px ;
 }
-img.logo-img:hover{
-    transform: scale(1.2);
-    transition: all 300ms;
-}
 nav ul li{
     display: inline-block;
     font-family: 'Montserrat', sans-serif;  
@@ -127,6 +123,9 @@ button:hover{
 span{
     padding-left: 10px;
     font-size: 20px;
+}
+.link{
+    color: white;
 }
 audio{
     width: 100%;
