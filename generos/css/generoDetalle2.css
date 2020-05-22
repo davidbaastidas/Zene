@@ -5,41 +5,63 @@
     text-decoration: none;
 }
 html,body{
-    background-color: black;
+    background-image: url("https://andro4all.com/files/2020/03/Luces-de-noche-700x1244.jpg");
+    background-repeat: repeat;
+    background-size: inherit;
     font-family: 'Montserrat', sans-serif;
+    background-attachment: fixed;
 }
 .container{
-    min-height: 100vw;
     width: 100%;
+    min-height: 50vw;
 }
 header{
-    position: sticky;
     background-color:#131212;
-    top:-60;
+    padding-bottom: 10px;
+    text-align: center;
 }
-.main-header{
-    text-align: center;  
+nav li{
+    padding-left: 4px;
+    padding-right: 4px;
+    font-size: 30px;
+}
+ul.nav-links{
+    margin:0;
+    padding: 0;
 }
 nav{
-    margin-top: 5px;
-    padding-bottom: 5px;
+    margin-top: 0px;
+    padding-bottom: 0px;
 }
 .logo-img{
-    width: 30%;
-    border-radius: 35px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 5px;
+    width: auto;
+    height: 240px;
+    margin-top: -30px;
+    margin-bottom: -30px ;
 }
 nav ul li{
     display: inline-block;
+    font-family: 'Montserrat', sans-serif;  
 }
-#link0{
-    display: none;
+.menuHome:hover{
+    transform: scale(1.2);
+    transition: all 300ms;
 }
-#link1{
-    margin-left: 40px;
+.menuGenero:hover{
+    transform: scale(1.2);
+    transition: all 300ms;
+}
+.menuPlaylist:hover{
+    transform: scale(1.2);
+    transition: all 300ms;
+}
+nav h3{
+    color: white;
+    text-align: center;
+    font-size: 20px;
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    text-decoration: none;
 }
 h3{
     color: white;
@@ -76,11 +98,49 @@ button{
     width: 55px;
     border: none;
 }
+button:hover{
+    transform: scale(1.2);
+    transition: all 300ms;
+}
+main{
+    display: grid;
+    grid-template-rows: 35% 73%;
+    gap: 2%;
+}
+.tituloGenero{
+    display: grid;
+    grid-template-columns: 40% 55%;
+    gap: 2%;
+    margin-left: 5%;
+}
+.imageGenre{
+    width: 75%;
+    height: auto;
+    margin-left: 15%;
+    padding-top: 2%;
+}
+.generoTipo{
+    color: white;
+    font-size: 151%;
+    padding-top: 20%;
+}
+.listaGenero{
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 7%;
+}
+.listaGenero p{
+    border-style: solid;
+    border-width: 2px;
+    border-right: none;
+    border-left: none;
+    border-bottom: none;
+    border-color: rgb(211, 211, 211, 0.3);
+    font-size: 80%;
+}
 footer{
-    position:absolute;
     width:100%;
-    border-top: solid 5px #131212;
-    margin-top: 20px;
+    margin-top: 10%;
 }
 .sponsors{
     color: white;
@@ -92,7 +152,7 @@ footer{
     padding: 10px 20px;
 }
 .anclaLocal a,p{
-    font-size: 12px;
+    font-size: 88%;
     color: white;
 }
 .creditos{
@@ -105,39 +165,75 @@ footer{
 }
 #experiencia, .sponsors, .textoCreditos, .deezer{
     text-align: center;
+    font-size: 88%;
 }
-
-@media (min-width:426px){
+.finalAgradecimiento{
+    font-size: 92%;
+}
+.fa-facebook-square:hover{
+    transform: scale(1.2);
+    transition: all 300ms;
+}
+.fa-twitter:hover{
+    transform: scale(1.2);
+    transition: all 300ms;
+}
+.fa-instagram:hover{
+    transform: scale(1.2);
+    transition: all 300ms;
+}
+.fa-whatsapp:hover{
+    transform: scale(1.2);
+    transition: all 300ms;
+} 
+@media (min-width:768px){
     .container{
         position: relative;
     }
-    header{
-        display: block;
-        position: absolute;
-        height: 100vw;
-        width: 180px;
+    .main-header{
+        position: fixed;
+        width: 24%;
+        min-height: 100vw;
+        padding-bottom: 0;
     }
-    .logo-img{
-        width: 80%;
-        margin-bottom: 40px;
+    main{
+        margin-left: 25%;
     }
-    #link0{
-        display: block;
+    .logo-img {
+        width: auto;
+        height: 240px;
+        margin-top: 0px;
+        margin-bottom: -30px;
+        padding-left: 10%;
+        padding-right: 10%;
     }
-    #link1{
-        display: block;
-        margin-left: 0;
-    }
-    nav li{
+    .nav-links{
         margin-bottom: 30px;
+    }
+    nav ul li{
+        display: block;
+        padding: 0;
+        margin-bottom: 8%;
+        font-size: 18px;
     }
     form{
         text-align: end;
         padding-right: 20px;
     }
+    .tituloGenero {
+        display: grid;
+        grid-template-columns: 30% 65%;
+        gap: 2%;
+        margin-left: 5%;
+    }
+    .listaGenero{
+        margin-top: 5%;
+    }
     footer{
         bottom: 0;
-        max-height: 80px;
+        width: 72%;
+        margin-left: 28%;
+        margin-top: 3%;
     }
     .anclaLocal a,p{
         font-size: 15px;
@@ -152,5 +248,42 @@ footer{
     .textoCreditos{
         padding-top: 35px;
         text-align: left;
+    }
+}@media (min-width:1024px){
+    .main-header{
+        width: 16%;
+    }
+    ul.nav-links {
+        display: inline;
+        margin: 0;
+        padding: 0;
+    }
+    .logo-img {
+        height: 240px;
+    }
+    nav{
+        margin-top: 15%;
+    }
+    main{
+        margin-left: 20%;
+    }
+    .listaGenero p {
+        border-style: solid;
+        border-width: 2px;
+        border-right: none;
+        border-left: none;
+        border-bottom: none;
+        border-color: rgb(211, 211, 211, 0.3);
+        font-size: 100%;
+    }    
+    .seguir{
+        width: 7%;
+    }
+    nav h3{
+        font-size: 22px;
+    }
+    footer {
+        width: 76%;
+        margin-left: 22%;
     }
 }
