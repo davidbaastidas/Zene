@@ -9,46 +9,60 @@ html,body{
     background-repeat: repeat;
     background-size: inherit;
     font-family: 'Montserrat', sans-serif;
+    background-attachment: fixed;
 }
 .container{
     min-height: 100vw;
     width: 100%;
 }
 header{
-    position: sticky;
     background-color:#131212;
-    top:-60;
+    padding-bottom: 10px;
+    text-align: center;
 }
-.main-header{
-    text-align: center;  
-    height: 130px;
+nav li{
+    padding-left: 4px;
+    padding-right: 4px;
+    font-size: 30px;
+}
+ul.nav-links{
+    display: inline;
+    margin:0;
+    padding: 0;
 }
 nav{
-    margin-top: 5px;
-    padding-bottom: 5px;
-    position: sticky;
-    margin-left: 25px;
+    margin-top: 0px;
+    padding-bottom: 0px;
 }
 .logo-img{
-    width: 30%;
-    border-radius: 35px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 5px;
+    width: auto;
+    height: 240px;
+    margin-top: -30px;
+    margin-bottom: -30px;
 }
 nav ul li{
     display: inline-block;
+    font-family: 'Montserrat', sans-serif;  
 }
-#link0{
-    display: none;
+.menuHome:hover{
+    transform: scale(1.2);
+    transition: all 300ms;
 }
-#link1{
-    margin-left: 40px;
+.menuGenero:hover{
+    transform: scale(1.2);
+    transition: all 300ms;
 }
-h3{
+.menuPlaylist:hover{
+    transform: scale(1.2);
+    transition: all 300ms;
+}
+nav h3{
     color: white;
     text-align: center;
+    font-size: 20px;
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    text-decoration: none;
 }
 section,form{
     position: relative;
@@ -63,6 +77,9 @@ fieldset{
     padding-top: 20px;
     padding-bottom: 20px;
     width: 100%;
+}
+.espacioBuscador{
+    margin: 0px 0 0px 0;
 }
 input, button{
     width: 180px;
@@ -81,9 +98,9 @@ button{
     width: 55px;
     border: none;
 }
-.generos{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+button:hover{
+    transform: scale(1.2);
+    transition: all 300ms;
 }
 div a img:hover{
     transform: scale(1.2);
@@ -92,16 +109,25 @@ div a img:hover{
 .fotoGenero{
     height: 100%;
     width: 100%;
-    float: left;
-    background-size: cover;
     border-radius: 50px;
     padding: 25px;
 }
+.generos{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.listaIzquierda{
+    display: grid;
+    grid-template-rows: 18% 18% 18% 18% 18%;
+}
+.listaDerecha{
+    display: grid;
+    grid-template-rows: 18% 18% 18% 18% 18%;
+}
 footer{
-    position:absolute;
     width:100%;
     border-top: solid 5px #131212;
-    margin-top: 20px;
+    margin-top: 10px;
 }
 .sponsors{
     color: white;
@@ -113,7 +139,7 @@ footer{
     padding: 10px 20px;
 }
 .anclaLocal a,p{
-    font-size: 12px;
+    font-size: 90%;
     color: white;
 }
 .creditos{
@@ -126,66 +152,83 @@ footer{
 }
 #experiencia, .sponsors, .textoCreditos, .deezer{
     text-align: center;
+    font-size: 86%;
 } 
-@media (min-width:375px){
-    .main-header{
-        height: 155px;
-    }
+.fa-facebook-square:hover{
+    transform: scale(1.2);
+    transition: all 300ms;
 }
-@media (min-width:425px){
-    .main-header{
-        height: 165px;
-    }
-    .generos{
-        padding-left: 5px;
-    }
+.fa-twitter:hover{
+    transform: scale(1.2);
+    transition: all 300ms;
 }
-/*Aca termina los cimientos de Mobile, y tenemos que empezar a poner lo de Tablet. Aca empiezan a aparecer todos los Carrusels */
-@media (min-width:426px){
-    header{
-        display: block;
-        position: absolute;
-        height: 100vw;
-        width: 180px;
+.fa-instagram:hover{
+    transform: scale(1.2);
+    transition: all 300ms;
+}
+.fa-whatsapp:hover{
+    transform: scale(1.2);
+    transition: all 300ms;
+}
+@media (min-width:768px){
+    .main-header{
+        position: fixed;
+        width: 24%;
+        min-height: 100vw;
+        padding-bottom: 0;
     }
-    .logo-img{
-        width: 80%;
-        margin-bottom: 40px;
+    .logo-img {
+        width: auto;
+        height: 240px;
+        margin-top: -30px;
+        margin-bottom: -30px;
+        padding-right: 10%;
+        padding-left: 10%;
     }
-    #link0{
-        display: block;
-    }
-    #link1{
-        display: block;
-        margin-left: 0;
-    }
-    nav li{
+    .nav-links{
         margin-bottom: 30px;
     }
-    form{
-        text-align: end;
-        padding-right: 20px;
+    nav ul li{
+        display: block;
+        padding: 0;
+        margin-bottom: 8%;
+        font-size: 18px;
     }
-    .generos{
-        grid-template-rows: 1fr 1fr;
-        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    form {
+        width: 100%;
+        text-align: right;
+        padding-right: 2%;
     }
-    footer{
-        bottom: 0;
-        max-height: 80px;
+    .fotoGenero {
+        height: auto;
+        width: 100%
     }
-    .anclaLocal a,p{
-        font-size: 15px;
-    }
-    .creditos{
+    .generos {
         display: grid;
-        grid-template-columns: 2fr 1fr;
+        grid-template-columns: 36% 36%;
     }
-    .deezer img{
-        height: 85px;
+    main{
+        margin-left: 40%;
     }
-    .textoCreditos{
-        padding-top: 35px;
-        text-align: left;
+    footer {
+        width: 72%;
+        margin-left: 28%;
+    }
+}
+@media (min-width:1024px){
+    .main-header{
+        position: fixed;
+        width: 16%;
+    }
+    main {
+        margin-left: 40%;
+    }
+    .fotoGenero {
+        height: 185px;
+        width: 70%
+    }
+    footer {
+        width: 80%;
+        margin-left: 20%;
     }
 }
