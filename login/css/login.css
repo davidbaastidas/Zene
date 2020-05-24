@@ -57,6 +57,10 @@ body{
 i{
     color: white;
 }
+a{
+  text-decoration: none;
+  color: white;
+}
 /*Aca empieza el loader*/
 .loader-wrapper{
     width: 100%;

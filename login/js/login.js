@@ -1,8 +1,5 @@
-window.addEventListener("load", function(){
-    let loader = document.querySelector(".loader-wrapper");
-    loader.className += " hidden";
-})
-
+//capturo los elementos
+let loader = document.querySelector('.loader-wrapper');
 
 let registroForm = document.querySelector('.registroForm');
 
@@ -11,6 +8,28 @@ let registro = document.querySelector('.registro');
 let loginForm = document.querySelector('.loginForm');
 
 let volver = document.querySelector('.volver');
+
+let formulario = document.querySelector('.form');
+
+let usuario = document.querySelector('[name=usuario]');
+
+let contras = document.querySelector('[name=contras]');
+
+let mail = document.querySelector('[name=mail]');
+
+let aviso = document.querySelector('.aviso');
+
+let boton = document.querySelector('.boton');
+
+window.addEventListener("load", function(){
+    loader.className += " hidden";
+})
+
+formularioAtras.boton.onclick = function(){
+    if(usuario == '')
+    console.log('falta usuario');
+    
+}
 
 registro.onclick = function(){
     loginForm.style.display = "none";
