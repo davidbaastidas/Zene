@@ -1,3 +1,9 @@
+window.addEventListener("load", function(){
+   let loader = document.querySelector(".loader-wrapper")
+   loader.className += " hidden";
+   
+})
+
 const apiCharts = "https://cors-anywhere.herokuapp.com/https://api.deezer.com/chart/0"
 fetch(apiCharts)
    .then(function(data){

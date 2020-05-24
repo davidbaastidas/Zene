@@ -8,40 +8,45 @@
     <title>Login</title>
 </head>
 <body>
+    
+    <!-- forms -->
     <div class="paginaLogin">
         <div class="form">
             <form class="registroForm">
                 <div class="textbox">
                     <i class="far fa-user"></i>
-                    <input type="text" placeholder="usuario">
+                    <input type="text" name="usuario" placeholder="usuario">
                 </div>
                 <div class="textbox">
                     <i class="fas fa-lock"></i>
-                    <input type="text" placeholder="contraseña">
+                    <input type="text" name="contras" placeholder="contraseña">
                 </div>
                 <div class="textbox">
                     <i class="far fa-envelope"></i>
-                    <input type="text" placeholder="email">
+                    <input type="email" name="mail" placeholder="email">
                 </div>
                 <button>Crear</button>
-                <p class="mensaje">¿Ya sos parte de Zene?<br><strong><a href="#">Iniciar Sesion</a></strong></p>
+                <p class="mensaje">¿Ya sos parte de Zene?<br><strong><a class="volver" href="#">Iniciar Sesion</a></strong></p>
             </form>
             <form class="loginForm">
                 <div class="textbox">
                     <i class="far fa-user"></i>
-                    <input type="text" placeholder="usuario">
+                    <input type="text" name="usuario" placeholder="usuario">
                 </div>
                 <div class="textbox">
                     <i class="fas fa-lock"></i>
-                    <input type="text" placeholder="contraseña">
+                    <input type="text" name="contras" placeholder="contraseña">
                 </div>
                 <button>Iniciar Zene</button>
-                <p class="mensaje">¿No estas registrado en Zene?<strong><a href="#">Registrate</a></strong></p>
+                <p class="mensaje">¿No estas registrado en Zene?<strong><a class="registro" href="#">Registrate</a></strong></p>
             </form>
         </div>    
     </div>
 
+    <!-- loader -->
+    <div class="loader-wrapper hidden">
+        <span class="loader"><span class="loader-inner"></span></span>
+    </div>
     <script src="js/login.js"></script>
-
 </body>
 </html>
