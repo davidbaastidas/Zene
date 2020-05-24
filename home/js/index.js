@@ -20,12 +20,24 @@ fetch(apiCharts)
       console.log(infoTrack.data[0]);
       
       for(let i=0; i<5; i++){  
-         
          nameTrack.innerHTML += infoTrack.data[i].title_short + '<br>'
          nameTrackArtist.innerHTML += infoTrack.data[i].artist.name;
       }
 
       //*ARTISTAS//
+   let imagen = document.querySelector('.imgs');
+   let insider = document.querySelector('.insider');
+   
+   //No entiendo porque me aplica solo a una imagen sola
+   imagen.onmouseover = function(){
+      insider.style.display = "none";
+      imagen.style.transform = "scale(1.5)";
+   }
+   imagen.onmouseout = function (){
+      insider.style.display = "inline";
+      imagen.style.transform = "scale(1)";
+   }
+
 
       //*ALBUMS//
 
@@ -33,6 +45,8 @@ fetch(apiCharts)
    .catch(function(error){
       console.log(error)
    })
+
+
 
 
 
