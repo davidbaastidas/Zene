@@ -12,34 +12,33 @@ fetch(apiCharts)
    .then(function(datos){
 
       //*TRACKS// 
-      let nameTrack = document.querySelector(".songName");
-      let nameTrackArtist = document.querySelector(".songArtist");
-      let lista = document.querySelector('.lista')
+      let nameTrack = document.querySelector(".listSongs");
       let infoTrack = datos.tracks;
-
-      console.log(infoTrack.data[0]);
       
+console.log(infoTrack);
+
       for(let i=0; i<5; i++){  
-         nameTrack.innerHTML += infoTrack.data[i].title_short + '<br>'
-         nameTrackArtist.innerHTML += infoTrack.data[i].artist.name;
+         nameTrack.innerHTML += '<li>' + '<div>' + '<span class="number">' + infoTrack.data[i].position + '</span>' + '</div>' + '<div>' + '<span class="songName">' + infoTrack.data[i].title_short + '<br>' + '</span>' + '<span class="songArtist">' + infoTrack.data[i].artist.name + '</span>' + '</div>' + '<div>'+ '<audio class="songAudio" src="' + infoTrack.data[i].preview + '" controls>' + '</audio>' + '</div>' + '</li>'
       }
 
       //*ARTISTAS//
-   let imagen = document.querySelector('.imgs');
-   let insider = document.querySelector('.insider');
+      
    
-   //No entiendo porque me aplica solo a una imagen sola
-   imagen.onmouseover = function(){
-      insider.style.display = "none";
-      imagen.style.transform = "scale(1.5)";
-   }
-   imagen.onmouseout = function (){
-      insider.style.display = "inline";
-      imagen.style.transform = "scale(1)";
-   }
-
+   // imagen.onmouseover = function(){
+   //    insider.style.display = "none";
+   //    imagen.style.transform = "scale(1.5)";
+   // }
+   // imagen.onmouseout = function (){
+   //    insider.style.display = "inline";
+   //    imagen.style.transform = "scale(1)";
+   // }
 
       //*ALBUMS//
+      let imagen = document.querySelector("#secondSection ul");
+      
+      for(let i=0; i<10; i++){
+         imagen.innerHTML += '<li>' + '<img src="' + infoTrack.data[i].album.cover_big + '">' + '<div class="uk-position-center uk-panel">' + '<h1 class="insiderAl">'+ infoTrack.data[i].album.title + '</h1>' + '</div>' ;
+      }
 
    })
    .catch(function(error){
