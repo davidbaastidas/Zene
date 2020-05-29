@@ -25,12 +25,6 @@ window.addEventListener("load", function(){
     loader.className += " hidden";
 })
 
-formularioAtras.boton.onclick = function(){
-    if(usuario == '')
-    console.log('falta usuario');
-    
-}
-
 registro.onclick = function(){
     loginForm.style.display = "none";
     registroForm.style.display = "inherit";
