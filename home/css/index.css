@@ -109,7 +109,7 @@ button:hover{
     font-family: 'Montserrat', sans-serif;   
 }
 .insiderAl{
-    background-color: rgba(24, 22, 22, 0.856);
+    background-color: rgba(24, 22, 22, 0.6);
 }
 .chartTracks{
     margin-left: auto;
@@ -139,6 +139,9 @@ audio{
 }
 .songAudio{
     text-align: end;
+}
+.songName {
+    color: rgb(253, 253, 253);
 }
 .songArtist{
     font-size: 16px;

@@ -3,6 +3,7 @@ window.addEventListener("load", function(){
     loader.className += " hidden";
 })
 
+
 let genre = "https://cors-anywhere.herokuapp.com/https://api.deezer.com/genre"
 fetch (genre)
     .then(function(response){
@@ -12,16 +13,15 @@ fetch (genre)
         
         console.log(datos.data);
         
-        let genres = datos.data
+        let genres = datos.data;
         let lista = document.querySelector (".generos");
 
-        genres.forEach (function(listaGeneros){
-            lista.innerHTML += '<li>' + listaGeneros.name + '</li>' ;
-
-        })
-
+        for (let i=1; i<genres.length; i++){
+            lista.innerHTML += '<li class="listas">' + '<div>' + '<a  href=generoDetalle2.html?id="' + genres[i].id + '">' + '<img class="fotoGenero" src="' + genres[i].picture_xl + '">' + '</div>' + '<h3 class="genreTitle">' + genres[i].name + '</h3>' + '</li>' ;
+        }
 
     })
     .catch(function(error){
         console.log(error);
     })
+

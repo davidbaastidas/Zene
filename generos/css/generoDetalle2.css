@@ -113,10 +113,13 @@ main{
     gap: 2%;
     margin-left: 5%;
 }
+.photoGenre{
+    margin-left: auto;
+    margin-right: auto;
+}
 .imageGenre{
     width: 75%;
     height: auto;
-    margin-left: 15%;
     padding-top: 2%;
 }
 .generoTipo{
