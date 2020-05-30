@@ -14,7 +14,7 @@ let apiChartTracks = "https://cors-anywhere.herokuapp.com/https://api.deezer.com
          let infoArtist = datos.artists;
       
          for(let i=0; i<10; i++){
-         imagenAr.innerHTML += '<li>' + '<img src="' + infoArtist.data[i].picture_big + '">' + '<div class="uk-position-center uk-panel">' + '<h1 class="insiderAl">'+ infoArtist.data[i].name + '</h1>' + '</div>'
+            imagenAr.innerHTML += '<li>' + '<a href=../artist/artist.html?id=' + infoArtist.data[i].id + '>' + '<img src="' + infoArtist.data[i].picture_big + '">' + '</a>' + '<div class="uk-position-center uk-panel">' +'<h1 class="insiderAl">'+ infoArtist.data[i].name + '</h1>' + '</div>' + '</li>'
          }
 
          //*TRACKS// 
@@ -31,7 +31,7 @@ let apiChartTracks = "https://cors-anywhere.herokuapp.com/https://api.deezer.com
          let imagenAl = document.querySelector("#secondSection ul");
       
          for(let i=0; i<10; i++){
-         imagenAl.innerHTML += '<li>' + '<img src="' + infoTrack.data[i].album.cover_big + '">' + '<div class="uk-position-center uk-panel">' + '<h1 class="insiderAl">'+ infoTrack.data[i].album.title + '</h1>' + '</div>'
+         imagenAl.innerHTML += '<li>' + '<img src="' + infoTrack.data[i].album.cover_big + '">' + '<div class="uk-position-center uk-panel">' + '<h1 class="insiderAl">'+ infoTrack.data[i].album.title + '</h1>' + '</div>' + '</li>'
          }
       })
       .catch(function(error){
