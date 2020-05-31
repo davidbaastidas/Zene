@@ -65,7 +65,9 @@ nav h3{
     text-decoration: none;
 }
 main{
-    display: grid;
+    margin-left: 1%;
+}
+.resultado img {
     margin-left: 10%;
 }
 .resultado h1{
@@ -74,18 +76,16 @@ main{
     padding-top: 5%;
     margin-left: 2%;
 }
-.resultado h2{
+.resultado h2 {
+    font-size: 100%;
+    color: white;
+    height: 0px;
+    margin-left: 26%;
+}
+.resultado h3 {
     font-size: 80%;
     color: white;
-    margin-left: 10%;
-}
-.resultado h3{
-    font-size: 80%;
-    color: white;
-    margin-left: 10%;
-}
-.resultado img{
-    margin-left: 30%;
+    margin-left: 37%;
 }
 footer{
     width:100%;
@@ -216,31 +216,15 @@ footer{
     }
 }
 /*Aca termina el loader*/
-@media (min-width:426px){
-    .fotoAlbum{
-        width: 100%;
-        padding: 5% 10%;
+
+@media (min-width:375px){
+    main {
+        margin-left: 10%;
     }
-    #firstSection{
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-    }
-    #info{
-        padding-top: 10%;
-    }
-    #albumsRelacionados div{
-        text-align: center;
-    }
-    .listenNow{
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: 1fr;
-    }
-    .listenNow img{
-        width:100%;
-    }
-    footer{
-        margin-top: 5%;
+}
+@media (min-width:425px){
+    main {
+        margin-left: 15%;
     }
 }
 /*Aca termina los cimientos de Mobile*/
@@ -252,18 +236,19 @@ footer{
         margin-left: 2%;
     }
     .resultado h2{
-        font-size: 100%;
+        font-size: 133%;
         color: white;
-        margin-left: 10%;
+        margin-left: 31%;
     }
     .resultado h3{
         font-size: 100%;
         color: white;
-        margin-left: 10%;
+        margin-left: 41%;
     }
     .resultado img{
         width: 20%;
         width: auto;
+        margin-left: 27%;
     }
     .main-header{
         position: fixed;
@@ -329,6 +314,16 @@ footer{
     }
     main{
         margin-left: 20%;
+    }
+    .resultado h3 {
+        font-size: 100%;
+        color: white;
+        margin-left: 31%;
+    }
+    .resultado h2 {
+        font-size: 133%;
+        color: white;
+        margin-left: 28%;
     }
     .seguir{
         width: 7%;
