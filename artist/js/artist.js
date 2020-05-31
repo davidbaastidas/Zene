@@ -37,7 +37,7 @@ fetch(urlParte2)
         let infoTrack = cambio.data;
 
         for(let i=0; i<5; i++){  
-            modificacionCancion.innerHTML += '<li>' + '<div>' + '<span>' + '<a class="songName" href=../tracks/tracks.html?id=' + infoTrack[i].id + '>' + infoTrack[i].title_short + '</a>' + '</span>' + '<br>' + '<span>' + '<a class="songArtist" href=../tracks/tracks.html?id=' + infoTrack[i].id + '>' + infoTrack[i].artist.name + '</span>' + '</div>' + '<div>' + '<audio class="songAudio" src=' + infoTrack[i].preview + ' controls>' + '</audio>' + '</div>' + '</li>'
+            modificacionCancion.innerHTML += '<li>' + '<div>' + '<span>' + '<a class="songName" href=../tracks/tracks.html?id=' + infoTrack[i].id + '>' + infoTrack[i].title_short + '</a>' + '</span>' + '<br>' + '<span>' + '<a class="songArtist" href=../tracks/tracks.html?id=' + infoTrack[i].id + '>' + infoTrack[i].artist.name + '</span>' + '</div>' + '<div>' + '<audio class="songAudio" src=' + infoTrack[i].preview + ' controls>' + '</audio>' + '</div>' + '<div>' + '<a class="songPlaylist" href=../playlist/playlist.html?id=' + infoTrack[i].id + '>' + '<button class="buttonAdd">' + '+' + '</button>' + '</a>' + '</div>' + '</li>'
         }
 
     })

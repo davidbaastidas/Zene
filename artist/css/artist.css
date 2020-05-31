@@ -148,8 +148,15 @@ h3.insider{
     border-bottom: 1px solid #dfe1ea;
     color: rgb(253, 253, 253);
     display: grid;
-    grid-template-columns: 0.25fr 2fr 1fr;
+    grid-template-columns:  55% 30% 9%;
     margin-top: 5px;
+    gap: 1%
+}
+.songName{
+    font-size: 79%;
+}
+.songArtist{
+    font-size: 79%;
 }
 .number{
     text-align: center;
@@ -167,6 +174,11 @@ span{
 }
 .songAudio{
     text-align: end;
+    width: 95%;
+}
+.buttonAdd{
+    width: 135%;
+    margin-top: 45%;
 }
 audio{
     width: 100%;
@@ -180,6 +192,10 @@ audio{
 .fotoAlbumCarrusel{
     height: 180px;
     width: 100%;
+}
+.uk-panel>:last-child {
+    margin-bottom: 0;
+    font-size: 100%;
 }
 footer{
     width:100%;
