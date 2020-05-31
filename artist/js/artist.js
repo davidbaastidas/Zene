@@ -4,46 +4,62 @@ window.addEventListener("load", function(){
 })
 
 let modificacionArriba = document.querySelector('#infoArtista');
-let modificacionCanciones = document.querySelector('.cancionesPopulares')
-let modificacionAlbum = document.querySelector('#albumArtist');
+let modificacionCancion = document.querySelector('.listSongs')
+let modificacionAlbum = document.querySelector('#albumArtist ul');
 
-// let queryString = location.href; 
-// console.log(queryString);
-
-// let searchParams = new URLSearchParams(queryString); 
-// console.log(searchParams);
-
-// let search = searchParams.get('search');
-// console.log(search);
+let queryString = location.search;
+let hrefParams = new URLSearchParams (queryString);
+let idArtista = hrefParams.get('id')
 
 
-// let infoTrack = datos.tracks;
+let urlParte1 = "https://cors-anywhere.herokuapp.com/https://api.deezer.com/artist/" + idArtista;
 
-
-// let art = "https://api.deezer.com/artist/" + 
-
-
-// let queryString = location.href;
-// let hrefParams = new URLSearchParams (queryString)
-
-let infoTrack = datos.tracks;
-
-let url = "https://cors-anywhere.herokuapp.com/https://api.deezer.com/artist/" + infoTrack.data[i].artist.id;
-
-fetch(url)
+fetch(urlParte1)
     .then(function(response){
         return response.json();
     })
     .then(function(datos){
+
+        modificacionArriba.innerHTML += '<h1 id="title">' + datos.name + '</h1>' + '<img class="artista" src="' + datos.picture_medium + '" alt="fotoArtista">'
+    })
+    .catch(function(error){
+        console.log(error);
+})
+
+let urlParte2 = "https://cors-anywhere.herokuapp.com/https://api.deezer.com/artist/" + idArtista + "/top"
+
+fetch(urlParte2)
+    .then(function(response){
+        return response.json();
+    })
+    .then(function(cambio){
         
-        console.log(datos);
+        let infoTrack = cambio.data;
 
+        for(let i=0; i<5; i++){  
+            modificacionCancion.innerHTML += '<li>' + '<div>' + '<span>' + '<a class="songName" href=../tracks/tracks.html?id=' + infoTrack[i].id + '>' + infoTrack[i].title_short + '</a>' + '</span>' + '<br>' + '<span>' + '<a class="songArtist" href=../tracks/tracks.html?id=' + infoTrack[i].id + '>' + infoTrack[i].artist.name + '</span>' + '</div>' + '<div>' + '<audio class="songAudio" src=' + infoTrack[i].preview + ' controls>' + '</audio>' + '</div>' + '</li>'
+        }
 
-        // let resultado = datos.artists;
+    })
+    .catch(function(error){
+        console.log(error);
+})
 
-        // resultado.forEach(function(resultado){
-        //     modificacionArriba.innerHTML += '<h1 id="title">' + resultado.name + '</h1>' + '<img src="' + resultado.picture_medium + '">'
-        // });
+let urlParte3 = "https://cors-anywhere.herokuapp.com/https://api.deezer.com/artist/" + idArtista + "/albums"
+
+fetch(urlParte3)
+    .then(function(response){
+        return response.json();
+    })
+    .then(function(album){
+
+        console.log(album)
+        let infoTrack = album.data;
+        
+        for(let i=0; i<5; i++){
+            modificacionAlbum.innerHTML += '<li>' + '<a href=../album/album.html?id=' + infoTrack[i].id + '>' + '<img src="' + infoTrack[i].cover_big + '">' + '<div class="uk-position-center uk-panel">' + '<h1 class="insiderAl">'+ infoTrack[i].title + '</h1>' + '</div>' + '</li>'
+        }
+
     })
     .catch(function(error){
         console.log(error);
