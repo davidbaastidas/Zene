@@ -345,9 +345,6 @@ footer{
 }
 /*Aca termina los cimientos de Mobile*/
 @media (min-width:600px){
-    #title{
-        margin-top:5%;
-    }
     .artista{
         max-width: 260px;
     }
@@ -357,6 +354,26 @@ footer{
     }
 }
 @media (min-width:768px){
+    main{
+        margin-left: 25%;
+    }
+    #infoArtista{
+        height: 55px;
+    }
+    .artista {
+        max-width: 260px;
+        margin-left: 28%;
+    }
+    .buttonAdd {
+        margin-top: 27%;
+    }
+    #title{
+        padding-top: 0%;
+        margin-left: 0%;
+    }
+    .cancionesPopulares{
+        margin-top: 47%;
+    }
     .main-header{
         position: fixed;
         width: 24%;
@@ -370,9 +387,6 @@ footer{
         margin-bottom: -30px;
         padding-right: 10%;
         padding-left: 10%;
-    }
-    main{
-        margin-left: 25%;
     }
     .nav-links{
         margin-bottom: 30px;
@@ -428,15 +442,21 @@ footer{
         margin-left: 20%;
     }
     #title{
-        padding-top: 10%;
+        padding-top: 0%;
         font-size: 34px;
+    }
+    .cancionesPopulares {
+        margin-top: 33%;
+    }
+    .buttonAdd {
+        margin-top: 18%;
     }
     #albumArtist {
         margin-top:8%;
     }    
     .artista{
         max-width: 30%;
-        margin-left: 8%;
+        margin-left: 36%;
     }
     footer{
         width: 72%;
