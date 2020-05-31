@@ -311,7 +311,7 @@ footer{
 @media (min-width:1024px){
     .main-header{
         position: fixed;
-        width: 18%;
+        width: 16%;
     }
     main{
         margin-left: 20%; 
