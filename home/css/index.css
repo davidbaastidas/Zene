@@ -322,6 +322,13 @@ footer{
     #experiencia,.sponsors{
         font-size: 16px;
     }
+    .anclaLocal a,p{
+        font-size: 20px;
+        color: white;
+    }
+    .anclaLocal .ruta{
+        font-size: 16px;
+    }
 }
 /*Aca termina los cimientos de Tablet*/
 @media (min-width: 1240px){
