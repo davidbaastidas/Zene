@@ -132,6 +132,13 @@ main{
     margin-right: 10%;
     margin-top: 7%;
 }
+li a, p{
+    color: white;
+}
+.listaRes{
+    list-style-type: none;
+    color: red;
+}
 .listaGenero p{
     border-style: solid;
     border-width: 2px;

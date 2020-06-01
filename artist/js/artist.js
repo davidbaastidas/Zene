@@ -9,7 +9,7 @@ let modificacionAlbum = document.querySelector('#albumArtist ul');
 
 let queryString = location.search;
 let hrefParams = new URLSearchParams (queryString);
-let idArtista = hrefParams.get('id')
+let idArtista = hrefParams.get('id');
 
 
 let urlParte1 = "https://cors-anywhere.herokuapp.com/https://api.deezer.com/artist/" + idArtista;

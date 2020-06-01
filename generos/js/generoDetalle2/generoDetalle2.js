@@ -3,36 +3,47 @@ window.addEventListener("load", function(){
     loader.className += " hidden";
 })
 
-let queryString = location.search; 
-let queryStringObj = new URLSearchParams(queryString);
-let id = queryStringObj.get('id');
-console.log(id);
+let modificacionFoto = document.querySelector('.fotoRes');
+let modificacionNombre = document.querySelector('.nombreRes')
+let modificacionLista = document.querySelector('.listaRes')
 
+let queryString = location.search;
+let hrefParams = new URLSearchParams (queryString);
+let idGenero = hrefParams.get('id');
 
-let proxy = 'https://cors-anywhere.herokuapp.com/'
-let url = proxy + 'https://api.deezer.com/genre/'
-fetch(url + id)
-    // .then(function(response){
-    //     return response.json();
-    // })
-    // .then(function(information){
+let urlParte1 = "https://cors-anywhere.herokuapp.com/https://api.deezer.com/genre/" + idGenero;
 
-    //     console.log(information);
-       
-    //     let titulo = information.name;
-
-    //     console.log(titulo);
-
-    //     let detalleGeneros = document.querySelector(".tituloGenero")
+fetch(urlParte1)
+    .then(function(response){
+        return response.json();
+    })
+    .then(function(datos){
         
-    //     for (let i=0; i<datos.length;i++){
-    //         detalle.innerHTML += '<div class="photoGenre">' + '<img class="imageGenre" src="' + datos.pic + '">' + '</div>' + '<h1 class="generoTipo">' + datos.name +'</h1>';
-    //     }
-        
-       
-        
+        modificacionFoto.innerHTML += '<img class="imageGenre" src="' + datos.picture_medium + '" alt="fotoGenero">'
 
-    // })
-    // .catch(function(error){
-    //     console.log(error);
-    // })
+        modificacionNombre.innerHTML += '<h1 class="generoTipo">' + 'Género: ' + datos.name + '</h1>'
+    })
+    .catch(function(error){
+        console.log(error);
+})
+
+let urlParte2 = "https://cors-anywhere.herokuapp.com/https://api.deezer.com/genre/" + idGenero + "/artists";
+
+fetch(urlParte2)
+    .then(function(response){
+        return response.json();
+    })
+    .then(function(datos){
+
+        let infoGenre = datos.data;
+
+        console.log(datos)
+        
+        for(let i=0; i<25; i++){  
+            modificacionLista.innerHTML += '<li>' + '<a href="../artist/artist.html?id=' + infoGenre[i].id + '">' + '<p>' + infoGenre[i].name + '</p>' + '</a>' + '</li>'
+        }
+
+    })
+    .catch(function(error){
+        console.log(error);
+})
