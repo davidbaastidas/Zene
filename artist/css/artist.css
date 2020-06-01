@@ -418,7 +418,14 @@ footer{
         margin-left: 28%;
     }
     .anclaLocal a,p{
-        font-size: 15px;
+        font-size: 92%;
+        color: white;
+    }
+    .sponsors a{
+        font-size: 20px;
+    }
+    .anclaLocal .ruta{
+        font-size: 16px;
     }
     .creditos{
         display: grid;
