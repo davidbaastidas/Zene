@@ -103,8 +103,13 @@ button:hover{
     color: ivory;
     font-family: 'Montserrat', sans-serif;
 }
+.fans{
+    color: rgba(245, 245, 245, 0.61);
+    font-family: 'Montserrat', sans-serif;
+    margin-top: 2%;
+}
 #title{
-    margin-top: 8%;
+    margin-top: 5%;
     font-size: 30px;
     letter-spacing: 1px;
 }
@@ -115,11 +120,12 @@ button:hover{
     max-width: 50%;
     border-radius: 60%;  
 }
+.songTrack{
+    padding-top: 2%;
+}
 a.songName{
     color: white;
-}
-a.songArtist{
-    color: white;
+    font-size: 80%;
 }
 img.artist:hover{
     transform: scale(1.2);
@@ -131,16 +137,17 @@ img.artist:hover{
 }
 .titulos,span{
     color: ivory;
-    margin-top: 8%;
+    margin-top: 5%;
     margin-bottom: 4%;
     font-family: 'Montserrat', sans-serif;
 }
 .titulos{
     text-align: center;
 }
-h3.insider{
+.insiderAl{
     color: ivory;
-    font-size: 100%;
+    text-align: center;
+    background-color: rgba(24, 22, 22, 0.6);
     font-family: 'Montserrat', sans-serif;
 }
 .chartTracks{
@@ -158,8 +165,8 @@ h3.insider{
     margin-top: 5px;
     gap: 1%
 }
-.songName{
-    font-size: 79%;
+#selectedSong{
+    padding-left: 0;
 }
 .songArtist{
     font-size: 79%;
@@ -184,7 +191,11 @@ span{
 }
 .buttonAdd{
     width: 135%;
-    margin-top: 45%;
+    height: 40px;
+}
+.add{
+    padding-bottom: 8px;
+    padding-top: 8px;
 }
 audio{
     width: 100%;
@@ -336,14 +347,6 @@ footer{
     .artista{
         max-width: 240px;
         height: auto;
-        float: left;
-        margin-left: 5%;
-    }
-    #title{
-        padding-top: 15%;
-    }
-    .cancionesPopulares .titulos{
-        margin-top: 20%;
     }
     .fotoAlbumCarrusel{
         height: 200px;
@@ -356,7 +359,6 @@ footer{
     }
     .cancionesPopulares .titulos{
         font-size: 30px;
-        margin-top: 15%;
     }
 }
 @media (min-width:768px){
@@ -368,10 +370,6 @@ footer{
     }
     .artista {
         max-width: 260px;
-        margin-left: 28%;
-    }
-    .buttonAdd {
-        margin-top: 27%;
     }
     #title{
         padding-top: 0%;
@@ -448,21 +446,16 @@ footer{
         margin-left: 20%;
     }
     #title{
-        padding-top: 0%;
         font-size: 34px;
     }
     .cancionesPopulares {
         margin-top: 33%;
-    }
-    .buttonAdd {
-        margin-top: 18%;
     }
     #albumArtist {
         margin-top:8%;
     }    
     .artista{
         max-width: 30%;
-        margin-left: 36%;
     }
     footer{
         width: 72%;
@@ -488,7 +481,7 @@ footer{
     #albumArtist {
         margin-top:4%;
     }
-    .cancionesPopulares .titulos,.titulos{
+    .cancionesPopulares,.titulos{
         font-size: 34px;
     }
 }
@@ -504,7 +497,7 @@ footer{
     #title{
         font-size: 60px;
     }
-    .cancionesPopulares .titulos,.titulos{
+    .cancionesPopulares, .titulos{
         font-size: 40px;
     }
 }

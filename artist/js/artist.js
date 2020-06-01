@@ -11,7 +11,6 @@ let queryString = location.search;
 let hrefParams = new URLSearchParams (queryString);
 let idArtista = hrefParams.get('id');
 
-
 let urlParte1 = "https://cors-anywhere.herokuapp.com/https://api.deezer.com/artist/" + idArtista;
 
 fetch(urlParte1)
@@ -20,7 +19,7 @@ fetch(urlParte1)
     })
     .then(function(datos){
 
-        modificacionArriba.innerHTML += '<h1 id="title">' + datos.name + '</h1>' + '<img class="artista" src="' + datos.picture_medium + '" alt="fotoArtista">'
+        modificacionArriba.innerHTML += '<h1 id="title">' + datos.name + '</h1>' + '<img class="artista" src="' + datos.picture_medium + '" alt="fotoArtista">' + '<h4 class="fans">' + 'Seguidores: ' + datos.nb_fan + '</h4>'
     })
     .catch(function(error){
         console.log(error);
@@ -37,7 +36,7 @@ fetch(urlParte2)
         let infoTrack = cambio.data;
 
         for(let i=0; i<5; i++){  
-            modificacionCancion.innerHTML += '<li>' + '<div>' + '<span>' + '<a class="songName" href=../tracks/tracks.html?id=' + infoTrack[i].id + '>' + infoTrack[i].title_short + '</a>' + '</span>' + '<br>' + '<span>' + '<a class="songArtist" href=../tracks/tracks.html?id=' + infoTrack[i].id + '>' + infoTrack[i].artist.name + '</span>' + '</div>' + '<div>' + '<audio class="songAudio" src=' + infoTrack[i].preview + ' controls>' + '</audio>' + '</div>' + '<div>' + '<a class="songPlaylist" href=../playlist/playlist.html?id=' + infoTrack[i].id + '>' + '<button class="buttonAdd">' + '+' + '</button>' + '</a>' + '</div>' + '</li>'
+            modificacionCancion.innerHTML += '<li>' + '<div class="songTrack">' + '<span id="selectedSong">' + '<a class="songName" href=../tracks/tracks.html?id=' + infoTrack[i].id + '>' + infoTrack[i].title_short + '</a>' + '</div>' + '<div>' + '<audio class="songAudio" src=' + infoTrack[i].preview + ' controls>' + '</audio>' + '</div>' + '<div class="add">' + '<a class="songPlaylist" href=../playlist/playlist.html?id=' + infoTrack[i].id + '>' + '<button class="buttonAdd">' + '+' + '</button>' + '</a>' + '</div>' + '</li>'
         }
 
     })

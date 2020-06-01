@@ -3,7 +3,7 @@ window.addEventListener("load", function(){
     loader.className += " hidden";
 })
 
-let modificacionFoto = document.querySelector('.fotoRes');
+let modificacionFoto = document.querySelector('.photoGenre');
 let modificacionNombre = document.querySelector('.nombreRes')
 let modificacionLista = document.querySelector('.listaRes')
 
@@ -34,12 +34,9 @@ fetch(urlParte2)
         return response.json();
     })
     .then(function(datos){
-
         let infoGenre = datos.data;
-
-        console.log(datos)
         
-        for(let i=0; i<25; i++){  
+        for(let i=0; i<10; i++){  
             modificacionLista.innerHTML += '<li>' + '<a href="../artist/artist.html?id=' + infoGenre[i].id + '">' + '<p>' + infoGenre[i].name + '</p>' + '</a>' + '</li>'
         }
 
