@@ -268,17 +268,25 @@ footer{
 }
 /*Aca termina el loader*/
 @media (min-width:768px){
+    .container{
+        position: relative;
+    }
     .main-header{
         position: fixed;
         width: 24%;
         min-height: 100vw;
         padding-bottom: 0;
     }
+    main{
+        margin-left: 25%;
+    }
     .logo-img {
         width: auto;
-        height: auto;
-        padding-right: 10%;
+        height: 240px;
+        margin-top: 0px;
+        margin-bottom: -30px;
         padding-left: 10%;
+        padding-right: 10%;
     }
     .nav-links{
         margin-bottom: 30px;
@@ -289,25 +297,45 @@ footer{
         margin-bottom: 8%;
         font-size: 18px;
     }
-    form {
-        width: 100%;
-        text-align: right;
-        padding-right: 2%;
+    form{
+        text-align: end;
+        padding-right: 20px;
     }
-    .generos{
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: auto;
+    .tituloGenero {
+        display: grid;
+        grid-template-columns: 30% 65%;
+        gap: 2%;
+        margin-left: 5%;
     }
-    .fotoGenero {
-        height: auto;
-        width: 100%
+    .listaGenero{
+        margin-top: 5%;
     }
-    main{
-        margin-left: 25%;
-    }
-    footer {
+    footer{
+        bottom: 0;
         width: 72%;
         margin-left: 28%;
+        margin-top: 3%;
+    }
+    .anclaLocal a,p{
+        font-size: 92%;
+        color: white;
+    }
+    .sponsors a{
+        font-size: 20px;
+    }
+    .anclaLocal .ruta{
+        font-size: 16px;
+    }
+    .creditos{
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+    }
+    .deezer img{
+        height: 85px;
+    }
+    .textoCreditos{
+        padding-top: 35px;
+        text-align: left;
     }
 }
 @media (min-width:1024px){

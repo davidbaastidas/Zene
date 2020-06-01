@@ -331,6 +331,10 @@ footer{
         margin-top: 3%;
     }
     .anclaLocal a,p{
+        font-size: 20px;
+        color: white;
+    }
+    .anclaLocal .ruta{
         font-size: 15px;
     }
     .creditos{
