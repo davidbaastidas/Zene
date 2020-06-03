@@ -12,7 +12,7 @@ html,body{
     background-attachment: fixed;
 }
 .container{
-    min-height: 100vw;
+    height: auto;
     width: 100%;
 }
 header{
@@ -99,8 +99,9 @@ button:hover{
     transform: scale(1.2);
     transition: all 300ms;
 }
-#nameArtist, #genreArtist,#fecha,#masInfo{
+#nameAlbum,#artName,#artistName,#genreArtist,#fecha,#masInfo{
     color: ivory;
+    text-decoration: none;
     text-align: center;
     font-family: 'Montserrat', sans-serif;
     margin-top: 10px;
@@ -114,35 +115,62 @@ button:hover{
     text-align: center;
     width:70%;
 }
-#selectedAlbum{
-    text-align:center;
+.data ,#genre{
+    color: whitesmoke;
+    font-family: 'Montserrat', sans-serif;
+    text-decoration: none;
 }
-.fotoAlbum{
-    width: 90%;
-}
-#albumsRelacionados{
+#trackList{
     margin-right: 2%;
-    padding-left: 2%;
+    margin-left: 2%;
 }
-#albumsRelacionados h2{
+.listSongs{
+    padding: 5px 20px;
+    padding-left: 30px;
+}
+.listSongs li{
+    border-bottom: 1px solid #dfe1ea;
+    color: rgb(253, 253, 253);
+    margin-top: 5px;
+    gap: 1%
+}
+.chartTracks{
+    margin-left: auto;
+    margin-right: auto;
+}
+#selectedSong{
+    padding-left: 0;
+}
+a.songName{
+    color: white;
+    font-size: 80%;
+}
+#trackList h2{
     color: ivory;
     text-align: center;
     font-size: 25px;
     font-family: 'Montserrat', sans-serif;
-    margin-top: 20px;
+    margin-top: 15px;
+    margin-bottom: 0;
 }
-.listenNow{
-    display: grid;
-    grid-template-rows: 1fr 1fr 1fr;
-    gap: 2%;
-    text-align: center;
+.songAudio{
+    text-align: end;
+    width: 95%;
+    height: 45px;
 }
-.listenNow img{
-    border-radius: 20%;
-    width: 70%;
+.buttonAdd{
+    width: 135%;
+    height: 30px;
 }
-.video{
-    display: none;
+.add{
+    padding-bottom: 8px;
+    padding-top: 8px;
+}
+audio{
+    width: 100%;
+    height: 60px;
+    padding-bottom: 8px;
+    padding-top: 8px;
 }
 footer{
     width:100%;
@@ -283,18 +311,7 @@ footer{
         grid-template-columns: 1fr 1fr;
     }
     #info{
-        padding-top: 10%;
-    }
-    #albumsRelacionados div{
-        text-align: center;
-    }
-    .listenNow{
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: 1fr;
-    }
-    .listenNow img{
-        width:100%;
+        padding-top: 5%;
     }
     footer{
         margin-top: 5%;
@@ -394,11 +411,6 @@ footer{
         display: grid;
         grid-template-rows: 0.5 auto;
         padding-top: 4%;
-    }
-    .video{
-        display: inline;
-        margin-left: auto;
-        margin-right: auto;
     }
 }
 @media (min-width:2560px){

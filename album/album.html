@@ -20,7 +20,6 @@
     <div class="container">
         
         <!-- header -->
-        <!-- header -->
         <header class="main-header">
             <a href="../home/index.html"><img class="logo-img" src="../logo.png" alt="Zene"></a>
             <nav>           
@@ -42,48 +41,24 @@
         
         <!-- main -->
         <main>
-            <a id="anclaArriba"></a>
             <section id="firstSection">
-                <div id="selectedAlbum">
-                    <img class="fotoAlbum" src="imagenes/Future nostalgia.jpg" alt="">
-                </div>
-                <div id="info" >
-                    <div class="informacion">
-                        <h3 id="nameArtist">Future Nostalgia</h4>
-                        <h5 id="genreArtist">Dua Lipa // Dance-Pop</h5>
-                        <h5 id="fecha"><span id="release" uk-icon="calendar">
-                        </span> Lanzamiento<br>27 de Marzo del 2020</h5>
-
+                <div id="selectedAlbum"></div>
+                    <div id="info">
+                        <div class="informacion"></div>
                         <div id="masInfo">
-                        <button class="uk-button" type="button" uk-toggle="target: #offcanvas-flip">+ Detalles</button>
+                            <button class="uk-button" type="button" uk-toggle="target: #offcanvas-flip">+ Detalles</button>
                             <div id="offcanvas-flip" uk-offcanvas="flip: true; overlay: true"> 
-                                <div class="uk-offcanvas-bar">
-                                    <button class="uk-offcanvas-close" type="button" uk-close></button>
-                                    <p>Discográfica:	Warner Records</p>
-                                    <p>Productor(es): Jeff Bhasker, Lorna Blackwood, Lauren D'Elia, Danja, Jason Evigan, Ian Kirkpatrick, SG Lewis, Skylar Mones, The Monsters and the Strangerz, Stuart Price, Gian Stone, TMS y Watt</p>
-
-                                </div>
+                                <div class="uk-offcanvas-bar"></div>
                             </div>
                         </div>
                     </div>
-
-                    <section class="video">
-                        <iframe src="https://player.vimeo.com/video/388652527?title=0&byline=0&portrait=0" width="680" height="400" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
-                    </section> 
-
-                </div>
-
-
-                
             </section>
-
-            <section id="albumsRelacionados">
-                <h2>Albums relacionados</h2>
-                <div class="generos">
-                    <div class="listenNow">
-                        <div><a href=""><img src="imagenes/Dua Lipa.jpg" alt=""></a></div>
-                        <div><a href=""><img src="imagenes/Future nostalgia.jpg" alt=""></a></div>
-                        <div><a href=""><img src="imagenes/Live acustic.jpg" alt=""></a></div>
+            <section id="trackList">
+                <h2>Track List</h2>
+                <div class="chartTracks">
+                    <ol class="listSongs">
+                        
+                    </ol>    
                 </div>
             </section>
 
@@ -94,7 +69,7 @@
             <div class="anclaLocal">
                 <p id="experiencia">Compartí tu experiencia Zene</p>
                 <p class="sponsors"><a href="https://www.facebook.com/david.bastidas.5458498/timeline#_"><i class="fab fa-facebook-square"></i></a><a href="https://twitter.com/MusicZene"><i class="fab fa-twitter"></i></a><a href="https://www.instagram.com/zenedesarrolladores/"><i class="fab fa-instagram"></i></a><a href="https://web.whatsapp.com/"><i class="fab fa-whatsapp"></i></a></p>
-                <a class="ruta" href="#anclaArriba" style="text-decoration: none">Volver arriba</a> <br>
+                <a class="ruta" href="#firstSection" style="text-decoration: none">Volver arriba</a> <br>
             </div>
             <div class="creditos">
                 <div class="textoCreditos">
@@ -111,6 +86,7 @@
     <div class="loader-wrapper hidden">
         <span class="loader"><span class="loader-inner"></span></span>
     </div>
+
     <script src="js/album.js"></script>
 </body>
 </html>

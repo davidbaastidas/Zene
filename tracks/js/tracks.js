@@ -25,7 +25,6 @@ fetch(url)
 
        otherInf.innerHTML += '<div id="audio">' + '<audio class="songAudio" src=' + datos.preview + ' controls>' + '</audio>' + '</div>';
 
-
     })
     .catch(function(error){
 
