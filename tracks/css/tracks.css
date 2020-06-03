@@ -364,6 +364,9 @@ footer{
 }
 /*Aca termina los cimientos de Tablet*/
 @media (min-width:1024px){
+    .container{
+        min-height: 67vw;
+    }
     .main-header{
         width: 16%;
     }
