@@ -99,12 +99,17 @@ button:hover{
     transform: scale(1.2);
     transition: all 300ms;
 }
+#likeArt,#buttonLike{
+    color: navy;
+    margin: 0;
+    text-align: center;
+}
 #infoArtista h1,h2,#title{
     color: ivory;
     font-family: 'Montserrat', sans-serif;
 }
-.fans{
-    color: rgba(245, 245, 245, 0.61);
+.fans,#like,svg{
+    color: rgba(245, 245, 245, 0.801);
     font-family: 'Montserrat', sans-serif;
     margin-top: 2%;
     margin-bottom: 2%;
@@ -117,17 +122,17 @@ button:hover{
 #infoArtista{
     text-align: center;
 }
-
 .artista{
-    max-width: 50%;
-    border-radius: 60%;  
+    width: 70%;
+    border-radius: 40%;  
 }
 .songTrack{
-    padding-top: 12px;
+    padding-top: 15px;
 }
-a.songName{
+#songName,#selectedSong{
     color: white;
-    font-size: 70%;
+    font-size: 95%;
+    text-decoration: none;
 }
 img.artist:hover{
     transform: scale(1.2);
@@ -139,7 +144,7 @@ img.artist:hover{
 }
 .titulos,span{
     color: ivory;
-    margin-top: 5%;
+    margin-top: 4%;
     margin-bottom: 4%;
     font-family: 'Montserrat', sans-serif;
 }
@@ -350,8 +355,13 @@ footer{
 /*Aca termina el loader*/
 @media (min-width:426px){
     .artista{
-        max-width: 240px;
-        height: auto;
+        width: 80%;
+        padding: 5% 5%;
+        padding-top:0;
+    }
+    #info{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
     }
     .fotoAlbumCarrusel{
         height: 200px;
@@ -359,29 +369,21 @@ footer{
 }
 /*Aca termina los cimientos de Mobile*/
 @media (min-width:600px){
-    .artista{
-        max-width: 260px;
-    }
     .cancionesPopulares .titulos{
         font-size: 30px;
+        margin-top: 10px;
     }
 }
 @media (min-width:768px){
     main{
         margin-left: 25%;
     }
-    #infoArtista{
-        height: 55px;
-    }
     .artista {
-        max-width: 260px;
+        max-width: 100%;
     }
     #title{
         padding-top: 0%;
         margin-left: 0%;
-    }
-    .cancionesPopulares{
-        margin-top: 47%;
     }
     .main-header{
         position: fixed;
@@ -413,12 +415,8 @@ footer{
     input{
         width: 18%;
     }
-    .artista{
-        float: left;
-        padding: 2%;
-    }
-    .fans{
-        padding-top: 5%;
+    .artista{  
+        text-align: center;
     }
     #albumArtist{
         margin: 8% 5%;
@@ -467,15 +465,9 @@ footer{
     #title{
         font-size: 34px;
     }
-    .cancionesPopulares {
-        margin-top: 33%;
-    }
     #albumArtist {
         margin-top:8%;
     }    
-    .artista{
-        max-width: 30%;
-    }
     footer{
         width: 72%;
         margin-left: 24%;

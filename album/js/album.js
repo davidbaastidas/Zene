@@ -20,13 +20,12 @@ fetch(url)
     let main2 = document.querySelector('.informacion');
     let detalle = document.querySelector('.uk-offcanvas-bar');
     let list = document.querySelector('.listSongs');
-
     let infoTracks = datos.tracks; 
     
 
-    main1.innerHTML += '<img class="fotoAlbum" src="' + datos.cover_big + '">' +'</div>';
+    main1.innerHTML += '<img class="fotoAlbum" src="' + datos.cover_big + '">';
        
-    main2.innerHTML += '<h2 id="nameAlbum">' + datos.title + '</h2>' + '<br>'+'<h4 id="artName">'+'<a id="artistName" href=../artist/artist.html?id=' + datos.artist.id + '>' + datos.artist.name + '</a>' + '</h4>' + '<h5 id="fecha">' + '<span id="release" uk-icon="calendar">' + '</span>' + 'Lanzamiento' + '<br>' + datos.release_date + '</h5>';
+    main2.innerHTML += '<h2 id="nameAlbum">' + datos.title + '</h2>' + '<h4 id="artName">'+'<a id="artistName" href=../artist/artist.html?id=' + datos.artist.id + '>' + datos.artist.name + '</a>' + '</h4>' + '<h5 id="fecha">' + '<span id="release" uk-icon="calendar">' + '</span>' + 'Lanzamiento' + '<br>' + datos.release_date + '</h5>';
         
     detalle.innerHTML += '<button class="uk-offcanvas-close" type="button" uk-close>' + '</button>' + '<br>';
     for(let i=0; i<5; i++){
