@@ -29,7 +29,7 @@ let apiChart = "https://cors-anywhere.herokuapp.com/https://api.deezer.com/chart
          
 
          for(let i=0; i<5; i++){  
-            nameTrack.innerHTML += '<li>' + '<div>' + '<span class="number">' + infoTrack.data[i].position + '</span>' + '</div>' + '<div>' + '<span>' + '<a class="songName" href=../tracks/tracks.html?id=' + infoTrack.data[i].id + '>' + infoTrack.data[i].title_short + '</a>' + '</span>' + '<br>' + '<span>' + '<a class="songArtist" href=../tracks/tracks.html?id=' + infoTrack.data[i].id + '>' + infoTrack.data[i].artist.name + '</span>' + '</div>' + '<div>' + '<audio class="songAudio" src=' + infoTrack.data[i].preview + ' controls>' + '</audio>' + '</div>' + '</li>'
+            nameTrack.innerHTML += '<li>' + '<div>' + '<span class="number">' + infoTrack.data[i].position + '</span>' + '</div>' + '<div>' + '<span>' + '<a class="songName" href=../tracks/tracks.html?id=' + infoTrack.data[i].id + '>' + infoTrack.data[i].title_short + '</a>' + '</span>' + '<br>' + '<span>' + '<a class="songArtist" href=../artist/artist.html?id=' + infoTrack.data[i].artist.id + '>' + infoTrack.data[i].artist.name + '</span>' + '</div>' + '<div>' + '<audio class="songAudio" src=' + infoTrack.data[i].preview + ' controls>' + '</audio>' + '</div>' + '</li>'
          }
 
          let apiResponse = document.querySelector(".uk-active")

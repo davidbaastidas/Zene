@@ -168,9 +168,9 @@ img.artist:hover{
     border-bottom: 1px solid #dfe1ea;
     color: rgb(253, 253, 253);
     display: grid;
-    grid-template-columns:  55% 30% 9%;
+    grid-template-columns:  55% 30%;
     margin-top: 5px;
-    gap: 1%
+    gap: 8%
 }
 #selectedSong{
     padding-left: 0;
@@ -194,7 +194,7 @@ span{
 }
 .songAudio{
     text-align: end;
-    width: 95%;
+    width: 120%;
 }
 .buttonAdd{
     width: 135%;
