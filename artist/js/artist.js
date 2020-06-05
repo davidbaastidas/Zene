@@ -25,6 +25,8 @@ fetch(urlParte1)
 
         /// Guardando info para recomendados
 
+        console.log(datos.nb_fan)
+
         let recuperoStorage = localStorage.getItem('recomendados');
 
         if(recuperoStorage == null){
@@ -34,22 +36,15 @@ fetch(urlParte1)
         }
     
         let agregar = document.querySelector('#likeArt');
-    
-        if(recomendados.includes(idArtista)){
-            agregar.innerHTML = 'Remove';
-        }
         
         agregar.addEventListener('click',function(e){
             e.preventDefault();
-            
     
             if(recomendados.includes(idArtista)){
                 let indiceEnElArray = recomendados.indexOf(idArtista);
                 recomendados.splice(indiceEnElArray,1);
                 agregar.innerHTML = "Add";
                 
-                
-                console.log(recomendados);
     
             } else{
                 recomendados.push(idArtista);
@@ -61,6 +56,7 @@ fetch(urlParte1)
         localStorage.setItem('recomendados',recomendadosParaStorage);
      
         })
+
     })
     .catch(function(error){
         console.log(error);
