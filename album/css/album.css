@@ -111,6 +111,11 @@ button:hover{
     color: midnightblue;
     font-weight: bolder;
 }
+#songName,#selectedSong{
+    color: whitesmoke;
+    text-decoration: none;
+    font-size: 90%;
+}
 #info button{ 
     text-align: center;
     width:70%;

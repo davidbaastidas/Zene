@@ -19,7 +19,7 @@ fetch(urlParte1)
     })
     .then(function(datos){
 
-        modificacionArriba.innerHTML += '<h1 id="title">' + datos.name + '</h1>' + '<img class="artista" src="' + datos.picture_medium + '" alt="fotoArtista">' + '<h4 class="fans">' + 'Seguidores: ' + datos.nb_fan + '</h4>'
+        modificacionArriba.innerHTML += '<h1 id="title">' + datos.name + '</h1>' + '<img class="artista" src="' + datos.picture_medium + '" alt="fotoArtista">' + '<h4 class="fans">' + 'Seguidores: ' + datos.nb_fan + '</h4>' + '<strong>'+ 'Like  '+ '</strong>'+'<span uk-icon="heart">'+'</span>';
     })
     .catch(function(error){
         console.log(error);

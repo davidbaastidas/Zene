@@ -26,7 +26,7 @@ fetch(url)
 
     main1.innerHTML += '<img class="fotoAlbum" src="' + datos.cover_big + '">' +'</div>';
        
-    main2.innerHTML += '<h3 id="nameAlbum">' + datos.title + '</h3>' + '<h3 id="artName">'+'<a id="artistName" href=../artist/artist.html?id=' + datos.artist.id + '>' + datos.artist.name + '</a>' + '</h3>' + '<h5 id="fecha">' + '<span id="release" uk-icon="calendar">' + '</span>' + 'Lanzamiento' + '<br>' + datos.release_date + '</h5>';
+    main2.innerHTML += '<h2 id="nameAlbum">' + datos.title + '</h2>' + '<br>'+'<h4 id="artName">'+'<a id="artistName" href=../artist/artist.html?id=' + datos.artist.id + '>' + datos.artist.name + '</a>' + '</h4>' + '<h5 id="fecha">' + '<span id="release" uk-icon="calendar">' + '</span>' + 'Lanzamiento' + '<br>' + datos.release_date + '</h5>';
         
     detalle.innerHTML += '<button class="uk-offcanvas-close" type="button" uk-close>' + '</button>' + '<br>';
     for(let i=0; i<5; i++){
@@ -35,7 +35,7 @@ fetch(url)
         detalle.innerHTML += '<p class="data">' + 'Discográfica: ' + datos.label + '<p class="data">' + 'Duración: ' + datos.duration + ' segundos' + '</p>' + '<p class="data">' + '<p class="data">' + 'Seguidores: ' + datos.fans + '</p>';
 
         for(let i=0; i<20; i++){  
-            list.innerHTML += '<li>' + '<div class="songTrack">' + '<span id="selectedSong">' + '<a class="songName" href=../tracks/tracks.html?id=' + infoTracks.data[i].id + '>' + infoTracks.data[i].title_short + '</span>' + '</div>';
+            list.innerHTML += '<li>' + '<div class="songTrack">' + '<span id="selectedSong">' + '<a id="songName" href=../tracks/tracks.html?id=' + infoTracks.data[i].id + '>' + infoTracks.data[i].title_short + '</span>' + '</div>';
         }
 
   
