@@ -25,7 +25,7 @@ function buscarYMostrarTrack(idTrack){
         return response.json();
     })
     .then(function(track){
-        listSongs.innerHTML += '<li>' + '<div>' + '<span>' + '<a class="titulo" href="../tracks/tracks.html?id=' + track.id + '">' + track.title + '</a>' + '</span>' + '<br>' + '<span>' + '<a class="artist" href="../artist/artist.html?id=' + track.artist.id + '">' + track.artist.name + '</a>' + '</span>' + '<div>' + '<audio class="songAudio" src=' + track.preview + ' controls>' + '</audio>' + '</div>' + '<button>' + 'Eliminar de playlist' + '</button>' +'</li>'
+        listSongs.innerHTML += '<li>' + '<div>' + '<span>' + '<a class="titulo" href="../tracks/tracks.html?id=' + track.id + '">' + track.title + '</a>' + '</span>' + '<br>' + '<span>' + '<a class="artist" href="../artist/artist.html?id=' + track.artist.id + '">' + track.artist.name + '</a>' + '</span>' + '<div>' + '<audio class="songAudio" src=' + track.preview + ' controls>' + '</audio>' + '</div>' + '<button class="eliminar">' + 'Eliminar de playlist' + '</button>' +'</li>'
     })
     .catch(function(error){
         console.log(error);
@@ -39,7 +39,7 @@ if(recuperoStorage == null){
     //Recupero el array de localStorage
     playlist = JSON.parse(recuperoStorage);
 }
-let sacar = document.querySelector('button');
+let sacar = document.querySelector('.eliminar');
 
 sacar.addEventListener('click', function(e){
     //Detener el <a>, porque nos va a derivar
