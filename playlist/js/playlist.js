@@ -25,7 +25,7 @@ function buscarYMostrarTrack(idTrack){
         return response.json();
     })
     .then(function(track){
-        listSongs.innerHTML += '<li>' +  '<div class="number">' + track.playlist + '</div>' + '<div>' + '<span>' + '<a href="../tracks/tracks.html?id=' + track.id + '">' + track.title + '</a>' + '</span>' + '<br>' + '<span class="songA">' + '<a href="../artist/artist.html?id=' + track.artist.id + '">' + track.artist.name + '</a>' + '</span>' + '<div>' + '<audio class="songAudio" src=' + track.preview + ' controls>' + '</audio>' + '</div>' +'</li>'
+        listSongs.innerHTML += '<li>' + '<div>' + '<span>' + '<a class="titulo" href="../tracks/tracks.html?id=' + track.id + '">' + track.title + '</a>' + '</span>' + '<br>' + '<span>' + '<a class="artist" href="../artist/artist.html?id=' + track.artist.id + '">' + track.artist.name + '</a>' + '</span>' + '<div>' + '<audio class="songAudio" src=' + track.preview + ' controls>' + '</audio>' + '</div>' +'</li>'
     })
     .catch(function(error){
         console.log(error);

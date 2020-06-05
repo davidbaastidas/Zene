@@ -201,8 +201,8 @@ span{
     height: 40px;
 }
 .add{
-    padding-bottom: 10px;
-    padding-top: 10px;
+    padding-bottom: 0px;
+    padding-top: 4px;
 }
 audio{
     width: 100%;

@@ -21,9 +21,11 @@ fetch(urlParte1)
 
         modificacionArriba.innerHTML = '<h1 id="title">' + datos.name + '</h1>'; 
 
-        modificacionArriba.innerHTML += '<div id="info">'+'<div id="fotoArtista">'+'<img class="artista" src="' + datos.picture_xl + '" alt="fotoArtista">' +'</div>'+'<div class="moreInfo">'+'<h4 class="fans">' + 'Seguidores: ' + datos.nb_fan + '</h4>' + '<button id="likeArt">'+ '<p id="buttonLike">'+'Add' +'</p>'+'</button>' +'</div>'+'</div>';
+        modificacionArriba.innerHTML += '<div id="info">'+'<div id="fotoArtista">'+'<img class="artista" src="' + datos.picture_xl + '" alt="fotoArtista">' +'</div>'+'<div class="moreInfo">'+'<h4 class="fans">' + 'Seguidores: ' + datos.nb_fan + '</h4>' + '<button id="likeArt">'+'Add' +'</button>' +'</div>'+'</div>';
 
         /// Guardando info para recomendados
+
+        console.log(datos.nb_fan)
 
         let recuperoStorage = localStorage.getItem('recomendados');
 
@@ -34,10 +36,6 @@ fetch(urlParte1)
         }
     
         let agregar = document.querySelector('#likeArt');
-    
-        if(recomendados.includes(idArtista)){
-            agregar.innerHTML = 'Remove';
-        }
         
         agregar.addEventListener('click',function(e){
             e.preventDefault();
@@ -46,8 +44,8 @@ fetch(urlParte1)
                 let indiceEnElArray = recomendados.indexOf(idArtista);
                 recomendados.splice(indiceEnElArray,1);
                 agregar.innerHTML = "Add";
-    
-                console.log(recomendados);
+                datos.nb_fan = parseInt(datos.nb_fan) +1;
+                
     
             } else{
                 recomendados.push(idArtista);
@@ -57,12 +55,8 @@ fetch(urlParte1)
     
         let recomendadosParaStorage = JSON.stringify(recomendados);
         localStorage.setItem('recomendados',recomendadosParaStorage);
-        console.log(localStorage);
      
         })
-        
-        ///
-
 
     })
     .catch(function(error){
@@ -97,7 +91,6 @@ fetch(urlParte3)
     })
     .then(function(album){
 
-        console.log(album)
         let infoTrack = album.data;
         
         for(let i=0; i<5; i++){

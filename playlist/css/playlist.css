@@ -120,7 +120,7 @@ main{
     border-bottom: 1px solid #dfe1ea;
     color: rgb(253, 253, 253);
     display: grid;
-    grid-template-columns: 0.25fr 2fr 1fr;
+    grid-template-columns: 17.25fr 2fr 1fr;
 }
 .number{
     text-align: center;
@@ -132,9 +132,11 @@ span{
     padding-left: 10px;
     font-size: 20px;
 }
-.songA{
-    font-size: 16px;
-    color: rgba(200, 214, 214, 0.5);
+.artist{
+    color:rgba(200, 214, 214, 0.5)
+}
+.titulo{
+    color: rgb(253, 253, 253)
 }
 audio,.songPlus{
     width: 100%;
@@ -147,6 +149,7 @@ audio,.songPlus{
 }
 .songAudio{
     text-align: end;
+    margin-left: 10%;
 }
 canvas, iframe, img, svg, video {
     vertical-align: middle;
