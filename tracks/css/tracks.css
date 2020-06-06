@@ -99,6 +99,9 @@ button:hover{
     transform: scale(1.2);
     transition: all 300ms;
 }
+#route1,#route2,#route3{
+    text-decoration: none;
+}
 main{
     display: grid;
     grid-template-rows: 1fr 1fr;
@@ -282,7 +285,12 @@ footer{
         font-size: 21px;
     }
 }
+
 @media (min-width:425px){
+    nav li{
+        padding-left: 5%;
+        padding-right: 5%;
+    }
     .fotoArtista {
         max-height: 200px;
         margin-left: 10%;

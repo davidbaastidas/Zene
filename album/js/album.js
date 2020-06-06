@@ -29,7 +29,7 @@ fetch(url)
         
     detalle.innerHTML += '<button class="uk-offcanvas-close" type="button" uk-close>' + '</button>' + '<br>';
     for(let i=0; i<5; i++){
-        detalle.innerHTML += '<p class="data">' + 'Género(s): ' + '<a id="genre" href=../generos/generoDetalle2.html?id=' + datos.genres.data[i].id + '>' + datos.genres.data[i].name + '</p>';
+        detalle.innerHTML += '<p class="data">' + 'Género(s): ' + '<a id="genre" href=../generos/generoDetalle.html?id=' + datos.genres.data[i].id + '>' + datos.genres.data[i].name + '</p>';
 
         detalle.innerHTML += '<p class="data">' + 'Discográfica: ' + datos.label + '<p class="data">' + 'Duración: ' + datos.duration + ' segundos' + '</p>' + '<p class="data">' + '<p class="data">' + 'Seguidores: ' + datos.fans + '</p>';
 

@@ -55,6 +55,9 @@ nav ul li{
     transform: scale(1.2);
     transition: all 300ms;
 }
+#route,#route1,#route2,#route3{
+    text-decoration: none;
+}
 nav h3{
     color: white;
     text-align: center;
@@ -66,6 +69,9 @@ nav h3{
 h3{
     color: white;
     text-align: center;
+}
+#listArtist{
+    font-family: 'Montserrat', sans-serif;
 }
 section,form{
     position: relative;
@@ -109,37 +115,35 @@ main{
 }
 .tituloGenero{
     display: grid;
-    grid-template-columns: 40% 55%;
-    gap: 2%;
-    margin-left: 5%;
+    grid-template-columns: 1fr 1fr;
+    margin-left: 2%;
+    margin-right: 2%;
 }
-.photoGenre{
+#photoGenre{
     text-align: center;
 }
 .imageGenre{
-    width: 75%;
-    height: auto;
-    padding-top: 2%;
+    width: 90%;
 }
 .generoTipo{
     color: white;
-    font-size: 151%;
+    font-size: 150%;
     padding-top: 16%;
     text-align: center;
+    font-family: 'Montserrat', sans-serif;
 }
 .listaGenero{
     margin-left: 10%;
     margin-right: 10%;
     margin-top: 7%;
 }
-.listaGenero h2{
+#listArtist{
     color: whitesmoke;
 }
-li a, p{
+#listaRes{
+    list-style: none;
     color: white;
-}
-.listaRes{
-    list-style-type: none;
+    padding-left: 2%;
 }
 .listaGenero p{
     border-style: solid;
@@ -287,6 +291,10 @@ footer{
 /*Aca termina el loader*/
 
 @media(min-width:426px){
+    nav li{
+        padding-left: 5%;
+        padding-right: 5%;
+    }
     footer p,a.ruta{
         font-size: 14px;
     }

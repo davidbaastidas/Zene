@@ -3,9 +3,9 @@ window.addEventListener("load", function(){
     loader.className += " hidden";
 })
 
-let modificacionFoto = document.querySelector('.photoGenre');
-let modificacionNombre = document.querySelector('.nombreRes')
-let modificacionLista = document.querySelector('.listaRes')
+let modificacionFoto = document.querySelector('#photoGenre');
+let modificacionNombre = document.querySelector('#nombreRes')
+let modificacionLista = document.querySelector('#listaRes')
 
 let queryString = location.search;
 let hrefParams = new URLSearchParams (queryString);
@@ -19,7 +19,7 @@ fetch(urlParte1)
     })
     .then(function(datos){
         
-        modificacionFoto.innerHTML += '<img class="imageGenre" src="' + datos.picture_medium + '" alt="fotoGenero">'
+        modificacionFoto.innerHTML += '<img class="imageGenre" src="' + datos.picture_xl + '" alt="fotoGenero">'
 
         modificacionNombre.innerHTML += '<h1 class="generoTipo">' + 'Género: ' + datos.name + '</h1>'
     })
@@ -37,7 +37,7 @@ fetch(urlParte2)
         let infoGenre = datos.data;
         
         for(let i=0; i<10; i++){  
-            modificacionLista.innerHTML += '<li>' + '<a href="../artist/artist.html?id=' + infoGenre[i].id + '">' + '<p>' + infoGenre[i].name + '</p>' + '</a>' + '</li>'
+            modificacionLista.innerHTML += '<li>' + '<a id="route" href="../artist/artist.html?id=' + infoGenre[i].id + '">' + '<p>' + infoGenre[i].name + '</p>' + '</a>' + '</li>'
         }
 
     })

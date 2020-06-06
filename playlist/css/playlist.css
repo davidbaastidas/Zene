@@ -55,6 +55,9 @@ nav ul li{
     transform: scale(1.2);
     transition: all 300ms;
 }
+#route1,#route2,#route3{
+    text-decoration: none;
+}
 nav h3{
     color: white;
     text-align: center;
@@ -132,11 +135,13 @@ span{
     padding-left: 10px;
     font-size: 20px;
 }
-.artist{
-    color:rgba(200, 214, 214, 0.5)
+#artist{
+    color:rgba(200, 214, 214, 0.5);
+    text-decoration: none;
 }
-.titulo{
-    color: rgb(253, 253, 253)
+#titulo{
+    color: rgb(253, 253, 253);
+    text-decoration: none;;
 }
 audio,.songPlus{
     width: 100%;
@@ -293,6 +298,10 @@ footer{
 /*Aca termina el loader*/
 
 @media(min-width:426px){
+    nav li{
+        padding-left: 5%;
+        padding-right: 5%;
+    }
     footer p,a.ruta{
         font-size: 14px;
     }

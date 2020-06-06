@@ -259,6 +259,10 @@ footer{
 /*Aca termina el loader*/
 
 @media(min-width:426px){
+    nav li{
+        padding-left: 5%;
+        padding-right: 5%;
+    }
     #info{
         display: grid;
         grid-template-columns: 1fr 1fr;

@@ -60,8 +60,9 @@ fetch(url)
 
     ////////
 
-
-       otherInf.innerHTML += '<h3 id="artista">' + '<a href=../artist/artist.html?id=' + datos.artist.id  + '>' + 'Artista: ' + datos.artist.name + '</h3>' + '<br>'+ '<h3 id="reference" >' + '<a href=../album/album.html?id=' + datos.album.id + '>' + 'Album: ' + datos.album.title + '</h3>' + '<br>'+ '<h3 id="duration">' + 'Duración: ' + datos.duration + ' segundos' + '</h3>' 
+       otherInf.innerHTML += '<h3 id="artista">' + '<a href=../artist/artist.html?id=' + datos.artist.id  + '>' + 'Artista: ' + datos.artist.name + '</h3>' + '<br>';
+       otherInf.innerHTML += '<h3 id="reference" >' + '<a href=../album/album.html?id=' + datos.album.id + '>' + 'Album: ' + datos.album.title + '</h3>' + '<br>';
+       otherInf.innerHTML += '<h3 id="duration">' + 'Duración: ' + datos.duration + ' segundos' + '</h3>';
 
        otherInf.innerHTML += '<div id="audio">' + '<audio class="songAudio" src=' + datos.preview + ' controls>' + '</audio>' + '</div>';
 

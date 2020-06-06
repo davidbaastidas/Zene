@@ -56,6 +56,9 @@ nav ul li{
     transform: scale(1.2);
     transition: all 300ms;
 }
+#route1,#route2,#route3{
+    text-decoration: none;
+}
 nav h3{
     color: white;
     text-align: center;
@@ -77,9 +80,6 @@ fieldset{
     padding-top: 20px;
     padding-bottom: 20px;
     width: 100%;
-}
-.espacioBuscador{
-    margin: 0px 0 0px 0;
 }
 input, button{
     width: 180px;
@@ -123,9 +123,10 @@ div a img:hover{
     margin: 0;
     margin-bottom: 20px;
 }
-.genreTitle a{
+#route{
     color: whitesmoke;
     text-transform: uppercase;
+    text-decoration: none;
     letter-spacing: 1px;
     font-size: 18px;
 }
@@ -263,6 +264,10 @@ footer{
 /*Aca termina el loader*/
 
 @media(min-width:426px){
+    nav li{
+        padding-left: 5%;
+        padding-right: 5%;
+    }
     .generos{
         display: grid;
         grid-template-columns: 1fr 1fr;

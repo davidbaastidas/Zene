@@ -105,12 +105,13 @@ button:hover{
     text-align: center;
 }
 #infoArtista h1,h2,#title{
-    color: ivory;
+    color: rgb(255, 255, 255);
     font-family: 'Montserrat', sans-serif;
 }
 .fans,#like,svg{
     color: rgba(245, 245, 245, 0.801);
     font-family: 'Montserrat', sans-serif;
+    padding-top: 4%;
     margin-top: 2%;
     margin-bottom: 2%;
 }
@@ -143,16 +144,18 @@ img.artist:hover{
     transition: all 300ms;
 }
 .titulos,span{
-    color: ivory;
-    margin-top: 4%;
-    margin-bottom: 4%;
+    color: rgb(255, 255, 255);
+    margin-top: 3%;
+    margin-bottom: 2%;
     font-family: 'Montserrat', sans-serif;
 }
 .titulos{
     text-align: center;
 }
+#route1,#route2,#route3{
+    text-decoration: none;
+}
 .insiderAl{
-    color: ivory;
     text-align: center;
     background-color: rgba(24, 22, 22, 0.6);
     font-family: 'Montserrat', sans-serif;
@@ -162,7 +165,8 @@ img.artist:hover{
     margin-right: auto;
 }
 .listSongs{
-    padding: 5px 20px;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 .listSongs li{
     border-bottom: 1px solid #dfe1ea;
@@ -354,11 +358,15 @@ footer{
 }
 /*Aca termina el loader*/
 
-@media (min-width:426px){
+@media (min-width:425px){
+    nav li{
+        padding-left: 5%;
+        padding-right: 5%;
+    }
     .artista{
-        width: 80%;
-        padding: 5% 5%;
-        padding-top:0;
+        width: 90%;
+        padding-left: 5%;
+        padding-right: 5%;
     }
     #info{
         display: grid;
@@ -372,12 +380,6 @@ footer{
     }
 }
 
-@media (min-width:600px){
-    #cancionesPopulares .titulos{
-        font-size: 30px;
-        margin-top: 10px;
-    }
-}
 /*Aca termina los cimientos de Mobile*/
 
 @media (min-width:768px){
@@ -385,7 +387,8 @@ footer{
         margin-left: 25%;
     }
     .artista {
-        max-width: 100%;
+        padding-top: 5%;
+        padding-bottom: 5%;
     }
     #title{
         padding-top: 0%;
