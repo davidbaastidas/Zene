@@ -143,31 +143,13 @@ main{
     margin-bottom: 10%;
 }
 footer{
-    position:absolute;
     width:100%;
     border-top: solid 5px #131212;
-    margin-top: 5%;
+    margin-top: 10px;
 }
 .sponsors{
     color: white;
     letter-spacing: 5px;
-    padding-bottom: 15px;
-}
-.fa-facebook-square:hover{
-    transform: scale(1.2);
-    transition: all 300ms;
-}
-.fa-twitter:hover{
-    transform: scale(1.2);
-    transition: all 300ms;
-}
-.fa-instagram:hover{
-    transform: scale(1.2);
-    transition: all 300ms;
-}
-.fa-whatsapp:hover{
-    transform: scale(1.2);
-    transition: all 300ms;
 }
 .anclaLocal{
     background-color: #131212;
@@ -181,6 +163,12 @@ footer{
     padding: 10px;
     padding-bottom: 0;
 }
+.sponsors{
+    margin-top: 0;
+}
+#experiencia{
+    margin-bottom:12px;
+}
 .deezer img{
     height: 60px;
     width: auto;
@@ -188,6 +176,22 @@ footer{
 #experiencia, .sponsors, .textoCreditos, .deezer{
     text-align: center;
 }
+#equipo{
+    margin:0;
+}
+.fa-facebook-square:hover{
+    transform: scale(1.2);
+    transition: all 300ms;
+}
+.fa-twitter:hover{
+    transform: scale(1.2);
+    transition: all 300ms;
+}
+.fa-instagram:hover{
+    transform: scale(1.2);
+    transition: all 300ms;
+}
+
 /*Aca empieza el loader*/
 .loader-wrapper{
     width: 100%;
@@ -293,10 +297,12 @@ footer{
     .infoAbajo h3{
         font-size: 16px;
     }
-    footer{
-        margin-top: 5%;
+    footer p,a.ruta{
+        font-size: 14px;
     }
 }
+/*Aca termina los cimientos de Mobile*/
+
 @media (min-width:768px){
     .main-header{
         position: fixed;
@@ -335,12 +341,17 @@ footer{
         font-size: 30px;
     }
     footer{
-        width: 70%;
+        bottom: 0;
+        width: 72%;
         margin-left: 28%;
+        margin-top: 3%;
     }
     .anclaLocal a,p{
-        font-size: 20px;
+        font-size: 92%;
         color: white;
+    }
+    .sponsors a{
+        font-size: 20px;
     }
     .anclaLocal .ruta{
         font-size: 16px;
@@ -348,7 +359,6 @@ footer{
     .creditos{
         display: grid;
         grid-template-columns: 2fr 1fr;
-        padding-bottom: 0;
     }
     .deezer img{
         height: 85px;
@@ -357,11 +367,9 @@ footer{
         padding-top: 35px;
         text-align: left;
     }
-    #experiencia,.sponsors{
-        font-size: 16px;
-    }
 }
 /*Aca termina los cimientos de Tablet*/
+
 @media (min-width:1024px){
     .container{
         min-height: 67vw;
@@ -382,7 +390,7 @@ footer{
         font-size: 22px;
     }
     footer {
-        width: 76%;
-        margin-left: 22%;
+        width: 80%;
+        margin-left: 20%;
     }
 }

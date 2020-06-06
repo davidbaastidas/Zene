@@ -23,6 +23,7 @@ fetch(urlParte1)
 
         modificacionArriba.innerHTML += '<div id="info">'+'<div id="fotoArtista">'+'<img class="artista" src="' + datos.picture_xl + '" alt="fotoArtista">' +'</div>'+'<div class="moreInfo">'+'<h4 class="fans">' + 'Seguidores: ' + datos.nb_fan + '</h4>' + '<button id="likeArt">'+'Add' +'</button>' +'</div>'+'</div>';
 
+        
         /// Guardando info para recomendados
 
         console.log(datos.nb_fan)

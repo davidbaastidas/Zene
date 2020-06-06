@@ -20,6 +20,7 @@
     <div class="container">
         
         <!-- header -->
+        <a name="buscadorAncla"></a>
         <header class="main-header">
             <a href="index.html"><img class="logo-img" src="../logo.png" alt="Zene"></a>
             <nav>           
@@ -30,23 +31,28 @@
                 </ul>
             </nav>
         </header>
+
+        <!-- barra buscador -->
+        <form action="../resultados/resultados.html" method="GET">
+            <fieldset>
+                <input type="text" name="search" placeholder=" Search...">
+                <button type="submit"><i class="fas fa-search"></i> </button>
+            </fieldset>
+        </form>
+
         
         <!-- main -->
         <main class="resultado">
-            <h1>Los resultados de tu busqueda fueron...</h1>
+            <h1 id="resultadoBusqueda">Los resultados de tu busqueda fueron...</h1>
+            <div id="info"></div>
         </main>
-
-        <!-- loader -->
-        <div class="loader-wrapper hidden">
-            <span class="loader"><span class="loader-inner"></span></span>
-        </div>
 
         <!-- footer -->
         <footer>
             <div class="anclaLocal">
                 <p id="experiencia">Compartí tu experiencia Zene</p>
-                <p class="sponsors"><a href="https://www.facebook.com/david.bastidas.5458498/timeline#_"><i class="fab fa-facebook-square"></i></a><a href="https://twitter.com/MusicZene"><i class="fab fa-twitter"></i></a><a href="https://www.instagram.com/zenedesarrolladores/"><i class="fab fa-instagram"></i></a><a href="https://web.whatsapp.com/"><i class="fab fa-whatsapp"></i></a></p>
-                <a class="ruta" href="#main.header" style="text-decoration: none">Volver arriba</a>
+                <p class="sponsors"><a href="https://www.facebook.com/david.bastidas.5458498/timeline#_"><i class="fab fa-facebook-square"></i></a><a href="https://twitter.com/MusicZene"><i class="fab fa-twitter"></i></a><a href="https://www.instagram.com/zenedesarrolladores/"><i class="fab fa-instagram"></i></a></p>
+                <a class="ruta" href="#buscadorAncla" style="color: white">Volver arriba</a> <br>
             </div>
             <div class="creditos">
                 <div class="textoCreditos">
@@ -57,8 +63,15 @@
                 </div>
             </div>
         </footer>
+
+        <!-- loader -->
+        <div class="loader-wrapper hidden">
+            <span class="loader"><span class="loader-inner"></span></span>
+        </div>
+
     </div>
 
+        
     <script src="js/resultados.js"></script>
 </body>
 </html>

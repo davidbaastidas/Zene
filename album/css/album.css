@@ -186,7 +186,7 @@ audio{
 footer{
     width:100%;
     border-top: solid 5px #131212;
-    margin-top: 10%;
+    margin-top: 10px;
 }
 .sponsors{
     color: white;
@@ -204,11 +204,17 @@ footer{
     padding: 10px;
     padding-bottom: 0;
 }
+.sponsors{
+    margin-top: 0;
+}
+#experiencia{
+    margin-bottom:12px;
+}
 .deezer img{
     height: 60px;
     width: auto;
 }
-#experiencia, .sponsors, .textoCreditos,.deezer{
+#experiencia, .sponsors, .textoCreditos, .deezer{
     text-align: center;
 }
 #equipo{
@@ -323,11 +329,12 @@ footer{
         display: grid;
         grid-template-columns: 1fr 1fr;
     }
-    footer{
-        margin-top: 5%;
+    footer p,a.ruta{
+        font-size: 14px;
     }
 }
 /*Aca termina los cimientos de Mobile*/
+
 @media (min-width:768px){
     .main-header{
         position: fixed;
@@ -368,11 +375,11 @@ footer{
     #info{
         padding-top: 5%;
     }
-
     footer{
         bottom: 0;
-        width: 70%;
+        width: 72%;
         margin-left: 28%;
+        margin-top: 3%;
     }
     .anclaLocal a,p{
         font-size: 92%;
@@ -387,7 +394,6 @@ footer{
     .creditos{
         display: grid;
         grid-template-columns: 2fr 1fr;
-        padding-bottom: 0;
     }
     .deezer img{
         height: 85px;
@@ -396,12 +402,14 @@ footer{
         padding-top: 35px;
         text-align: left;
     }
-    #experiencia,.sponsors{
-        font-size: 16px;
-    }
 }
 /*Aca termina los cimientos de Tablet*/
+
 @media (min-width:1024px){
+    .container {
+        min-height: 94vw;
+        width: 100%;
+    }    
     .main-header{
         width: 16%;
     }
@@ -415,12 +423,8 @@ footer{
         font-size: 22px;
     }
     footer {
-        width: 76%;
-        margin-left: 22%;
-    }
-    .container {
-        min-height: 94vw;
-        width: 100%;
+        width: 80%;
+        margin-left: 20%;
     }
 }
 @media(min-width:1441px){

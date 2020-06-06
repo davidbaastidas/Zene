@@ -242,15 +242,15 @@ footer{
     padding: 10px;
     padding-bottom: 0;
 }
-.deezer img{
-    height: 60px;
-    width: auto;
-}
 .sponsors{
     margin-top: 0;
 }
 #experiencia{
     margin-bottom:12px;
+}
+.deezer img{
+    height: 60px;
+    width: auto;
 }
 #experiencia, .sponsors, .textoCreditos, .deezer{
     text-align: center;
@@ -353,6 +353,7 @@ footer{
     }
 }
 /*Aca termina el loader*/
+
 @media (min-width:426px){
     .artista{
         width: 80%;
@@ -366,14 +367,19 @@ footer{
     .fotoAlbumCarrusel{
         height: 200px;
     }
+    footer p,a.ruta{
+        font-size: 14px;
+    }
 }
-/*Aca termina los cimientos de Mobile*/
+
 @media (min-width:600px){
-    .cancionesPopulares .titulos{
+    #cancionesPopulares .titulos{
         font-size: 30px;
         margin-top: 10px;
     }
 }
+/*Aca termina los cimientos de Mobile*/
+
 @media (min-width:768px){
     main{
         margin-left: 25%;
@@ -424,8 +430,9 @@ footer{
     }
     footer{
         bottom: 0;
-        width: 70%;
+        width: 72%;
         margin-left: 28%;
+        margin-top: 3%;
     }
     .anclaLocal a,p{
         font-size: 92%;
@@ -440,7 +447,6 @@ footer{
     .creditos{
         display: grid;
         grid-template-columns: 2fr 1fr;
-        padding-bottom: 0;
     }
     .deezer img{
         height: 85px;
@@ -449,11 +455,9 @@ footer{
         padding-top: 35px;
         text-align: left;
     }
-    #experiencia,.sponsors{
-        font-size: 16px;
-    }
 }
 /*Aca termina los cimientos de Tablet*/
+
 @media (min-width:1024px){
     .main-header{
         position: fixed;
@@ -468,48 +472,10 @@ footer{
     #albumArtist {
         margin-top:8%;
     }    
-    footer{
-        width: 72%;
-        margin-left: 24%;
-    }
-}
-@media (min-width:1440px){
-    .main-header{
-        width: 20%;
-    }
-    main{
+    footer {
+        width: 80%;
         margin-left: 20%;
     }
-    .seguir{
-        width: 7%;
-    }
-    #title{
-        font-size: 50px;
-    }
-    nav h3{
-        font-size: 22px;
-    }
-    #albumArtist {
-        margin-top:4%;
-    }
-    .cancionesPopulares,.titulos{
-        font-size: 34px;
-    }
 }
-@media (min-width:1600px){
-    .fotoAlbumCarrusel{
-        height: 300px;
-    }
-}
-@media (min-width:2560px){
-    nav h3{
-        font-size: 30px;
-    }
-    #title{
-        font-size: 60px;
-    }
-    .cancionesPopulares, .titulos{
-        font-size: 40px;
-    }
-}
+
 /*Aca termina los cimientos de Desktop*/

@@ -32,6 +32,9 @@ ul.nav-links{
     font-family: 'Montserrat', sans-serif;
     font-size: 18px;
 }
+#route1,#route2,#route3{
+    text-decoration: none;
+}
 .logo-img{
     width: auto;
     height: 240px;
@@ -138,12 +141,14 @@ audio{
 .songAudio{
     text-align: end;
 }
-.songName {
+#songName {
     color: rgb(253, 253, 253);
+    text-decoration: none;
 }
-.songArtist{
+#songArtist{
     font-size: 16px;
     color: rgba(200, 214, 214, 0.5);
+    text-decoration: none;
 }
 .number{
     text-align: center;
@@ -153,6 +158,10 @@ audio{
 }
 .video{
     display:none;
+}
+#picAlbum:hover, #picArtist:hover{
+    transform: scale(1.1);
+    transition: all 400ms;
 }
 footer{
     width:100%;
@@ -175,6 +184,12 @@ footer{
     padding: 10px;
     padding-bottom: 0;
 }
+.sponsors{
+    margin-top: 0;
+}
+#experiencia{
+    margin-bottom:12px;
+}
 .deezer img{
     height: 60px;
     width: auto;
@@ -194,10 +209,6 @@ footer{
     transition: all 300ms;
 }
 .fa-instagram:hover{
-    transform: scale(1.2);
-    transition: all 300ms;
-}
-.fa-whatsapp:hover{
     transform: scale(1.2);
     transition: all 300ms;
 }
@@ -303,6 +314,7 @@ footer{
     
 }
 /*Aca termina los cimientos de Mobile*/
+
 @media (min-width:768px){
     input{
         width: 385px;
@@ -331,6 +343,7 @@ footer{
     }
 }
 /*Aca termina los cimientos de Tablet*/
+
 @media (min-width: 1240px){
     h2.titulos{
         font-size: 36px;
