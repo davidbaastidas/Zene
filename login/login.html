@@ -10,40 +10,19 @@
 <body>
     
     <!-- forms -->
-    <h1></h1>
-    <div class="paginaLogin">
-        <div class="form">
-            <form class="registroForm">
-                <div class="textbox">
-                    <i class="far fa-user"></i>
-                    <input type="text" name="usuario" placeholder="usuario">
-                </div>
-                <div class="textbox">
-                    <i class="fas fa-lock"></i>
-                    <input type="text" name="contras" placeholder="contraseña">
-                </div>
-                <div class="textbox">
-                    <i class="far fa-envelope"></i>
-                    <input type="email" name="mail" placeholder="email">
-                </div>
-                <button class="boton">Crear</button>
-                <p class="mensaje">¿Ya sos parte de Zene?<br><strong><a class="volver" href="#">Iniciar Sesion</a></strong></p>
-                <p class="aviso"></p>
-            </form>
-            <form class="loginForm">
-                <div class="textbox">
-                    <i class="far fa-user"></i>
-                    <input type="text" name="usuario" placeholder="usuario">
-                </div>
-                <div class="textbox">
-                    <i class="fas fa-lock"></i>
-                    <input type="password" name="contras" placeholder="contraseña">
-                </div>
-                <button class="boton"><a href="../home/index.html">Iniciar Zene</a></button>
-                <p class="mensaje">¿No estas registrado en Zene?<strong><a class="registro" href="#">Registrate</a></strong></p>
-                <p class="aviso"></p>
-            </form>
-        </div>    
+    <div class="cajaForm">
+        <form class= "cajaContenidoForm" action="../home/index.html" method="post">
+            <div class="container">
+
+                <label for="user"><p><i class="far fa-user"></i>Usuario</p></label>
+                <input type="text" placeholder="Ingresar Usuario" name="user" required>
+
+                <label for="pass"><p><i class="fas fa-lock"></i>Contraseña</p></label>
+                <input type="password" placeholder="Ingresar Contraseña" name="pass" required>
+        
+                <button class="boton" type="submit">INICIAR ZENE</button>
+            </div>
+        </form>
     </div>
 
     <!-- loader -->

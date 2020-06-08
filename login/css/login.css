@@ -1,145 +1,133 @@
 body{
-    font-family: sans-serif;
-    background-image: url("https://andro4all.com/files/2020/03/Luces-de-noche-700x1244.jpg");
-    background-repeat: repeat;
-    background-size: inherit;
-    background-attachment: fixed;
+  font-family: sans-serif;
+  background-image: url("https://andro4all.com/files/2020/03/Luces-de-noche-700x1244.jpg");
+  background-repeat: repeat;
+  background-size: inherit;
+  background-attachment: fixed;
 }
-.paginaLogin{
-    width: 360px;
-    padding: 10% 0 0;
-    margin: auto;
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
 }
-.form{
-    position: relative;
-    z-index: 1;
-    background-color: rgba(0, 0, 0, 0.6);
-    max-width: 360px;
-    margin: 0 auto 100px;
-    padding: 45px;
-    text-align: center;
+button {
+  background-color: rgb(33, 44, 35);
+  color: white;
+  padding: 14px 20px;
+  margin: 8px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
 }
-.form input{
-    font-family: sans-serif;
-    outline: 1;
-    background: white;
-    width: 92%;
-    border: 0;
-    margin: 0 0 15px;
-    padding: 15px;box-sizing: border-box;
-    font-size: 14px;
+button:hover {
+  opacity: 0.8;
 }
-.form button{
-    font-family: sans-serif;
-    text-transform: uppercase;
-    outline: 0;
-    background-color: rgb(38, 51, 38);
-    width: 100%;
-    border: 0;
-    padding: 15px;
-    color: white;
-    cursor: pointer;
-} 
-.form button:hover, .form button:active{
-    background-color: rgb(33, 44, 35);
+.container {
+  padding: 16px;
 }
-.form .mensaje{
-    margin: 20px 0px 20px;
-    color: white;
+.cajaForm {
+  display: flex; 
+  position: fixed; 
+  left: 0;
+  top: 0;
+  width: 20%; 
+  height: 347px; 
+  padding-top: 13%;
+  margin-left: 42%;
 }
-.form .mensaje a{
-    color: white;
-    text-decoration: none;
+label p{
+  color: white;
 }
-.form .registroForm{
-    display: none;
+.cajaContenidoForm {
+  background-color: rgba(0, 0, 0, 0.6);
+  margin: 5% auto 15% auto;
+  width: 80%; 
 }
 i{
-    color: white;
-}
-a{
-  text-decoration: none;
-  color: white;
+  padding-right: 5%;
 }
 /*Aca empieza el loader*/
 .loader-wrapper{
-    width: 100%;
-    height: 100%;
-    z-index: 2;
-    position: absolute;
-    top: 0;
-    left: 0;
-    background-color: #131212;
-    display: flex;
-    justify-content: center;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #131212;
+  display: flex;
+  justify-content: center;
 }
 .loader {
-  display: inline-block;
-  width: 30px;
-  height: 30px;
-  position: relative;
-  border: 4px solid #Fff;
-  top: 50%;
-  animation: loader 2s infinite ease;
+display: inline-block;
+width: 30px;
+height: 30px;
+position: relative;
+border: 4px solid #Fff;
+top: 50%;
+animation: loader 2s infinite ease;
 }
 .loader-inner {
-  vertical-align: top;
-  display: inline-block;
-  width: 100%;
-  background-color: #fff;
-  animation: loader-inner 2s infinite ease-in;
+vertical-align: top;
+display: inline-block;
+width: 100%;
+background-color: #fff;
+animation: loader-inner 2s infinite ease-in;
 }
 @keyframes loader {
-  0% {
-    transform: rotate(0deg);
-  }
-  
-  25% {
-    transform: rotate(180deg);
-  }
-  
-  50% {
-    transform: rotate(180deg);
-  }
-  
-  75% {
-    transform: rotate(360deg);
-  }
-  
-  100% {
-    transform: rotate(360deg);
-  }
+0% {
+  transform: rotate(0deg);
+}
+
+25% {
+  transform: rotate(180deg);
+}
+
+50% {
+  transform: rotate(180deg);
+}
+
+75% {
+  transform: rotate(360deg);
+}
+
+100% {
+  transform: rotate(360deg);
+}
 }
 @keyframes loader-inner {
-  0% {
-    height: 0%;
-  }
-  
-  25% {
-    height: 0%;
-  }
-  
-  50% {
-    height: 100%;
-  }
-  
-  75% {
-    height: 100%;
-  }
-  
-  100% {
-    height: 0%;
-  }
+0% {
+  height: 0%;
+}
+
+25% {
+  height: 0%;
+}
+
+50% {
+  height: 100%;
+}
+
+75% {
+  height: 100%;
+}
+
+100% {
+  height: 0%;
+}
 }
 .loader-wrapper.hidden{
-    animation: fadeOut 1s;
-    animation-fill-mode: forwards;
+  animation: fadeOut 1s;
+  animation-fill-mode: forwards;
 }
 
 @keyframes fadeOut{
-    100%{
-        opacity: 0;
-        visibility: hidden;
-    }
+  100%{
+      opacity: 0;
+      visibility: hidden;
+  }
 }
 /*Aca termina el loader*/
