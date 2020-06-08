@@ -114,8 +114,6 @@ main{
     gap: 2%;
 }
 .tituloGenero{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
     margin-left: 2%;
     margin-right: 2%;
 }
@@ -127,8 +125,9 @@ main{
 }
 .generoTipo{
     color: white;
+    text-transform: uppercase;
     font-size: 150%;
-    padding-top: 16%;
+    letter-spacing: 1.5px;
     text-align: center;
     font-family: 'Montserrat', sans-serif;
 }
@@ -137,22 +136,33 @@ main{
     margin-right: 10%;
     margin-top: 7%;
 }
-#listArtist{
+#genreTitle{
+    text-align: center;
+    margin-top: 10px ;
+    margin-bottom: 30px;
     color: whitesmoke;
 }
-#listaRes{
-    list-style: none;
-    color: white;
-    padding-left: 2%;
+#route{
+    color: whitesmoke;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 1px;
+    font-size: 18px;
 }
-.listaGenero p{
-    border-style: solid;
-    border-width: 2px;
-    border-right: none;
-    border-left: none;
-    border-bottom: none;
-    border-color: rgb(211, 211, 211, 0.3);
-    font-size: 80%;
+#contenedorFoto{
+    text-align: center;
+}
+#fotoArtista{
+    border-radius: 50%;
+    width:90%;
+}
+#listaRes{
+    column-gap: 5%;
+}
+.listas{
+    margin-left: 2%;
+    margin-right: 2%;
+    list-style: none;
 }
 footer{
     width:100%;
@@ -203,9 +213,7 @@ footer{
     transform: scale(1.2);
     transition: all 300ms;
 }
-.finalAgradecimiento{
-    font-size: 92%;
-}
+
 
 /*Aca empieza el loader*/
 .loader-wrapper{
@@ -295,6 +303,10 @@ footer{
         padding-left: 5%;
         padding-right: 5%;
     }
+    #listaRes{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
     footer p,a.ruta{
         font-size: 14px;
     }
@@ -302,9 +314,6 @@ footer{
 /*Aca termina los cimientos de Mobile*/
 
 @media (min-width:768px){
-    .container{
-        position: relative;
-    }
     .main-header{
         position: fixed;
         width: 24%;
@@ -334,12 +343,6 @@ footer{
     form{
         text-align: end;
         padding-right: 20px;
-    }
-    .tituloGenero {
-        display: grid;
-        grid-template-columns: 30% 65%;
-        gap: 2%;
-        margin-left: 5%;
     }
     .listaGenero{
         margin-top: 5%;
@@ -390,23 +393,11 @@ footer{
         margin-top: 15%;
     }
     main{
-        margin-left: 20%;
+        margin-left: 18%;
     }
-    .listaGenero p {
-        border-style: solid;
-        border-width: 2px;
-        border-right: none;
-        border-left: none;
-        border-bottom: none;
-        border-color: rgb(211, 211, 211, 0.3);
-        font-size: 100%;
-    }    
-    .seguir{
-        width: 7%;
-    }
-    nav h3{
-        font-size: 22px;
-    }
+    #listaRes{
+        grid-template-columns: 1fr 1fr 1fr;
+    } 
     footer {
         width: 80%;
         margin-left: 20%;

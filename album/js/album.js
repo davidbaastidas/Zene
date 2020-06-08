@@ -31,12 +31,28 @@ fetch(url)
     for(let i=0; i<5; i++){
         detalle.innerHTML += '<p class="data">' + 'Género(s): ' + '<a id="genre" href=../generos/generoDetalle.html?id=' + datos.genres.data[i].id + '>' + datos.genres.data[i].name + '</p>';
 
-        detalle.innerHTML += '<p class="data">' + 'Discográfica: ' + datos.label + '<p class="data">' + 'Duración: ' + datos.duration + ' segundos' + '</p>' + '<p class="data">' + '<p class="data">' + 'Seguidores: ' + datos.fans + '</p>';
+        let segundos = datos.duration;
+        function secondsToString(seconds) {
+            var minute = Math.floor((seconds / 60) % 60);
+            minute = (minute < 10)? '0' + minute : minute;
+            var second = seconds % 60;
+            second = (second < 10)? '0' + second : second;
+            return minute + ' min ' + second + ' s';
+        }
+        let duracionTrack = (secondsToString(segundos));
+
+        detalle.innerHTML += '<p class="data">' + 'Discográfica: ' + datos.label + '<p class="data">' + 'Duración: ' + duracionTrack + '</p>' + '<p class="data">' + '<p class="data">' + datos.fans + ' fans' + '</p>';
+        
+
 
         for(let i=0; i<20; i++){  
             list.innerHTML += '<li>' + '<div class="songTrack">' + '<span id="selectedSong">' + '<a id="songName" href=../tracks/tracks.html?id=' + infoTracks.data[i].id + '>' + infoTracks.data[i].title_short + '</span>' + '</div>';
+
         }
 
+        
+
+        
   
     }
         

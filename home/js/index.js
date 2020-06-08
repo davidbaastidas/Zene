@@ -26,11 +26,22 @@ let apiChart = "https://cors-anywhere.herokuapp.com/https://api.deezer.com/chart
          
          //*TRACKS// 
          let nameTrack = document.querySelector(".listSongs");
-         
 
          for(let i=0; i<5; i++){  
-            nameTrack.innerHTML += '<li>' + '<div>' + '<span class="number">' + infoTrack.data[i].position + '</span>' + '</div>' + '<div>' + '<span>' + '<a id="songName" href=../tracks/tracks.html?id=' + infoTrack.data[i].id + '>' + infoTrack.data[i].title_short + '</a>' + '</span>' + '<br>' + '<span>' + '<a id="songArtist" href=../artist/artist.html?id=' + infoTrack.data[i].artist.id + '>' + infoTrack.data[i].artist.name + '</span>' + '</div>' + '<div>' + '<audio class="songAudio" src=' + infoTrack.data[i].preview + ' controls>' + '</audio>' + '</div>' + '</li>'
+            nameTrack.innerHTML += '<li>' + '<div>' + '<span class="number">' + infoTrack.data[i].position + '</span>' + '</div>' + '<div>' + '<span>' + '<a id="songName" href=../tracks/tracks.html?id=' + infoTrack.data[i].id + '>' + infoTrack.data[i].title_short + '</a>' + '</span>' + '<br>' + '<span>' + '<a id="songArtist" href=../artist/artist.html?id=' + infoTrack.data[i].artist.id + '>' + infoTrack.data[i].artist.name + '</span>' + '</div>' + '<div>' + '<audio class="songAudio" src=' + infoTrack.data[i].preview + ' controls>' + '</audio>' + '</div>' + '</li>';
          }
+         //    let audiosjs = document.querySelector('.songAudio');
+         // }
+         // audiojs.events.ready(function() {
+         //    var as = audiojs.createAll();
+         //    $('.play').on('click', function(event){
+         //      for (var prop in audiojs.instances) {
+         //        audiojs.instances[prop].pause();
+         //      }
+         //      return true;
+         //    });
+         //  });
+
 
          let apiResponse = document.querySelector(".uk-active")
 

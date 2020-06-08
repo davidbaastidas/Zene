@@ -3,8 +3,7 @@ window.addEventListener("load", function(){
     loader.className += " hidden";
 })
 
-let modificacionFoto = document.querySelector('#photoGenre');
-let modificacionNombre = document.querySelector('#nombreRes')
+let modificacionNombre = document.querySelector('#tituloGenero')
 let modificacionLista = document.querySelector('#listaRes')
 
 let queryString = location.search;
@@ -18,10 +17,7 @@ fetch(urlParte1)
         return response.json();
     })
     .then(function(datos){
-        
-        modificacionFoto.innerHTML += '<img class="imageGenre" src="' + datos.picture_xl + '" alt="fotoGenero">'
-
-        modificacionNombre.innerHTML += '<h1 class="generoTipo">' + 'Género: ' + datos.name + '</h1>'
+        modificacionNombre.innerHTML += '<h1 class="generoTipo">' + datos.name + '</h1>'
     })
     .catch(function(error){
         console.log(error);
@@ -34,12 +30,14 @@ fetch(urlParte2)
         return response.json();
     })
     .then(function(datos){
+        
         let infoGenre = datos.data;
         
         for(let i=0; i<10; i++){  
-            modificacionLista.innerHTML += '<li>' + '<a id="route" href="../artist/artist.html?id=' + infoGenre[i].id + '">' + '<p>' + infoGenre[i].name + '</p>' + '</a>' + '</li>'
+            modificacionLista.innerHTML += '<li class="listas">' + '<div id="contenedorFoto">' + '<a href=../artist/artist.html?id=' + infoGenre[i].id + '>' + '<img id="fotoArtista" src="' + infoGenre[i].picture_xl + '">' + '</div>' + '<h4 id="genreTitle">' +'<a id="route" href="../artist/artist.html?id=' + infoGenre[i].id + '">' + infoGenre[i].name + '</a>' + '</h4>' +'</li>';
         }
 
+        
     })
     .catch(function(error){
         console.log(error);

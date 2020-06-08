@@ -57,12 +57,21 @@ fetch(url)
     console.log(localStorage);
         
     })
-
     ////////
+
+    let segundos = datos.duration;
+    function secondsToString(seconds) {
+        var minute = Math.floor((seconds / 60) % 60);
+        minute = (minute < 10)? '0' + minute : minute;
+        var second = seconds % 60;
+        second = (second < 10)? '0' + second : second;
+        return minute + ' min ' + second + ' s';
+    }
+    let duracionTrack = (secondsToString(segundos));
 
        otherInf.innerHTML += '<h3 id="artista">' + '<a href=../artist/artist.html?id=' + datos.artist.id  + '>' + 'Artista: ' + datos.artist.name + '</h3>' + '<br>';
        otherInf.innerHTML += '<h3 id="reference" >' + '<a href=../album/album.html?id=' + datos.album.id + '>' + 'Album: ' + datos.album.title + '</h3>' + '<br>';
-       otherInf.innerHTML += '<h3 id="duration">' + 'Duración: ' + datos.duration + ' segundos' + '</h3>';
+       otherInf.innerHTML += '<h3 id="duration">' + duracionTrack + '</h3>';
 
        otherInf.innerHTML += '<div id="audio">' + '<audio class="songAudio" src=' + datos.preview + ' controls>' + '</audio>' + '</div>';
 
