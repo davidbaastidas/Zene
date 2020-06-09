@@ -34,7 +34,8 @@ fetch(url)
     let agregar = document.querySelector('.botonAgregar');
 
     if(playlist.includes(idTrack)){
-        agregar.innerHTML = ' Remove from playlist';
+        agregar.innerHTML = 'Eliminar de la playlist';
+        agregar.style.backgroundColor = "white";
     }
     
     agregar.addEventListener('click',function(e){
@@ -43,13 +44,15 @@ fetch(url)
         if(playlist.includes(idTrack)){
             let indiceEnElArray = playlist.indexOf(idTrack);
             playlist.splice(indiceEnElArray,1);
-            agregar.innerHTML = "Add to playlist";
+            agregar.innerHTML = "Añadir a la playlist";
+            agregar.style.backgroundColor = "rgb(235, 235, 238)";
 
             console.log(playlist);
 
         } else{
             playlist.push(idTrack);
-            agregar.innerHTML = 'Remove from playlist';
+            agregar.innerHTML = 'Eliminar de la playlist';
+            agregar.style.backgroundColor = "white";
         }
 
     let playlistParaStorage = JSON.stringify(playlist);

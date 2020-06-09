@@ -19,11 +19,48 @@ fetch(urlParte1)
     })
     .then(function(datos){
 
-        modificacionArriba.innerHTML += '<div id="info">'+'<div id="fotoArtista">'+'<img class="artista" src="' + datos.picture_xl + '" alt="fotoArtista">' +'</div>'+'<div class="moreInfo">'+'<h2 id="title">' + datos.name + '</h2>'+'<h5 class="fans">' + datos.nb_fan + ' fans' + '</h5>' + '<button id="likeArt">'+'Add' +'</button>' +'</div>'+'</div>';
+        modificacionArriba.innerHTML += '<div id="info">'+'<div id="fotoArtista">'+'<img class="artista" src="' + datos.picture_xl + '" alt="fotoArtista">' +'</div>'+'<div class="moreInfo">'+'<h2 id="title">' + datos.name + '</h2>'+'<h5 class="fans">' + datos.nb_fan + ' fans' + '</h5>' + '<button id="likeArt">'+ 'Añadir' +'</button>' +'</div>'+'</div>';
 
-        let numberFans = datos.nb_fan
+        let numberFans = document.querySelector('.fans')
+        let recuperoStorage = localStorage.getItem('fans'); 
 
-        
+        if(recuperoStorage == null){
+            fans = [];
+        } else {
+            fans = JSON.parse(recuperoStorage);
+            nFans = parseInt (datos.nb_fan); // pasar de objeto a numero
+        }
+
+        let like = document.querySelector('#likeArt')
+
+        if(fans.includes(idArtista)){
+            like.innerHTML = 'Eliminar';
+            numberFans.innerHTML = nFans + 1 + ' fans';
+            like.style.backgroundColor = 'white';
+        }
+
+        like.addEventListener('click',function(e){
+            e.preventDefault();
+            if(fans.includes(idArtista)){
+                let indiceEnElArray = fans.indexOf(idArtista);
+                fans.splice(indiceEnElArray,1);
+                like.innerHTML = "Añadir";
+                numberFans.innerHTML = nFans + ' fans';
+                like.style.backgroundColor = "rgb(235, 235, 238)";
+                console.log(fans);
+            } else{
+                fans.push(idArtista);
+                like.innerHTML = 'Eliminar';
+                numberFans.innerHTML = nFans + 1 + ' fans';
+                like.style.backgroundColor = 'white';
+            }
+    
+        let fansParaStorage = JSON.stringify(fans);
+        localStorage.setItem('fans',fansParaStorage);
+        console.log(localStorage);
+        })
+
+
     })
     .catch(function(error){
         console.log(error);
