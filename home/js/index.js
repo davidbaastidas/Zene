@@ -1,3 +1,21 @@
+let apiResponse = document.querySelector(".uk-active")
+
+      apiResponse.afterprint = function(){
+         let loader = document.querySelector(".loader-wrapper")
+         console.log(apiResponse);
+         loader.className += " hidden";
+      }
+
+let recuperoStorage = localStorage.getItem('ususarios');
+let usuario = JSON.parse(recuperoStorage);
+let listSongs = document.querySelector('.usuarioInfo');
+      
+   if(recuperoStorage == "[]"){
+      usuario.forEach(function(usuarios){
+        usuarios(ususarios);
+        usuarioInfo.innerHTML += '<h3 class="usuarioInfo">' + name + '</h3>'
+      })
+   }
 
 let apiChart = "https://cors-anywhere.herokuapp.com/https://api.deezer.com/chart/0"
 
@@ -7,7 +25,6 @@ let apiChart = "https://cors-anywhere.herokuapp.com/https://api.deezer.com/chart
       })
       .then(function(datos){
          let infoTrack = datos.tracks;
-         console.log(infoTrack);
 
          //*ARTIST// 
          let imagenAr = document.querySelector("#firstSection ul");
@@ -42,14 +59,6 @@ let apiChart = "https://cors-anywhere.herokuapp.com/https://api.deezer.com/chart
          //    });
          //  });
 
-
-         let apiResponse = document.querySelector(".uk-active")
-
-         apiResponse.afterprint = function(){
-         let loader = document.querySelector(".loader-wrapper")
-         console.log(apiResponse);
-         loader.className += " hidden";
-         }
       })
       .catch(function(error){
       console.log(error)
