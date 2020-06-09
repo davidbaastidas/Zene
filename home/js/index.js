@@ -1,10 +1,11 @@
-let apiResponse = document.querySelector(".uk-active")
-
-      apiResponse.afterprint = function(){
-         let loader = document.querySelector(".loader-wrapper")
-         console.log(apiResponse);
-         loader.className += " hidden";
-      }
+//loader que no funca
+//let apiResponse = document.querySelector(".uk-active")
+//
+//      apiResponse.afterprint = function(){
+//         let loader = document.querySelector(".loader-wrapper")
+//         console.log(apiResponse);
+//         loader.className += " hidden";
+//      }
 
 let recuperoStorage = localStorage.getItem('ususarios');
 let usuario = JSON.parse(recuperoStorage);
