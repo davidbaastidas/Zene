@@ -1,22 +1,13 @@
-//loader que no funca
-//let apiResponse = document.querySelector(".uk-active")
-//
-//      apiResponse.afterprint = function(){
-//         let loader = document.querySelector(".loader-wrapper")
-//         console.log(apiResponse);
-//         loader.className += " hidden";
-//      }
+window.addEventListener('load', function(e){
+   let loader = document.querySelector('.loader-wrapper');
+   loader.classList.add('hidden');
+})
 
-let recuperoStorage = localStorage.getItem('ususarios');
-let usuario = JSON.parse(recuperoStorage);
-let listSongs = document.querySelector('.usuarioInfo');
-      
-   if(recuperoStorage == "[]"){
-      usuario.forEach(function(usuarios){
-        usuarios(ususarios);
-        usuarioInfo.innerHTML += '<h3 class="usuarioInfo">' + name + '</h3>'
-      })
-   }
+let usuarioInfo = document.querySelector('.usuarioInfo');
+
+if(localStorage.getItem('usuario') !== null){
+   usuarioInfo.innerHTML = localStorage.getItem('usuario');
+}
 
 let apiChart = "https://cors-anywhere.herokuapp.com/https://api.deezer.com/chart/0"
 
