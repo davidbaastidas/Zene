@@ -1,6 +1,6 @@
-window.addEventListener("load", function(){
-    let loader = document.querySelector(".loader-wrapper");
-    loader.className += " hidden";
+window.addEventListener('load', function(e){
+    let loader = document.querySelector('.loader-wrapper');
+    loader.classList.add('hidden');
 })
 
 let queryString = location.search;
