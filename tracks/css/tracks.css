@@ -109,6 +109,9 @@ main{
     display: grid;
     grid-template-rows: 1fr 1fr;
 }
+#selectedArtist{
+    margin-top: 10px;
+}
 #duration,#reference,#artista{
     color: rgba(255, 255, 255, 0.842);
     text-align: center;
@@ -117,36 +120,38 @@ main{
     color: rgba(255, 255, 255, 0.842);
 }
 .infoArtista{
-    margin-top: 4%;
-    margin-left: 5%;
-    margin-right: 5%;
     text-align: center;
 }
 .fotoArtista{
-    max-height: 140px;
-    width: auto;
-    border-radius: 90px;
-    float: left;
+    width: 80%;
 }
 #audio{
     margin-top: 5%;
     margin-bottom: 5%;
     text-align: center;
 }
+#info{
+    margin-top: 4%;
+}
 .songAudio{
     width: 80%;
 }
-.fotoTrack img:hover{
-    transform: scale(1.2);
-    transition: all 300ms;
+#otherInfo{
+    padding-top: 20px;
 }
-.infoArriba{
-    padding-right: 5px;
+#duration{
+    padding-bottom: 20px;
 }
-.tituloTrack{
+#tituloTrack{
     font-size: 19px;
     color: white;
-    margin-bottom: 10%;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+.botonAgregar{
+    width: 80px;
+    height: 30px;
+    margin-top: 8px;
 }
 footer{
     width:100%;
@@ -280,30 +285,22 @@ footer{
     }
 }
 /*Aca termina el loader*/
-@media (min-width:375px){
-    .fotoArtista {
-        max-height: 180px;
-    }
-    .tituloTrack{
-        font-size: 21px;
-    }
-}
 
 @media (min-width:425px){
+    .infoArtista{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .fotoArtista{
+        width: 100%;
+        padding: 5% 10%;
+    }
     nav li{
         padding-left: 5%;
         padding-right: 5%;
     }
-    .fotoArtista {
-        max-height: 200px;
-        margin-left: 10%;
-    }
-    .tituloTrack {
+    #tituloTrack {
         font-size: 23px;
-    }
-    .botonAgregar {
-        height: 40px;
-        width: 100px;
     }
     .infoAbajo h3{
         font-size: 16px;
@@ -344,12 +341,11 @@ footer{
     input{
         width: 18%;
     }
-    .fotoArtista {
-        max-height: 250px;
-        margin-left: 10%;
-    }
-    .tituloTrack {
+    #tituloTrack {
         font-size: 30px;
+    }
+    .fotoArtista{
+        padding: 5% 10%;
     }
     footer{
         bottom: 0;
@@ -382,16 +378,13 @@ footer{
 /*Aca termina los cimientos de Tablet*/
 
 @media (min-width:1024px){
-    .container{
-        min-height: 67vw;
-    }
     .main-header{
-        width: 16%;
+        width: 18%;
     }
     main{
         margin-left: 20%;
     }
-    .tituloTrack{
+    #tituloTrack{
         font-size: 40px;
     }
     .seguir{

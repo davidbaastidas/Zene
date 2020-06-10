@@ -16,10 +16,13 @@ fetch(url)
     .then(function(datos){
        console.log(datos);
        
-       let infoArt = document.querySelector('.infoArtista');
-       let otherInf = document.querySelector('.otherInfo');
+       let art = document.querySelector('#selectedArtist');
+       let infoArt = document.querySelector('#info');
+       let otherInf = document.querySelector('#otherInfo');
        
-       infoArt.innerHTML += '<div>'+ '<img class="fotoArtista" src="' + datos.artist.picture_big + '">' +'</div>'+ '<span class="tituloTrack">' + datos.title + '</span>'+ '<br>' + '<br>' + '<a class="songPlaylist" href=../playlist/playlist.html?id=' + datos.id + '>' + '<button class="botonAgregar">'+'Add to playlist'+'</button>';
+       art.innerHTML += '<img class="fotoArtista" src="' + datos.artist.picture_big + '">';
+
+       infoArt.innerHTML += '<span id="tituloTrack">' + datos.title + '</span>' + '<br>' +'<a class="songPlaylist" href=../playlist/playlist.html?id=' + datos.id + '>' + '<button class="botonAgregar">'+'Añadir a la playlist'+'</button>';
 
     ////// Add/Remove from playlist
     

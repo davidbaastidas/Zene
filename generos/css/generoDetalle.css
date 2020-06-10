@@ -159,6 +159,10 @@ main{
     border-radius: 50%;
     width:90%;
 }
+#fotoArtista:hover{
+    transform: scale(1.1);
+    transition: all 300ms;
+}
 #listaRes{
     column-gap: 5%;
 }
