@@ -94,6 +94,10 @@ button:hover{
     transform: scale(1.2);
     transition: all 300ms;
 }
+.usuarioInfo:hover{
+    transform: scale(1.2);
+    transition: all 300ms;
+}
 nav h3{
     color: white;
     text-align: center;
@@ -125,7 +129,7 @@ nav h3{
     font-size: 80%;
     margin-bottom: 8%;
 }
-#route0,#route1, #route2{
+#route0,#route1,#route2,#route3,#route4{
     text-decoration: none;
 }
 #trackName{

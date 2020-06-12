@@ -3,6 +3,12 @@ window.addEventListener('load', function(e){
     loader.classList.add('hidden');
 })
 
+let usuarioInfo = document.querySelector('.usuarioInfo');
+
+if(localStorage.getItem('usuario') !== null){
+   usuarioInfo.innerHTML = localStorage.getItem('usuario');
+}
+
 let queryString = location.search;
 let hrefParams = new URLSearchParams (queryString);
 let idTrack = hrefParams.get('id');

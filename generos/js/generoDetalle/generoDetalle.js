@@ -3,6 +3,12 @@ window.addEventListener('load', function(e){
     loader.classList.add('hidden');
 })
 
+let usuarioInfo = document.querySelector('.usuarioInfo');
+
+if(localStorage.getItem('usuario') !== null){
+   usuarioInfo.innerHTML = localStorage.getItem('usuario');
+}
+
 let modificacionNombre = document.querySelector('#tituloGenero')
 let modificacionLista = document.querySelector('#listaRes')
 

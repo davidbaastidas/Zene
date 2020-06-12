@@ -3,6 +3,12 @@ window.addEventListener('load', function(e){
     loader.classList.add('hidden');
 })
 
+let usuarioInfo = document.querySelector('.usuarioInfo');
+
+if(localStorage.getItem('usuario') !== null){
+   usuarioInfo.innerHTML = localStorage.getItem('usuario');
+}
+
 let queryString = location.search;
 let hrefParams = new URLSearchParams (queryString);
 let idAlbum = hrefParams.get('id');
@@ -49,13 +55,8 @@ fetch(url)
 
         }
 
-        
-
-        
-  
     }
         
-    
     
     })
     .catch(function(error){
