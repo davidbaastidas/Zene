@@ -105,7 +105,7 @@ button:hover{
     transform: scale(1.2);
     transition: all 300ms;
 }
-div a img:hover{
+img.fotoGenero:hover{
     transform: scale(1.2);
     transition: all 300ms;
 }
