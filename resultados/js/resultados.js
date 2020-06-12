@@ -14,15 +14,6 @@ console.log(searchParams);
 let search = searchParams.get('search');
 console.log(search);
 
-let resultadoSearch = document.querySelector("#resultadoBusqueda");
-
-if(search == null || search == "[]"){
-    search = [];
-    resultadoSearch.innerHTML = 'No se encontraron resultados para tu búsqueda';
-} else {
-    resultadoSearch.innerHTML = 'Los resultados de tu busqueda fueron...'
-}
-
 let proxy = "https://cors-anywhere.herokuapp.com/";
 let url = proxy + "https://api.deezer.com/search?q=" + search;
 
@@ -35,7 +26,7 @@ fetch(url)
         let resultados = datos.data;
         let resultadoBusqueda = document.querySelector('#resultadoBusqueda');
 
-        if (resultados == null || resultados == undefined){
+        if (resultados == null || resultados == undefined || search == "[]"){
             resultadoBusqueda.innerHTML += "No se encontraron resultados de tu búsqueda";
 
         } else {
