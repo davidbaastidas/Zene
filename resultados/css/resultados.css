@@ -125,8 +125,13 @@ nav h3{
     font-size: 80%;
     margin-bottom: 8%;
 }
-#route1, #route2{
+#route0,#route1, #route2{
     text-decoration: none;
+}
+#trackName{
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    font-weight: 800;
 }
 footer{
     width:100%;
@@ -269,6 +274,7 @@ footer{
     #info{
         display: grid;
         grid-template-columns: 1fr 1fr;
+        margin: 2% 2%;
     }
     .listas{
         margin-top: 2%;
@@ -352,7 +358,7 @@ footer{
         width: 16%;
     }
     main{
-        margin-left: 20%;
+        margin-left: 18%;
     }
     .seguir{
         width: 7%;
