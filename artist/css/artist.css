@@ -66,7 +66,7 @@ nav ul li i{
 nav h3{
     color: white;
     text-align: center;
-    font-size: 20px;
+    font-size: 14px;
     margin: 0;
     font-family: 'Montserrat', sans-serif;
     text-decoration: none;
@@ -396,6 +396,9 @@ footer{
 /*Aca termina los cimientos de Mobile*/
 
 @media (min-width:768px){
+    nav h3{
+        font-size: 20px;
+    }
     main{
         margin-left: 25%;
     }
