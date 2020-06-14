@@ -12,7 +12,7 @@ html,body{
     background-attachment: fixed;
 }
 .container{
-    min-height: 50vw;
+    min-height: 100vw;
     width: 100%;
 }
 header{
@@ -36,6 +36,7 @@ nav{
 }
 .logo-img{
     width: auto;
+    max-width: 100%;
     height: 240px;
     margin-top: -30px;
     margin-bottom: -30px;
@@ -47,41 +48,6 @@ nav ul li{
 nav ul li i{
     color: white;
 }
-section,form{
-    position: relative;
-    height: auto;
-}
-form{
-    width: 100%;
-    text-align: center;
-}
-fieldset{
-    border: 0px solid;
-    padding-top: 20px;
-    width: 100%;
-}
-input, button{
-    width: 180px;
-    height: 35px;
-    border-radius: 15px;
-}
-input{
-    color: black;
-    border: none;
-    padding-left: 0cm;
-}
-input:focus{
-    outline: none;
-}
-button{
-    width: 55px;
-    border: none;
-}
-button:hover{
-    transform: scale(1.2);
-    transition: all 300ms;
-}
-
 .menuHome:hover{
     transform: scale(1.2);
     transition: all 300ms;
@@ -106,6 +72,47 @@ nav h3{
     font-family: 'Montserrat', sans-serif;
     text-decoration: none;
 }
+section,form{
+    position: relative;
+    height: auto;
+}
+form{
+    width: 100%;
+    text-align: center;
+}
+fieldset{
+    border: 0px solid;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    width: 100%;
+}
+input, button{
+    height: 35px;
+    border-radius: 15px;
+}
+input{
+    width: 50%;
+    color: black;
+    border: none;
+    padding-left: 0cm;
+}
+input:focus{
+    outline: none;
+}
+button{
+    width: 55px;
+    border: none;
+}
+button:hover{
+    transform: scale(1.2);
+    transition: all 300ms;
+}
+#route1,#route2,#route3,#route4{
+    text-decoration: none;
+}
+ 
+/* IGUAL PARA TODOS - HEADER Y BUSCADOR */
+
 .listas{
     margin-left: 2%;
     margin-right: 2%;
@@ -137,6 +144,9 @@ nav h3{
     letter-spacing: 0.5px;
     font-weight: 800;
 }
+
+/* IGUAL PARA TODOS - FOOTER */
+
 footer{
     width:100%;
     border-top: solid 5px #131212;
@@ -145,6 +155,7 @@ footer{
 .sponsors{
     color: white;
     letter-spacing: 5px;
+    margin-top: 0;
 }
 .anclaLocal{
     background-color: #131212;
@@ -157,9 +168,6 @@ footer{
 .creditos{
     padding: 10px;
     padding-bottom: 0;
-}
-.sponsors{
-    margin-top: 0;
 }
 #experiencia{
     margin-bottom:12px;
@@ -190,7 +198,7 @@ footer{
 /*Aca empieza el loader*/
 .loader-wrapper{
     width: 100%;
-    height: 100%;
+    height: 100vw;
     z-index: 2;
     position: absolute;
     top: 0;
@@ -294,8 +302,8 @@ footer{
     nav h3{
         font-size: 20px;
     }
-    .container{
-        position: relative;
+    main{
+        margin-left: 25%;
     }
     .main-header{
         position: fixed;
@@ -303,16 +311,10 @@ footer{
         min-height: 100vw;
         padding-bottom: 0;
     }
-    main{
-        margin-left: 25%;
-    }
     .logo-img {
         width: auto;
-        height: 240px;
-        margin-top: 0px;
-        margin-bottom: -30px;
-        padding-left: 10%;
         padding-right: 10%;
+        padding-left: 10%;
     }
     .nav-links{
         margin-bottom: 30px;
@@ -327,9 +329,18 @@ footer{
         text-align: end;
         padding-right: 20px;
     }
+    input{
+        width: 18%;
+    }
+
+    /* IGUAL PARA TODOS - HEADER Y BUSCADOR */
+
     #info{
         grid-template-columns: 1fr 1fr 1fr;
     }
+
+    /* IGUAL PARA TODOS - FOOTER */
+
     footer{
         bottom: 0;
         width: 72%;
@@ -365,16 +376,11 @@ footer{
         width: 16%;
     }
     main{
-        margin-left: 18%;
-    }
-    .seguir{
-        width: 7%;
-    }
-    nav h3{
-        font-size: 22px;
+        margin-left: 20%;
     }
     #info{
         grid-template-columns: 1fr 1fr 1fr 1fr;
+        margin-left:0;
     }
     footer {
         width: 80%;

@@ -38,7 +38,7 @@ fetch(url)
         } else {
 
             for(let i=0; i<resultados.length; i++){
-                modificacion.innerHTML += '<li class="listas">' + '<div>'+'<a href=../album/album.html?id=' + resultados[i].album.id + '>' + '<img src="' + resultados[i].album.cover_xl + '">' + '</a>' + '</div>' + '<a id="route0" href=../tracks/tracks.html?id=' + resultados[i].id + '>' +'<h2 id="trackName">' + resultados[i].title_short + '</h2>' + '</a>' + '<a id="route2" href=../artist/artist.html?id=' + resultados[i].artist.id + '>' + '<h2>' + resultados[i].artist.name + '</h2>' + '</a>' + '</a>' + '<a id="route1" href=../album/album.html?id=' + resultados[i].album.id + '>' +'<h2>' + 'Album: ' + resultados[i].album.title + '</h2>' ;
+                modificacion.innerHTML += '<li class="listas">' + '<div>'+'<a href=../album/album.html?id=' + resultados[i].album.id + '>' + '<img src="' + resultados[i].album.cover_xl + '">' + '</a>' + '</div>' + '<a id="route0" href=../tracks/tracks.html?id=' + resultados[i].id + '>' +'<h2 id="trackName">' + resultados[i].title_short + '</h2>' + '</a>' + '<a id="route2" href=../artist/artist.html?id=' + resultados[i].artist.id + '>' + '<h2>' + resultados[i].artist.name + '</h2>' + '</a>' + '</a>' + '<a id="route1" href=../album/album.html?id=' + resultados[i].album.id + '>' +'<h2>' + 'Album: ' + resultados[i].album.title + '</h2>';
             }
 
         }

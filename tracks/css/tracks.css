@@ -36,6 +36,7 @@ nav{
 }
 .logo-img{
     width: auto;
+    max-width: 100%;
     height: 240px;
     margin-top: -30px;
     margin-bottom: -30px;
@@ -109,6 +110,9 @@ button:hover{
 #route1,#route2,#route3,#route4{
     text-decoration: none;
 }
+ 
+/* IGUAL PARA TODOS - HEADER Y BUSCADOR */
+
 main{
     display: grid;
     grid-template-rows: 1fr 1fr;
@@ -119,6 +123,8 @@ main{
 #duration,#reference,#artista{
     color: rgba(255, 255, 255, 0.842);
     text-align: center;
+    margin-bottom: 3%;
+    font-family: 'Montserrat', sans-serif;
 }
 #reference a,#artista a{
     color: rgba(255, 255, 255, 0.842);
@@ -135,16 +141,13 @@ main{
     text-align: center;
 }
 #info{
-    margin-top: 4%;
+    margin-top: 6%;
 }
 .songAudio{
     width: 80%;
 }
 #otherInfo{
-    padding-top: 20px;
-}
-#duration{
-    padding-bottom: 20px;
+    padding-top: 50px;
 }
 #tituloTrack{
     font-size: 19px;
@@ -153,10 +156,13 @@ main{
     text-transform: uppercase;
 }
 .botonAgregar{
-    width: 80px;
-    height: 30px;
+    width: 95px;
+    height: 40px;
     margin-top: 8px;
 }
+
+/* IGUAL PARA TODOS - FOOTER */
+
 footer{
     width:100%;
     border-top: solid 5px #131212;
@@ -165,6 +171,7 @@ footer{
 .sponsors{
     color: white;
     letter-spacing: 5px;
+    margin-top: 0;
 }
 .anclaLocal{
     background-color: #131212;
@@ -177,9 +184,6 @@ footer{
 .creditos{
     padding: 10px;
     padding-bottom: 0;
-}
-.sponsors{
-    margin-top: 0;
 }
 #experiencia{
     margin-bottom:12px;
@@ -210,7 +214,7 @@ footer{
 /*Aca empieza el loader*/
 .loader-wrapper{
     width: 100%;
-    height: 100%;
+    height: 100vw;
     z-index: 2;
     position: absolute;
     top: 0;
@@ -291,6 +295,13 @@ footer{
 /*Aca termina el loader*/
 
 @media (min-width:425px){
+    nav li{
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+
+    /*IGUAL PARA TODOS*/
+
     .infoArtista{
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -299,16 +310,15 @@ footer{
         width: 100%;
         padding: 5% 10%;
     }
-    nav li{
-        padding-left: 5%;
-        padding-right: 5%;
-    }
     #tituloTrack {
         font-size: 23px;
     }
     .infoAbajo h3{
         font-size: 16px;
     }
+
+    /*IGUAL PARA TODOS*/
+
     footer p,a.ruta{
         font-size: 14px;
     }
@@ -319,18 +329,19 @@ footer{
     nav h3{
         font-size: 20px;
     }
+    main{
+        margin-left: 25%;
+    }
     .main-header{
         position: fixed;
         width: 24%;
         min-height: 100vw;
-        padding-bottom: 0s;
-    }
-    main{
-        margin-left: 25%;
+        padding-bottom: 0;
     }
     .logo-img {
         width: auto;
-        height: 180px;
+        padding-right: 10%;
+        padding-left: 10%;
     }
     .nav-links{
         margin-bottom: 30px;
@@ -348,12 +359,18 @@ footer{
     input{
         width: 18%;
     }
+
+    /* IGUAL PARA TODOS - HEADER Y BUSCADOR */
+
     #tituloTrack {
         font-size: 30px;
     }
     .fotoArtista{
         padding: 5% 10%;
     }
+
+    /* IGUAL PARA TODOS - FOOTER */
+
     footer{
         bottom: 0;
         width: 72%;
@@ -386,22 +403,28 @@ footer{
 
 @media (min-width:1024px){
     .main-header{
-        width: 18%;
+        width: 16%;
     }
     main{
         margin-left: 20%;
     }
+
+    /* IGUAL PARA TODOS - HEADER Y BUSCADOR */
+
     #tituloTrack{
         font-size: 40px;
     }
-    .seguir{
-        width: 7%;
+    .botonAgregar{
+        margin-top: 14px;
     }
-    nav h3{
-        font-size: 22px;
-    }
+
+    /* IGUAL PARA TODOS - FOOTER */
+
     footer {
         width: 80%;
         margin-left: 20%;
     }
 }
+
+/*Aca termina los cimientos de Desktop*/
+

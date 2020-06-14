@@ -12,8 +12,8 @@ html,body{
     background-attachment: fixed;
 }
 .container{
+    min-height: 100vw;
     width: 100%;
-    min-height: 50vw;
 }
 header{
     background-color:#131212;
@@ -26,6 +26,7 @@ nav li{
     font-size: 30px;
 }
 ul.nav-links{
+    display: inline;
     margin:0;
     padding: 0;
 }
@@ -35,9 +36,10 @@ nav{
 }
 .logo-img{
     width: auto;
+    max-width: 100%;
     height: 240px;
     margin-top: -30px;
-    margin-bottom: -30px ;
+    margin-bottom: -30px;
 }
 nav ul li{
     display: inline-block;
@@ -62,9 +64,6 @@ nav ul li i{
     transform: scale(1.2);
     transition: all 300ms;
 }
-#route,#route1,#route2,#route3,#route4{
-    text-decoration: none;
-}
 nav h3{
     color: white;
     text-align: center;
@@ -72,13 +71,6 @@ nav h3{
     margin: 0;
     font-family: 'Montserrat', sans-serif;
     text-decoration: none;
-}
-h3{
-    color: white;
-    text-align: center;
-}
-#listArtist{
-    font-family: 'Montserrat', sans-serif;
 }
 section,form{
     position: relative;
@@ -91,15 +83,15 @@ form{
 fieldset{
     border: 0px solid;
     padding-top: 20px;
-    padding-bottom: 20px;
+    padding-bottom: 10px;
     width: 100%;
 }
 input, button{
-    width: 180px;
     height: 35px;
     border-radius: 15px;
 }
 input{
+    width: 50%;
     color: black;
     border: none;
     padding-left: 0cm;
@@ -114,6 +106,15 @@ button{
 button:hover{
     transform: scale(1.2);
     transition: all 300ms;
+}
+#route1,#route2,#route3,#route4{
+    text-decoration: none;
+}
+ 
+/* IGUAL PARA TODOS - HEADER Y BUSCADOR */
+
+#listArtist{
+    font-family: 'Montserrat', sans-serif;
 }
 main{
     display: grid;
@@ -175,6 +176,9 @@ main{
     margin-right: 2%;
     list-style: none;
 }
+
+/* IGUAL PARA TODOS - FOOTER */
+
 footer{
     width:100%;
     border-top: solid 5px #131212;
@@ -183,6 +187,7 @@ footer{
 .sponsors{
     color: white;
     letter-spacing: 5px;
+    margin-top: 0;
 }
 .anclaLocal{
     background-color: #131212;
@@ -195,9 +200,6 @@ footer{
 .creditos{
     padding: 10px;
     padding-bottom: 0;
-}
-.sponsors{
-    margin-top: 0;
 }
 #experiencia{
     margin-bottom:12px;
@@ -225,11 +227,10 @@ footer{
     transition: all 300ms;
 }
 
-
 /*Aca empieza el loader*/
 .loader-wrapper{
     width: 100%;
-    height: 100%;
+    height: 100vw;
     z-index: 2;
     position: absolute;
     top: 0;
@@ -314,10 +315,16 @@ footer{
         padding-left: 5%;
         padding-right: 5%;
     }
+
+    /*IGUAL PARA TODOS*/
+
     #listaRes{
         display: grid;
         grid-template-columns: 1fr 1fr;
     }
+
+    /*IGUAL PARA TODOS*/
+
     footer p,a.ruta{
         font-size: 14px;
     }
@@ -328,22 +335,19 @@ footer{
     nav h3{
         font-size: 20px;
     }
+    main{
+        margin-left: 25%;
+    }
     .main-header{
         position: fixed;
         width: 24%;
         min-height: 100vw;
         padding-bottom: 0;
     }
-    main{
-        margin-left: 25%;
-    }
     .logo-img {
         width: auto;
-        height: 240px;
-        margin-top: 0px;
-        margin-bottom: -30px;
-        padding-left: 10%;
         padding-right: 10%;
+        padding-left: 10%;
     }
     .nav-links{
         margin-bottom: 30px;
@@ -358,9 +362,18 @@ footer{
         text-align: end;
         padding-right: 20px;
     }
+    input{
+        width: 18%;
+    }
+
+    /* IGUAL PARA TODOS - HEADER Y BUSCADOR */
+
     .listaGenero{
         margin-top: 5%;
     }
+
+    /* IGUAL PARA TODOS - FOOTER */
+
     footer{
         bottom: 0;
         width: 72%;
@@ -395,19 +408,8 @@ footer{
     .main-header{
         width: 16%;
     }
-    ul.nav-links {
-        display: inline;
-        margin: 0;
-        padding: 0;
-    }
-    .logo-img {
-        height: 240px;
-    }
-    nav{
-        margin-top: 15%;
-    }
     main{
-        margin-left: 18%;
+        margin-left: 20%;
     }
     #listaRes{
         grid-template-columns: 1fr 1fr 1fr;

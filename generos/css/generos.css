@@ -36,6 +36,7 @@ nav{
 }
 .logo-img{
     width: auto;
+    max-width: 100%;
     height: 240px;
     margin-top: -30px;
     margin-bottom: -30px;
@@ -63,9 +64,6 @@ nav ul li i{
     transform: scale(1.2);
     transition: all 300ms;
 }
-#route1,#route2,#route3,#route4{
-    text-decoration: none;
-}
 nav h3{
     color: white;
     text-align: center;
@@ -85,15 +83,15 @@ form{
 fieldset{
     border: 0px solid;
     padding-top: 20px;
-    padding-bottom: 20px;
+    padding-bottom: 10px;
     width: 100%;
 }
 input, button{
-    width: 180px;
     height: 35px;
     border-radius: 15px;
 }
 input{
+    width: 50%;
     color: black;
     border: none;
     padding-left: 0cm;
@@ -109,8 +107,14 @@ button:hover{
     transform: scale(1.2);
     transition: all 300ms;
 }
+#route1,#route2,#route3,#route4{
+    text-decoration: none;
+}
+ 
+/* IGUAL PARA TODOS - HEADER Y BUSCADOR */
+
 img.fotoGenero:hover{
-    transform: scale(1.2);
+    transform: scale(1.1);
     transition: all 300ms;
 }
 .listas{
@@ -137,6 +141,9 @@ img.fotoGenero:hover{
     letter-spacing: 1px;
     font-size: 18px;
 }
+
+/* IGUAL PARA TODOS - FOOTER */
+
 footer{
     width:100%;
     border-top: solid 5px #131212;
@@ -145,6 +152,7 @@ footer{
 .sponsors{
     color: white;
     letter-spacing: 5px;
+    margin-top: 0;
 }
 .anclaLocal{
     background-color: #131212;
@@ -157,9 +165,6 @@ footer{
 .creditos{
     padding: 10px;
     padding-bottom: 0;
-}
-.sponsors{
-    margin-top: 0;
 }
 #experiencia{
     margin-bottom:12px;
@@ -190,7 +195,7 @@ footer{
 /*Aca empieza el loader*/
 .loader-wrapper{
     width: 100%;
-    height: 100%;
+    height: 100vw;
     z-index: 2;
     position: absolute;
     top: 0;
@@ -275,6 +280,9 @@ footer{
         padding-left: 5%;
         padding-right: 5%;
     }
+
+    /*IGUAL PARA TODOS*/
+
     .generos{
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -283,6 +291,9 @@ footer{
         margin-top: 2%;
         margin-bottom: 2%;
     }
+    
+    /*IGUAL PARA TODOS*/
+
     footer p,a.ruta{
         font-size: 14px;
     }
@@ -293,8 +304,8 @@ footer{
     nav h3{
         font-size: 20px;
     }
-    .container{
-        position: relative;
+    main{
+        margin-left: 25%;
     }
     .main-header{
         position: fixed;
@@ -302,16 +313,10 @@ footer{
         min-height: 100vw;
         padding-bottom: 0;
     }
-    main{
-        margin-left: 25%;
-    }
     .logo-img {
         width: auto;
-        height: 240px;
-        margin-top: 0px;
-        margin-bottom: -30px;
-        padding-left: 10%;
         padding-right: 10%;
+        padding-left: 10%;
     }
     .nav-links{
         margin-bottom: 30px;
@@ -326,6 +331,12 @@ footer{
         text-align: end;
         padding-right: 20px;
     }
+    input{
+        width: 18%;
+    }
+
+    /* IGUAL PARA TODOS - HEADER Y BUSCADOR */
+
     .tituloGenero {
         display: grid;
         grid-template-columns: 30% 65%;
@@ -335,6 +346,9 @@ footer{
     .listaGenero{
         margin-top: 5%;
     }
+    
+    /* IGUAL PARA TODOS - FOOTER */
+
     footer{
         bottom: 0;
         width: 72%;
@@ -367,11 +381,10 @@ footer{
 
 @media (min-width:1024px){
     .main-header{
-        position: fixed;
         width: 16%;
     }
     main{
-        margin-left: 20%; 
+        margin-left: 20%;
     }
     .generos{
         grid-template-columns: 1fr 1fr 1fr 1fr;

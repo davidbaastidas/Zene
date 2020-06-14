@@ -35,6 +35,7 @@ fetch(urlParte1)
         } else {
             fans = JSON.parse(recuperoStorage);
             nFans = parseInt (datos.nb_fan); // pasar de objeto a numero
+            var nFans;
         }
 
         let like = document.querySelector('#likeArt')
@@ -54,6 +55,7 @@ fetch(urlParte1)
                 numberFans.innerHTML = nFans + ' fans';
                 like.style.backgroundColor = "rgb(235, 235, 238)";
                 console.log(fans);
+                
             } else{
                 fans.push(idArtista);
                 like.innerHTML = 'Eliminar';
