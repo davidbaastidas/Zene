@@ -230,7 +230,7 @@ footer{
 /*Aca empieza el loader*/
 .loader-wrapper{
     width: 100%;
-    height: 100vw;
+    height: 100%;
     z-index: 2;
     position: absolute;
     top: 0;
