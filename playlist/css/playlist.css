@@ -157,7 +157,7 @@ span{
 }
 #lista{
     display: grid;
-    grid-template-columns: 2fr 1fr 0.5fr;
+    grid-template-columns: 2fr 1fr;
 }
 audio{
     width: 100%;

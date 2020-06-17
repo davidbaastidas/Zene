@@ -330,6 +330,9 @@ footer{
     input{
         width: 385px;
     }
+    #firstSection,#secondSection{
+        margin-bottom: 30px;
+    }
     h2.titulos{
         margin-top: 30px;
     }
@@ -344,6 +347,9 @@ footer{
     }
     #experiencia,.sponsors{
         font-size: 16px;
+    }
+    footer{
+        margin-top: 20px;
     }
     .anclaLocal a,p{
         font-size: 20px;
