@@ -20,13 +20,12 @@ fetch(url)
         return response.json();
     })
     .then(function(datos){
-
+        
     let main1 = document.querySelector('#selectedAlbum');
     let main2 = document.querySelector('.informacion');
     let detalle = document.querySelector('.uk-offcanvas-bar');
     let list = document.querySelector('.listSongs');
     let infoTracks = datos.tracks; 
-    
 
     main1.innerHTML += '<img class="fotoAlbum" src="' + datos.cover_big + '">';
        
@@ -48,17 +47,12 @@ fetch(url)
 
         detalle.innerHTML += '<p class="data">' + 'Discográfica: ' + datos.label + '<p class="data">' + 'Duración: ' + duracionTrack + '</p>' + '<p class="data">' + '<p class="data">' + datos.fans + ' fans' + '</p>';
         
-
-
         for(let i=0; i<20; i++){  
             list.innerHTML += '<li>' + '<div class="songTrack">' + '<span id="selectedSong">' + '<a id="songName" href=../tracks/tracks.html?id=' + infoTracks.data[i].id + '>' + infoTracks.data[i].title_short + '</span>' + '</div>';
-
         }
 
     }
-        
     
     })
     .catch(function(error){
-
     })

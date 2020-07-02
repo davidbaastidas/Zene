@@ -30,11 +30,9 @@ fetch(urlParte1)
         let numberFans = document.querySelector('.fans')
         let recuperoStorage = localStorage.getItem('fans'); 
 
-        if(recuperoStorage == null){
-            fans = [];
-        } else {
-            fans = JSON.parse(recuperoStorage);
-            nFans = parseInt (datos.nb_fan); // pasar de objeto a numero
+        if(recuperoStorage !== null){ 
+            fans = JSON.parse(recuperoStorage); //convertir un json string a objeto
+            nFans = parseInt (datos.nb_fan); //pasar un string a numero
             var nFans;
         }
 
